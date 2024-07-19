@@ -35,21 +35,21 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('login/mentor', [MentorAuthController::class,'login']);
-Route::post('login', [UserAuthController::class,'login']);
+Route::post('login/mentor', [MentorAuthController::class, 'login']);
+Route::post('login', [UserAuthController::class, 'login']);
 Route::post('register/remaja', [RegisterRemajaController::class, 'register']);
 Route::post('register/parent', [RegisterParentController::class, 'register']);
 Route::post('register/mentor', [RegisterMentorController::class, 'register']);
 
-Route::post('password/forgot',[ForgotPasswordController::class,'forgotPassword']);
-Route::post('password/reset',[ResetPasswordController::class,'resetPassword']);
+Route::post('password/forgot', [ForgotPasswordController::class, 'forgotPassword']);
+Route::post('password/reset', [ResetPasswordController::class, 'resetPassword']);
 
 Route::middleware(['auth:api'])->group(function () {
     Route::post('logout', [UserAuthController::class, 'logout']);
 
-    Route::get('leaderboard/all', [LeaderboarController::class,'getLeaders']);
-    Route::get('leaderboard/parent', [LeaderboarController::class,'getChildLeaders']);
-    Route::get('leaderboard/mentor', [LeaderboarController::class,'getLeadersFromMentor']);
+    Route::get('leaderboard/all', [LeaderboarController::class, 'getLeaders']);
+    Route::get('leaderboard/parent', [LeaderboarController::class, 'getChildLeaders']);
+    Route::get('leaderboard/mentor', [LeaderboarController::class, 'getLeadersFromMentor']);
 
     Route::get('exercise', [ExerciseController::class, 'getExercise']);
     Route::get('exercise/state', [ExerciseController::class, 'getReportExercises']);
@@ -63,20 +63,20 @@ Route::middleware(['auth:api'])->group(function () {
 
     Route::post('assesment/submit', [AssesmentController::class, 'submitAssesment']);
 
-    Route::get('meet', [GMeetController::class,'list']);
-    Route::get('meet/show/{id}', [GMeetController::class,'show']);
+    Route::get('meet', [GMeetController::class, 'list']);
+    Route::get('meet/show/{id}', [GMeetController::class, 'show']);
 
-    Route::get('meet/list', [MentorGMeetController::class,'list']);
+    Route::get('meet/list', [MentorGMeetController::class, 'list']);
 
-    Route::post('meet/create', [MentorGMeetController::class,'createMeet']);
-    Route::post('meet/publish/{id}', [MentorGMeetController::class,'publishMeet']);
-    Route::post('meet/join/{id}', [GMeetController::class,'joinMeet']);
+    Route::post('meet/create', [MentorGMeetController::class, 'createMeet']);
+    Route::post('meet/publish/{id}', [MentorGMeetController::class, 'publishMeet']);
+    Route::post('meet/join/{id}', [GMeetController::class, 'joinMeet']);
 
-    Route::post('linked', [LinkedAccountParentConroller::class,'linkAccount']);
+    Route::post('linked', [LinkedAccountParentConroller::class, 'linkAccount']);
 
-    Route::post('profile/update/remaja', [ProfileAccountRemajaController::class,'updateProfile']);
-    Route::post('profile/update/parent', [ProfileAccountParentController::class,'updateProfile']);
-    Route::post('profile/update/password', [UserAuthController::class,'updatePassword']);
+    Route::post('profile/update/remaja', [ProfileAccountRemajaController::class, 'updateProfile']);
+    Route::post('profile/update/parent', [ProfileAccountParentController::class, 'updateProfile']);
+    Route::post('profile/update/password', [UserAuthController::class, 'updatePassword']);
 
-    Route::get('logged', [UserAuthController::class,'logged']);
+    Route::get('logged', [UserAuthController::class, 'logged']);
 });

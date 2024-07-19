@@ -20,6 +20,8 @@ class Remaja extends Model
         'user_id',
         'username',
         'orang_tua_id',
+        'activity_id',
+        'paket_id',
     ];
 
 

@@ -16,7 +16,8 @@ use Illuminate\Validation\ValidationException;
 
 class UserAuthController extends Controller
 {
-    public function logged(Request $request){
+    public function logged(Request $request)
+    {
         $baseUrl = $request->root();
         $user = auth()->user();
 
@@ -30,7 +31,7 @@ class UserAuthController extends Controller
             $akun = Mentor::where('user_id', $user->id)->first();
         }
 
-        $user['foto'] = asset('storage/storage/profile/'.$user->foto);
+        $user['foto'] = asset('storage/storage/profile/' . $user->foto);
         // dd($akun);
         $user['detail'] = $akun;
 
@@ -41,58 +42,58 @@ class UserAuthController extends Controller
         ]);
     }
     public function login(Request $request)
-{
-    $request->validate([
-        'email' => 'required|email',
-        'password' => 'required',
-    ]);
+    {
+        $request->validate([
+            'email' => 'required|email',
+            'password' => 'required',
+        ]);
 
-    // dd($request->all());
+        // dd($request->all());
 
-    $user = User::where('email', $request->email)->first();
+        $user = User::where('email', $request->email)->first();
 
-    // if (!$user || !Hash::check($request->password, $user->password)) {
-    //     throw ValidationException::withMessages([
-    //         'email' => ['The provided credentials are incorrect.'],
-    //     ]);
-    // }
+        // if (!$user || !Hash::check($request->password, $user->password)) {
+        //     throw ValidationException::withMessages([
+        //         'email' => ['The provided credentials are incorrect.'],
+        //     ]);
+        // }
 
-    if(!$user){
+        if (!$user) {
+            return response()->json([
+                'status' => 'failed',
+                'message' => 'Akun tidak ditemukan'
+            ], 401);
+        }
+
+
+        // $token = null;
+        // $akun = null;
+
+        if ($user->role === 'Remaja') {
+            $token = $user->createToken('mobile', ['role:Remaja'])->plainTextToken;
+            $akun = Remaja::where('user_id', $user->id)->first();
+        } elseif ($user->role === 'Parent') {
+            $token = $user->createToken('mobile', ['role:Parent'])->plainTextToken;
+            $akun = Parents::where('user_id', $user->id)->first();
+        } else {
+            return response()->json([
+                'status' => 'failed',
+                'message' => 'You do not have authorization',
+            ], 403);
+        }
+
+        $user->api_token = $token;
+        $user->save();
+
+        $user['detail'] = $akun;
+
         return response()->json([
-            'status' => 'failed',
-            'message' => 'Akun tidak ditemukan'
-        ], 401);
+            'status' => 'success',
+            'message' => 'Login successful',
+            'token' => $token,
+            'data' => $user
+        ]);
     }
-
-
-    // $token = null;
-    // $akun = null;
-
-    if ($user->role === 'Remaja') {
-        $token = $user->createToken('mobile', ['role:Remaja'])->plainTextToken;
-        $akun = Remaja::where('user_id', $user->id)->first();
-    } elseif ($user->role === 'Parent') {
-        $token = $user->createToken('mobile', ['role:Parent'])->plainTextToken;
-        $akun = Parents::where('user_id', $user->id)->first();
-    } else {
-        return response()->json([
-            'status' => 'failed',
-            'message' => 'You do not have authorization',
-        ], 403);
-    }
-
-    $user->api_token = $token;
-    $user->save();
-
-    $user['detail'] = $akun;
-
-    return response()->json([
-        'status' => 'success',
-        'message' => 'Login successful',
-        'token' => $token,
-        'data' => $user
-    ]);
-}
 
 
     public function register(Request $request)
@@ -176,20 +177,19 @@ class UserAuthController extends Controller
         $user = auth()->user();
 
         if (Hash::check($request->old_password, $user->password)) {
-           return response()->json([
-            'status' => 'failed',
-            'message' => 'Harap masukkan password lama yang sesuai!'
-           ], 401);
+            return response()->json([
+                'status' => 'failed',
+                'message' => 'Harap masukkan password lama yang sesuai!'
+            ], 401);
         }
-
+        
         $user->password = Hash::make($request->password);
-
         $user->save();
+
 
         return response()->json([
             'status' => 'success',
             'message' => 'Password berhasil diubah'
         ]);
     }
-
 }

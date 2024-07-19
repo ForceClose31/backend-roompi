@@ -11,14 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('mentor', function (Blueprint $table) {
+        Schema::create('paket_kesetaraan', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_lengkap');
-            $table->string('gelar');
-            $table->string('riwayat_pendidikan_terakhir');
-            $table->integer('user_id');
-            $table->integer('activity_id');
-            $table->integer('paket_id');
+            $table->string('paket');
             $table->timestamps();
         });
     }
@@ -28,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('mentor');
+        Schema::dropIfExists('paket_kesetaraan');
     }
 };

@@ -16,5 +16,7 @@ class Mentor extends Model
         'gelar',
         'riwayat_pendidikan_terakhir',
         'user_id',
+        'activity_id',
+        'paket_id',
     ];
 }

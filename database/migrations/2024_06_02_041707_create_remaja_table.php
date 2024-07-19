@@ -21,6 +21,8 @@ return new class extends Migration
             $table->integer('user_id');
             $table->string('username');
             $table->integer('orang_tua_id')->nullable();
+            $table->integer('acitivity_id');
+            $table->integer('paket_id');
             $table->timestamps();
         });
     }

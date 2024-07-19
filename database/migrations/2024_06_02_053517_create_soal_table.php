@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('pertanyaan');
             $table->integer('sub_bagian_id');
+            $table->integer('paket_id');
             $table->timestamps();
         });
     }
