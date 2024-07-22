@@ -17,13 +17,10 @@ class RemajaAccountSeeder extends Seeder
 {
     public function run()
     {
-        // Create or get the activity
         $activity = Activity::firstOrCreate(['activity' => 'pkbm']);
 
-        // Create or get the paket
         $paket = Paket::firstOrCreate(['paket' => 'C']);
 
-        // Create the user
         $user = User::create([
             'name' => 'Remaja User',
             'email' => 'remajaaaadaa@gmail.com',
@@ -31,7 +28,6 @@ class RemajaAccountSeeder extends Seeder
             'role' => 'Remaja',
         ]);
 
-        // Create the remaja
         $remaja = Remaja::create([
             'user_id' => $user->id,
             'username' => 'remajauser',
