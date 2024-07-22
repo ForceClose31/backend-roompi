@@ -11,10 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('bagian', function (Blueprint $table) {
+
+        Schema::create('sub_bagian', function (Blueprint $table) {
             $table->id();
-            $table->string('nama_bagian');
+            $table->string('nama_sub_bagian');
+            $table->bigInteger('nilai_maks');
+            $table->unsignedBigInteger('bagian_id');
             $table->timestamps();
+            $table->foreign('bagian_id')->references('id')->on('bagian')->onDelete('cascade');
         });
     }
 
@@ -23,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('bagian');
+        Schema::dropIfExists('sub_bagian');
     }
 };

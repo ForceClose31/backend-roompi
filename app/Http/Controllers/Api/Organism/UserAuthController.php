@@ -9,6 +9,7 @@ use App\Models\Parents;
 use App\Models\Remaja;
 use App\Models\ReportExercise;
 use App\Models\SubBagian;
+use App\Models\Soal;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -103,6 +104,8 @@ class UserAuthController extends Controller
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:8|confirmed',
             'role' => 'required|in:Remaja,Parent',
+            'activity' => 'required|string',
+            'paket' => 'nullable|string|in:a,b,c',
         ]);
 
         $user = User::create([
@@ -119,21 +122,27 @@ class UserAuthController extends Controller
                 'exp' => 0,
                 'star' => 0,
                 'level' => 0,
+                'activity' => $request->activity,
+                'paket' => $request->paket,
             ]);
-            $token = $user->createToken('mobile', ['role:Remaja'])->plainTextToken;
-            $bagian_ids = Bagian::all();
-            foreach ($bagian_ids as $bagian) {
-                $sub_bagian_ids = SubBagian::where('bagian_id', $bagian->id)->get();
-                foreach ($sub_bagian_ids as $sub_bagian) {
+
+            if ($request->activity === 'pkbm' && in_array($request->paket, ['a', 'b', 'c'])) {
+                $paket_id = $this->getPaketId($request->paket);
+                $soal_entries = Soal::where('paket_id', $paket_id)->get();
+
+                foreach ($soal_entries as $soal) {
                     ReportExercise::create([
                         'remaja_id' => $remaja->id,
-                        'bagian_id' => $bagian->id,
-                        'sub_bagian_id' => $sub_bagian->id,
+                        'bagian_id' => $soal->bagian_id,
+                        'sub_bagian_id' => $soal->sub_bagian_id,
                         'nilai' => 0,
                         'completed' => 0,
                     ]);
                 }
             }
+
+
+            $token = $user->createToken('mobile', ['role:Remaja'])->plainTextToken;
 
             return response()->json([
                 'status' => 'success',
@@ -192,4 +201,17 @@ class UserAuthController extends Controller
             'message' => 'Password berhasil diubah'
         ]);
     }
+    
+    private function getPaketId($paket)
+    {
+        $paket_map = [
+            'a' => 1,
+            'b' => 2,
+            'c' => 3,
+            'd' => 4,
+        ];
+
+        return $paket_map[$paket] ?? null;
+    }
 }
+

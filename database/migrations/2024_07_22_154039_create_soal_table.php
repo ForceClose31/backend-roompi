@@ -14,9 +14,12 @@ return new class extends Migration
         Schema::create('soal', function (Blueprint $table) {
             $table->id();
             $table->string('pertanyaan');
-            $table->integer('sub_bagian_id');
-            $table->integer('paket_id');
+            $table->unsignedBigInteger('sub_bagian_id');
+            $table->unsignedBigInteger('paket_id');
             $table->timestamps();
+
+            $table->foreign('sub_bagian_id')->references('id')->on('sub_bagian')->onDelete('cascade');
+            $table->foreign('paket_id')->references('id')->on('paket_kesetaraan')->onDelete('cascade');
         });
     }
 
