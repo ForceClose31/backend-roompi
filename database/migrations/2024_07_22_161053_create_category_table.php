@@ -11,15 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('report_exercise', function (Blueprint $table) {
+        Schema::create('category', function (Blueprint $table) {
             $table->id();
-            $table->integer('remaja_id');
-            $table->integer('bagian_id');
-            $table->integer('sub_bagian_id');
-            $table->integer('activity_id');
-            $table->integer('paket_id');
-            $table->integer('nilai');
-            $table->boolean('completed');
+            $table->string('nama_mapel');
             $table->timestamps();
         });
     }
@@ -29,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('report_exercise');
+        Schema::dropIfExists('category');
     }
 };

@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Api\Organism;
 
 use App\Http\Controllers\Controller;
+use App\Models\Activity;
 use App\Models\Bagian;
 use App\Models\Mentor;
+use App\Models\Paket;
 use App\Models\Parents;
 use App\Models\Remaja;
 use App\Models\ReportExercise;
@@ -96,7 +98,6 @@ class UserAuthController extends Controller
         ]);
     }
 
-
     public function register(Request $request)
     {
         $request->validate([
@@ -104,8 +105,8 @@ class UserAuthController extends Controller
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:8|confirmed',
             'role' => 'required|in:Remaja,Parent',
-            'activity' => 'required|string',
-            'paket' => 'nullable|string|in:a,b,c',
+            'activity_id' => 'required|exists:activity,id',
+            'paket_id' => 'nullable|exists:paket_kesetaraan,id',
         ]);
 
         $user = User::create([
@@ -122,27 +123,30 @@ class UserAuthController extends Controller
                 'exp' => 0,
                 'star' => 0,
                 'level' => 0,
-                'activity' => $request->activity,
-                'paket' => $request->paket,
+                'activity_id' => $request->activity_id,
+                'paket_id' => $request->paket_id,
             ]);
+            $token = $user->createToken('mobile', ['role:Remaja'])->plainTextToken;
 
-            if ($request->activity === 'pkbm' && in_array($request->paket, ['a', 'b', 'c'])) {
-                $paket_id = $this->getPaketId($request->paket);
-                $soal_entries = Soal::where('paket_id', $paket_id)->get();
-
-                foreach ($soal_entries as $soal) {
-                    ReportExercise::create([
-                        'remaja_id' => $remaja->id,
-                        'bagian_id' => $soal->bagian_id,
-                        'sub_bagian_id' => $soal->sub_bagian_id,
-                        'nilai' => 0,
-                        'completed' => 0,
-                    ]);
+            $activity = Activity::find($request->activity_id);
+            $paket = Paket::find($request->paket_id);
+            if ($activity->activity === 'pkbm' && in_array($paket->paket, ['A', 'B', 'C'])) {
+                $bagian_ids = Bagian::all();
+                foreach ($bagian_ids as $bagian) {
+                    $sub_bagian_ids = SubBagian::where('bagian_id', $bagian->id)->get();
+                    foreach ($sub_bagian_ids as $sub_bagian) {
+                        ReportExercise::create([
+                            'remaja_id' => $remaja->id,
+                            'bagian_id' => $bagian->id,
+                            'sub_bagian_id' => $sub_bagian->id,
+                            'activity_id' => $activity->id,
+                            'paket_id' => $paket->id,
+                            'nilai' => 0,
+                            'completed' => 0,
+                        ]);
+                    }
                 }
             }
-
-
-            $token = $user->createToken('mobile', ['role:Remaja'])->plainTextToken;
 
             return response()->json([
                 'status' => 'success',
@@ -151,7 +155,7 @@ class UserAuthController extends Controller
                 'data' => $user,
             ]);
         } elseif ($user->role === 'Parent') {
-            Parent::create([
+            Parents::create([
                 'user_id' => $user->id,
                 'nama_lengkap' => $request->name,
                 'kode' => $request->kode,
@@ -165,7 +169,7 @@ class UserAuthController extends Controller
             ]);
         }
     }
-
+    
     public function logout(Request $request)
     {
         $request->user()->currentAccessToken()->delete();
@@ -191,7 +195,7 @@ class UserAuthController extends Controller
                 'message' => 'Harap masukkan password lama yang sesuai!'
             ], 401);
         }
-        
+
         $user->password = Hash::make($request->password);
         $user->save();
 
@@ -201,17 +205,4 @@ class UserAuthController extends Controller
             'message' => 'Password berhasil diubah'
         ]);
     }
-    
-    private function getPaketId($paket)
-    {
-        $paket_map = [
-            'a' => 1,
-            'b' => 2,
-            'c' => 3,
-            'd' => 4,
-        ];
-
-        return $paket_map[$paket] ?? null;
-    }
 }
-

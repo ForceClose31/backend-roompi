@@ -16,10 +16,12 @@ return new class extends Migration
             $table->string('pertanyaan');
             $table->unsignedBigInteger('sub_bagian_id');
             $table->unsignedBigInteger('paket_id');
+            $table->unsignedBigInteger('category_id');
             $table->timestamps();
 
             $table->foreign('sub_bagian_id')->references('id')->on('sub_bagian')->onDelete('cascade');
             $table->foreign('paket_id')->references('id')->on('paket_kesetaraan')->onDelete('cascade');
+            $table->foreign('category_id')->references('id')->on('category')->onDelete('cascade');
         });
     }
 

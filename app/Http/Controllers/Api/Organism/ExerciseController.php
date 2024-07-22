@@ -32,6 +32,10 @@ class ExerciseController extends Controller
                 'message' => 'Remaja not found'
             ], 404);
         }
+
+        $activityId = $remaja->activity_id;
+        $paketId = $remaja->paket_id;
+
         $reportExercises = ReportExercise::where('remaja_id', $remaja->id)->get();
 
 
@@ -43,23 +47,29 @@ class ExerciseController extends Controller
 
             foreach ($groupedExercises as $reportExercise) {
                 $subBagian = SubBagian::find($reportExercise->sub_bagian_id);
-                $soals = Soal::where('sub_bagian_id', $subBagian->id)->inRandomOrder()->take(5)->get();
-                $soalExercise = [];
+                $soals = Soal::where('sub_bagian_id', $subBagian->id)
+                    ->where('paket_id', $paketId)
+                    ->inRandomOrder()
+                    ->take(5)
+                    ->get();
 
-                foreach ($soals as $soal) {
-                    $pilihan = Pilihan::where('soal_id', $soal->id)->get();
-                    $soalData = [
-                        'soal' => $soal,
-                        'pilihan' => $pilihan
+                if ($activityId == $reportExercise->activity_id) {
+                    $soalExercise = [];
+                    foreach ($soals as $soal) {
+                        $pilihan = Pilihan::where('soal_id', $soal->id)->get();
+                        $soalData = [
+                            'soal' => $soal,
+                            'pilihan' => $pilihan
+                        ];
+                        array_push($soalExercise, $soalData);
+                    }
+
+                    $subBagianData = [
+                        'sub_bagian' => $subBagian,
+                        'soal' => $soalExercise
                     ];
-                    array_push($soalExercise, $soalData);
+                    array_push($subBagianExercise, $subBagianData);
                 }
-
-                $subBagianData = [
-                    'sub_bagian' => $subBagian,
-                    'soal' => $soalExercise
-                ];
-                array_push($subBagianExercise, $subBagianData);
             }
 
             $exerciseData = [
@@ -72,6 +82,7 @@ class ExerciseController extends Controller
 
         return response()->json(['exercise' => $exercise]);
     }
+
     public function startExercise(Request $request, $bagianId, $subBagianId)
     {
         $user = $request->user();
@@ -100,28 +111,41 @@ class ExerciseController extends Controller
             ], 404);
         }
 
-        $soals = Soal::where('sub_bagian_id', $subBagianId)->inRandomOrder()->take(5)->get();
+        $paketId = $remaja->paket_id;
+        $activityId = $remaja->activity_id;
 
-        $soalExercise = [];
-        foreach ($soals as $soal) {
-            $pilihan = Pilihan::where('soal_id', $soal->id)->get();
-            $soalData = [
-                'soal' => $soal,
-                'pilihan' => $pilihan
-            ];
-            array_push($soalExercise, $soalData);
+        $soals = Soal::where('sub_bagian_id', $subBagianId)
+            ->where('paket_id', $paketId)
+            ->inRandomOrder()
+            ->take(5)
+            ->get();
+
+        if ($activityId == $remaja->activity_id) {
+            $soalExercise = [];
+            foreach ($soals as $soal) {
+                $pilihan = Pilihan::where('soal_id', $soal->id)->get();
+                $soalData = [
+                    'soal' => $soal,
+                    'pilihan' => $pilihan
+                ];
+                array_push($soalExercise, $soalData);
+            }
+
+            return response()->json([
+                'status' => 'success',
+                'message' => 'Data berhasil didapatkan',
+                'data' => [
+                    'sub_bagian' => $subBagian,
+                    'data_soal' => $soalExercise
+                ]
+            ]);
+        } else {
+            return response()->json([
+                'status' => 'failed',
+                'message' => 'Activity mismatch'
+            ], 400);
         }
-
-        return response()->json([
-            'status' => 'success',
-            'message' => 'Data berhasil didapatkan',
-            'data' => [
-                'sub_bagian' => $subBagian,
-                'data_soal' => $soalExercise
-            ]
-        ]);
     }
-
 
     public function getReportExercises(Request $request)
     {
@@ -144,15 +168,16 @@ class ExerciseController extends Controller
         }
 
         $reportExercises = ReportExercise::where('remaja_id', $remaja->id)
-                            ->orderBy('bagian_id')
-                            ->orderBy('sub_bagian_id')
-                            ->get();
+            ->orderBy('bagian_id')
+            ->orderBy('sub_bagian_id')
+            ->orderBy('paket_id') 
+            ->orderBy('activity_id')
+            ->get();
 
         $reportExercises->transform(function ($reportExercise) {
             $reportExercise->nama_bagian = Bagian::where('id', $reportExercise->bagian_id)->value('nama_bagian');
             $reportExercise->nama_sub_bagian = SubBagian::where('id', $reportExercise->sub_bagian_id)->value('nama_sub_bagian');
 
-            // unset($reportExercise->created_at, $reportExercise->updated_at);
             return $reportExercise;
         });
 
@@ -161,6 +186,7 @@ class ExerciseController extends Controller
             'data' => $reportExercises
         ]);
     }
+
 
 
     public function submitExercise(Request $request, $bagianId, $subBagianId)
@@ -206,9 +232,9 @@ class ExerciseController extends Controller
 
 
         $report = ReportExercise::where('remaja_id', $remaja->id)
-                    ->where('bagian_id', $bagianId)
-                    ->where('sub_bagian_id', $subBagianId)
-                    ->first();
+            ->where('bagian_id', $bagianId)
+            ->where('sub_bagian_id', $subBagianId)
+            ->first();
 
         if ($report) {
             $report->nilai = $totalNilai;
@@ -231,63 +257,5 @@ class ExerciseController extends Controller
             'message' => 'Exercise submitted successfully',
             'nilai' => $totalNilai
         ]);
-    }
-
-
-
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
-    {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
-    {
-        //
     }
 }

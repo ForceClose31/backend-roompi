@@ -16,7 +16,6 @@ class PaketSeeder extends Seeder
             ['paket' => 'A'],
             ['paket' => 'B'],
             ['paket' => 'C'],
-            ['paket' => 'D'],
         ];
 
         foreach ($pakets as $paket) {
