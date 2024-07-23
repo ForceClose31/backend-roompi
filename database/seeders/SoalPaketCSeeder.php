@@ -13,188 +13,208 @@ class SoalPaketCSeeder extends Seeder
      */
     public function run(): void
     {
-        
+
         // Mapel Matematika
         $soalBagian1Level1 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 1, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Nilai x yang memenuhi sistem pertidaksamaan {2x+y-z=4 x+2y+3z=19 3x-2y+z=9 adalah...', 'sub_bagian_id' => 1, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 2
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 1, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Nilai z yang memenuhi sistem pertidaksamaan {3x+2y+1=8 2x-y+3z=10 x-y-2z=2 adalah...', 'sub_bagian_id' => 1, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 3
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 1, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Nilai b yang memenuhi sistem pertidaksamaan {a+2b+3c=8 2a+2b+4c=10 2a+4b+2c=4 adalah...', 'sub_bagian_id' => 1, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 4
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 1, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Apabila x, y, dan z adalah penyelesaian yang memenuhi sistem pertidaksamaan {x+y=4 y+z=2 z+x=12 Nilai x + y + z adalah...', 'sub_bagian_id' => 1, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 5
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 1, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Apabila x, y, dan z adalah penyelesaian yang memenuhi sistem pertidaksamaan {x+y=5 y+z=3 z+x=10 Nilai x + y + z adalah...', 'sub_bagian_id' => 1, 'category_id' => 1, 'paket_id' => 3],
         ];
 
         $soalBagian1Level2 = [
             // Pertanyaan 6
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 2, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Apabila x, y, dan z adalah penyelesaian yang memenuhi sistem pertidaksamaan {x+y=7 y+z=5 z+x=15 Nilai x + y + z adalah...', 'sub_bagian_id' => 2, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 7
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 2, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Apabila x, y, dan z adalah penyelesaian yang memenuhi sistem pertidaksamaan {x+y=6 y+z=4 z+x=8 Nilai x + y + z adalah...', 'sub_bagian_id' => 2, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 8
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 2, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Apabila x, y, dan z adalah penyelesaian yang memenuhi sistem pertidaksamaan {x+y=9 y+z=6 z+x=14 Nilai x + y + z adalah...', 'sub_bagian_id' => 2, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 9
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 2, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Apabila x, y, dan z adalah penyelesaian yang memenuhi sistem pertidaksamaan {x+y=8 y+z=5 z+x=11 Nilai x + y + z adalah...', 'sub_bagian_id' => 2, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 10
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 2, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Apabila x, y, dan z adalah penyelesaian yang memenuhi sistem pertidaksamaan {x+y=10 y+z=8 z+x=16 Nilai x + y + z adalah...', 'sub_bagian_id' => 2, 'category_id' => 1, 'paket_id' => 3],
         ];
 
         $soalBagian1Level3 = [
             // Pertanyaan 11
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 3, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Apabila x, y, dan z adalah penyelesaian yang memenuhi sistem pertidaksamaan {x+y=4 y+z=2 z+x=6 Nilai x + y + z adalah...', 'sub_bagian_id' => 3, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 12
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 3, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Apabila x, y, dan z adalah penyelesaian yang memenuhi sistem pertidaksamaan {x+y=12 y+z=7 z+x=20 Nilai x + y + z adalah...', 'sub_bagian_id' => 3, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 13
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 3, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Apabila x, y, dan z adalah penyelesaian yang memenuhi sistem pertidaksamaan {x+y=15 y+z=10 z+x=22 Nilai x + y + z adalah...', 'sub_bagian_id' => 3, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 14
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 3, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Apabila x, y, dan z adalah penyelesaian yang memenuhi sistem pertidaksamaan {x+y=11 y+z=9 z+x=18 Nilai x + y + z adalah...', 'sub_bagian_id' => 3, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 15
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 3, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Apabila x, y, dan z adalah penyelesaian yang memenuhi sistem pertidaksamaan {x+y=13 y+z=8 z+x=17 Nilai x + y + z adalah...', 'sub_bagian_id' => 3, 'category_id' => 1, 'paket_id' => 3],
         ];
 
         $soalBagian1Level4 = [
             // Pertanyaan 16
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 4, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Apabila x, y, dan z adalah penyelesaian yang memenuhi sistem pertidaksamaan {x+y=9 y+z=6 z+x=12 Nilai x + y + z adalah...', 'sub_bagian_id' => 4, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 17
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 4, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Apabila x, y, dan z adalah penyelesaian yang memenuhi sistem pertidaksamaan {x+y=8 y+z=7 z+x=14 Nilai x + y + z adalah...', 'sub_bagian_id' => 4, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 18
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 4, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Apabila x, y, dan z adalah penyelesaian yang memenuhi sistem pertidaksamaan {x+y=11 y+z=4 z+x=16 Nilai x + y + z adalah...', 'sub_bagian_id' => 4, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 19
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 4, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Apabila x, y, dan z adalah penyelesaian yang memenuhi sistem pertidaksamaan {x+y=7 y+z=3 z+x=13 Nilai x + y + z adalah...', 'sub_bagian_id' => 4, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 20
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 4, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Apabila x, y, dan z adalah penyelesaian yang memenuhi sistem pertidaksamaan {x+y=6 y+z=5 z+x=10 Nilai x + y + z adalah...', 'sub_bagian_id' => 4, 'category_id' => 1, 'paket_id' => 3],
         ];
 
         DB::table('soal')->insert(array_merge($soalBagian1Level1, $soalBagian1Level2, $soalBagian1Level3, $soalBagian1Level4));
 
         $pilihanBagian1Level1 = [
             // Pertanyaan 1
-            ['pilihan' => 'Cold', 'skor' => 20, 'benar' => true, 'soal_id' => 801],
-            ['pilihan' => 'Warm', 'skor' => 0, 'benar' => false, 'soal_id' => 801],
-            ['pilihan' => 'Cool', 'skor' => 0, 'benar' => false, 'soal_id' => 801],
-            ['pilihan' => 'Icy', 'skor' => 0, 'benar' => false, 'soal_id' => 801],
+            ['pilihan' => '3', 'skor' => 20, 'benar' => true, 'soal_id' => 801],
+            ['pilihan' => '-2', 'skor' => 0, 'benar' => false, 'soal_id' => 801],
+            ['pilihan' => '-3', 'skor' => 0, 'benar' => false, 'soal_id' => 801],
+            ['pilihan' => '1', 'skor' => 0, 'benar' => false, 'soal_id' => 801],
+            ['pilihan' => '2', 'skor' => 0, 'benar' => false, 'soal_id' => 801],
             // Pertanyaan 2
-            ['pilihan' => 'Large', 'skor' => 20, 'benar' => true, 'soal_id' => 802],
-            ['pilihan' => 'Little', 'skor' => 0, 'benar' => false, 'soal_id' => 802],
-            ['pilihan' => 'Tiny', 'skor' => 0, 'benar' => false, 'soal_id' => 802],
-            ['pilihan' => 'Miniature', 'skor' => 0, 'benar' => false, 'soal_id' => 802],
+            ['pilihan' => '1', 'skor' => 20, 'benar' => true, 'soal_id' => 802],
+            ['pilihan' => '10', 'skor' => 0, 'benar' => false, 'soal_id' => 802],
+            ['pilihan' => '-1', 'skor' => 0, 'benar' => false, 'soal_id' => 802],
+            ['pilihan' => '2', 'skor' => 0, 'benar' => false, 'soal_id' => 802],
+            ['pilihan' => '-2', 'skor' => 0, 'benar' => false, 'soal_id' => 802],
             // Pertanyaan 3
-            ['pilihan' => 'Bluee', 'skor' => 0, 'benar' => false, 'soal_id' => 803],
-            ['pilihan' => 'Bloue', 'skor' => 0, 'benar' => false, 'soal_id' => 803],
-            ['pilihan' => 'Blue', 'skor' => 20, 'benar' => true, 'soal_id' => 803],
-            ['pilihan' => 'Blhue', 'skor' => 0, 'benar' => false, 'soal_id' => 803],
+            ['pilihan' => '1', 'skor' => 0, 'benar' => false, 'soal_id' => 803],
+            ['pilihan' => '-2', 'skor' => 0, 'benar' => false, 'soal_id' => 803],
+            ['pilihan' => '0', 'skor' => 20, 'benar' => true, 'soal_id' => 803],
+            ['pilihan' => '-3', 'skor' => 0, 'benar' => false, 'soal_id' => 803],
+            ['pilihan' => '3', 'skor' => 0, 'benar' => false, 'soal_id' => 803],
             // Pertanyaan 4
-            ['pilihan' => 'Bank', 'skor' => 0, 'benar' => false, 'soal_id' => 804],
-            ['pilihan' => 'School', 'skor' => 0, 'benar' => false, 'soal_id' => 804],
-            ['pilihan' => 'Library', 'skor' => 20, 'benar' => true, 'soal_id' => 804],
-            ['pilihan' => 'Mall', 'skor' => 0, 'benar' => false, 'soal_id' => 804],
+            ['pilihan' => '-10', 'skor' => 0, 'benar' => false, 'soal_id' => 804],
+            ['pilihan' => '10', 'skor' => 0, 'benar' => false, 'soal_id' => 804],
+            ['pilihan' => '9', 'skor' => 20, 'benar' => true, 'soal_id' => 804],
+            ['pilihan' => '11', 'skor' => 0, 'benar' => false, 'soal_id' => 804],
+            ['pilihan' => '12', 'skor' => 0, 'benar' => false, 'soal_id' => 804],
             // Pertanyaan 5
-            ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 805],
-            ['pilihan' => 'Carrot', 'skor' => 20, 'benar' => true, 'soal_id' => 805],
-            ['pilihan' => 'Orange', 'skor' => 0, 'benar' => false, 'soal_id' => 805],
-            ['pilihan' => 'Banana', 'skor' => 0, 'benar' => false, 'soal_id' => 805],
+            ['pilihan' => '10', 'skor' => 0, 'benar' => false, 'soal_id' => 805],
+            ['pilihan' => '9', 'skor' => 20, 'benar' => true, 'soal_id' => 805],
+            ['pilihan' => '99', 'skor' => 0, 'benar' => false, 'soal_id' => 805],
+            ['pilihan' => '-9', 'skor' => 0, 'benar' => false, 'soal_id' => 805],
+            ['pilihan' => '-10', 'skor' => 0, 'benar' => false, 'soal_id' => 805],
         ];
 
         $pilihanBagian1Level2 = [
             // Pertanyaan 6
-            ['pilihan' => 'Angry', 'skor' => 0, 'benar' => false, 'soal_id' => 806],
-            ['pilihan' => 'Happy', 'skor' => 20, 'benar' => true, 'soal_id' => 806],
-            ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 806],
-            ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 806],
+            ['pilihan' => '13.5', 'skor' => 0, 'benar' => false, 'soal_id' => 806],
+            ['pilihan' => '13', 'skor' => 20, 'benar' => true, 'soal_id' => 806],
+            ['pilihan' => '14.4', 'skor' => 0, 'benar' => false, 'soal_id' => 806],
+            ['pilihan' => '1', 'skor' => 0, 'benar' => false, 'soal_id' => 806],
+            ['pilihan' => '10', 'skor' => 0, 'benar' => false, 'soal_id' => 806],
             // Pertanyaan 7
-            ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 807],
-            ['pilihan' => 'Went', 'skor' => 20, 'benar' => true, 'soal_id' => 807],
-            ['pilihan' => 'Gone', 'skor' => 0, 'benar' => false, 'soal_id' => 807],
-            ['pilihan' => 'Going', 'skor' => 0, 'benar' => false, 'soal_id' => 807],
+            ['pilihan' => '1', 'skor' => 0, 'benar' => false, 'soal_id' => 807],
+            ['pilihan' => '9', 'skor' => 20, 'benar' => true, 'soal_id' => 807],
+            ['pilihan' => '8', 'skor' => 0, 'benar' => false, 'soal_id' => 807],
+            ['pilihan' => '88', 'skor' => 0, 'benar' => false, 'soal_id' => 807],
+            ['pilihan' => '-8', 'skor' => 0, 'benar' => false, 'soal_id' => 807],
             // Pertanyaan 8
-            ['pilihan' => 'Dog', 'skor' => 0, 'benar' => false, 'soal_id' => 808],
-            ['pilihan' => 'Cat', 'skor' => 0, 'benar' => false, 'soal_id' => 808],
-            ['pilihan' => 'Bird', 'skor' => 20, 'benar' => true, 'soal_id' => 808],
-            ['pilihan' => 'Fish', 'skor' => 0, 'benar' => false, 'soal_id' => 808],
+            ['pilihan' => '13', 'skor' => 0, 'benar' => false, 'soal_id' => 808],
+            ['pilihan' => '14', 'skor' => 0, 'benar' => false, 'soal_id' => 808],
+            ['pilihan' => '14.5', 'skor' => 20, 'benar' => true, 'soal_id' => 808],
+            ['pilihan' => '15.5', 'skor' => 0, 'benar' => false, 'soal_id' => 808],
+            ['pilihan' => '15', 'skor' => 0, 'benar' => false, 'soal_id' => 808],
             // Pertanyaan 9
-            ['pilihan' => '5', 'skor' => 0, 'benar' => false, 'soal_id' => 809],
-            ['pilihan' => '6', 'skor' => 0, 'benar' => false, 'soal_id' => 809],
-            ['pilihan' => '7', 'skor' => 20, 'benar' => true, 'soal_id' => 809],
-            ['pilihan' => '8', 'skor' => 0, 'benar' => false, 'soal_id' => 809],
+            ['pilihan' => '-5', 'skor' => 0, 'benar' => false, 'soal_id' => 809],
+            ['pilihan' => '3', 'skor' => 0, 'benar' => false, 'soal_id' => 809],
+            ['pilihan' => '12.5', 'skor' => 0, 'benar' => false, 'soal_id' => 809],
+            ['pilihan' => '13', 'skor' => 0, 'benar' => false, 'soal_id' => 809],
+            ['pilihan' => '12', 'skor' => 20, 'benar' => true, 'soal_id' => 809],
             // Pertanyaan 10
-            ['pilihan' => 'Biology', 'skor' => 0, 'benar' => false, 'soal_id' => 810],
-            ['pilihan' => 'Chemistry', 'skor' => 0, 'benar' => false, 'soal_id' => 810],
-            ['pilihan' => 'Mathematics', 'skor' => 20, 'benar' => true, 'soal_id' => 810],
-            ['pilihan' => 'Geography', 'skor' => 0, 'benar' => false, 'soal_id' => 810],
+            ['pilihan' => '15', 'skor' => 0, 'benar' => false, 'soal_id' => 810],
+            ['pilihan' => '14', 'skor' => 0, 'benar' => false, 'soal_id' => 810],
+            ['pilihan' => '2', 'skor' => 0, 'benar' => false, 'soal_id' => 810],
+            ['pilihan' => '17', 'skor' => 20, 'benar' => true, 'soal_id' => 810],
+            ['pilihan' => '-2', 'skor' => 0, 'benar' => false, 'soal_id' => 810],
         ];
 
         $pilihanBagian1Level3 = [
             // Pertanyaan 11
-            ['pilihan' => 'Mango', 'skor' => 0, 'benar' => false, 'soal_id' => 811],
-            ['pilihan' => 'Tomato', 'skor' => 0, 'benar' => false, 'soal_id' => 811],
-            ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 811],
-            ['pilihan' => 'Potato', 'skor' => 20, 'benar' => true, 'soal_id' => 811],
+            ['pilihan' => '9', 'skor' => 0, 'benar' => false, 'soal_id' => 811],
+            ['pilihan' => '10', 'skor' => 0, 'benar' => false, 'soal_id' => 811],
+            ['pilihan' => '5', 'skor' => 0, 'benar' => false, 'soal_id' => 811],
+            ['pilihan' => '2', 'skor' => 0, 'benar' => false, 'soal_id' => 811],
+            ['pilihan' => '6', 'skor' => 20, 'benar' => true, 'soal_id' => 811],
             // Pertanyaan 12
-            ['pilihan' => 'Sailor', 'skor' => 0, 'benar' => false, 'soal_id' => 812],
-            ['pilihan' => 'Pilot', 'skor' => 20, 'benar' => true, 'soal_id' => 812],
-            ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 812],
-            ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 812],
+            ['pilihan' => '20', 'skor' => 0, 'benar' => false, 'soal_id' => 812],
+            ['pilihan' => '19.5', 'skor' => 20, 'benar' => true, 'soal_id' => 812],
+            ['pilihan' => '18.5', 'skor' => 0, 'benar' => false, 'soal_id' => 812],
+            ['pilihan' => '15', 'skor' => 0, 'benar' => false, 'soal_id' => 812],
+            ['pilihan' => '16', 'skor' => 0, 'benar' => false, 'soal_id' => 812],
             // Pertanyaan 13
-            ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 813],
-            ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 813],
-            ['pilihan' => 'Table', 'skor' => 0, 'benar' => false, 'soal_id' => 813],
-            ['pilihan' => 'Lamp', 'skor' => 0, 'benar' => false, 'soal_id' => 813],
+            ['pilihan' => '22', 'skor' => 0, 'benar' => false, 'soal_id' => 813],
+            ['pilihan' => '23.5', 'skor' => 20, 'benar' => true, 'soal_id' => 813],
+            ['pilihan' => '30', 'skor' => 0, 'benar' => false, 'soal_id' => 813],
+            ['pilihan' => '31', 'skor' => 0, 'benar' => false, 'soal_id' => 813],
+            ['pilihan' => '32', 'skor' => 0, 'benar' => false, 'soal_id' => 813],
             // Pertanyaan 14
-            ['pilihan' => 'Night', 'skor' => 20, 'benar' => true, 'soal_id' => 814],
-            ['pilihan' => 'Sun', 'skor' => 0, 'benar' => false, 'soal_id' => 814],
-            ['pilihan' => 'Morning', 'skor' => 0, 'benar' => false, 'soal_id' => 814],
-            ['pilihan' => 'Noon', 'skor' => 0, 'benar' => false, 'soal_id' => 814],
+            ['pilihan' => '19', 'skor' => 20, 'benar' => true, 'soal_id' => 814],
+            ['pilihan' => '12', 'skor' => 0, 'benar' => false, 'soal_id' => 814],
+            ['pilihan' => '122', 'skor' => 0, 'benar' => false, 'soal_id' => 814],
+            ['pilihan' => '11', 'skor' => 0, 'benar' => false, 'soal_id' => 814],
+            ['pilihan' => '112', 'skor' => 0, 'benar' => false, 'soal_id' => 814],
             // Pertanyaan 15
-            ['pilihan' => 'London', 'skor' => 0, 'benar' => false, 'soal_id' => 815],
-            ['pilihan' => 'Paris', 'skor' => 20, 'benar' => true, 'soal_id' => 815],
-            ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 815],
-            ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 815],
+            ['pilihan' => '20', 'skor' => 0, 'benar' => false, 'soal_id' => 815],
+            ['pilihan' => '11', 'skor' => 0, 'benar' => false, 'soal_id' => 815],
+            ['pilihan' => '19', 'skor' => 20, 'benar' => true, 'soal_id' => 815],
+            ['pilihan' => '12', 'skor' => 0, 'benar' => false, 'soal_id' => 815],
+            ['pilihan' => '13', 'skor' => 0, 'benar' => false, 'soal_id' => 815],
         ];
 
         $pilihanBagian1Level4 = [
             // Pertanyaan 16
-            ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 816],
-            ['pilihan' => 'Square', 'skor' => 20, 'benar' => true, 'soal_id' => 816],
-            ['pilihan' => 'Green', 'skor' => 0, 'benar' => false, 'soal_id' => 816],
-            ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 816],
+            ['pilihan' => '13.6', 'skor' => 0, 'benar' => false, 'soal_id' => 816],
+            ['pilihan' => '13.5', 'skor' => 20, 'benar' => true, 'soal_id' => 816],
+            ['pilihan' => '13', 'skor' => 0, 'benar' => false, 'soal_id' => 816],
+            ['pilihan' => '13.2', 'skor' => 0, 'benar' => false, 'soal_id' => 816],
+            ['pilihan' => '12', 'skor' => 0, 'benar' => false, 'soal_id' => 816],
             // Pertanyaan 17
-            ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 817],
-            ['pilihan' => 'Eight', 'skor' => 20, 'benar' => true, 'soal_id' => 817],
-            ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 817],
-            ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 817],
+            ['pilihan' => '14', 'skor' => 0, 'benar' => false, 'soal_id' => 817],
+            ['pilihan' => '14.5', 'skor' => 20, 'benar' => true, 'soal_id' => 817],
+            ['pilihan' => '13', 'skor' => 0, 'benar' => false, 'soal_id' => 817],
+            ['pilihan' => '15', 'skor' => 0, 'benar' => false, 'soal_id' => 817],
+            ['pilihan' => '12', 'skor' => 0, 'benar' => false, 'soal_id' => 817],
             // Pertanyaan 18
-            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 818],
-            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 818],
-            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 818],
-            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 818],
+            ['pilihan' => '15.5', 'skor' => 20, 'benar' => true, 'soal_id' => 818],
+            ['pilihan' => '13', 'skor' => 0, 'benar' => false, 'soal_id' => 818],
+            ['pilihan' => '12', 'skor' => 0, 'benar' => false, 'soal_id' => 818],
+            ['pilihan' => '11', 'skor' => 0, 'benar' => false, 'soal_id' => 818],
+            ['pilihan' => '14', 'skor' => 0, 'benar' => false, 'soal_id' => 818],
             // Pertanyaan 13
-            ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 819],
-            ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 819],
-            ['pilihan' => 'Table', 'skor' => 0, 'benar' => false, 'soal_id' => 819],
-            ['pilihan' => 'Lamp', 'skor' => 0, 'benar' => false, 'soal_id' => 819],
+            ['pilihan' => '11', 'skor' => 0, 'benar' => false, 'soal_id' => 819],
+            ['pilihan' => '11.5', 'skor' => 20, 'benar' => true, 'soal_id' => 819],
+            ['pilihan' => '12', 'skor' => 0, 'benar' => false, 'soal_id' => 819],
+            ['pilihan' => '14', 'skor' => 0, 'benar' => false, 'soal_id' => 819],
+            ['pilihan' => '13', 'skor' => 0, 'benar' => false, 'soal_id' => 819],
             // Pertanyaan 14
-            ['pilihan' => 'Night', 'skor' => 20, 'benar' => true, 'soal_id' => 820],
-            ['pilihan' => 'Sun', 'skor' => 0, 'benar' => false, 'soal_id' => 820],
-            ['pilihan' => 'Morning', 'skor' => 0, 'benar' => false, 'soal_id' => 820],
-            ['pilihan' => 'Noon', 'skor' => 0, 'benar' => false, 'soal_id' => 820],
+            ['pilihan' => '10.5', 'skor' => 20, 'benar' => true, 'soal_id' => 820],
+            ['pilihan' => '11.3', 'skor' => 0, 'benar' => false, 'soal_id' => 820],
+            ['pilihan' => '13', 'skor' => 0, 'benar' => false, 'soal_id' => 820],
+            ['pilihan' => '14', 'skor' => 0, 'benar' => false, 'soal_id' => 820],
+            ['pilihan' => '17', 'skor' => 0, 'benar' => false, 'soal_id' => 820],
         ];
 
         DB::table('pilihan')->insert(array_merge($pilihanBagian1Level1, $pilihanBagian1Level2, $pilihanBagian1Level3, $pilihanBagian1Level4));
@@ -202,184 +222,204 @@ class SoalPaketCSeeder extends Seeder
         $soalBagian2Level1 = [
 
             // Pertanyaan 21
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Bu Dewi membeli 5 kg telur, 2 kg daging, dan 1 kg udang dengan harga Rp380.000,00. Bu Ayu membeli 3 kg telur dan 1 kg daging dengan harga Rp160.000,00. Bu Sinta membeli 3 kg daging dan 2 kg udang dengan harga Rp460.000,00. Jika Bu Ani membeli 2 kg telur, 1 kg daging dan 1 kg udang ditempat yang sama, ia harus membayar sebesar...', 'sub_bagian_id' => 5, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 22
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Umur Andra lebih muda 2 tahun dari umur Budi. Umur Budi lebih muda 3 tahun dari umur Caca. Jika jumlah umur Andra, Budi, Caca sama dengan 61 tahun, maka jumlah umur Andra dan Caca adalah...', 'sub_bagian_id' => 5, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 23
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Persamaan parabola y=ax2+bx+c melalui titik-titik (1,2), (2,4) dan (3,8). Persamaan parabola tersebut adalah...', 'sub_bagian_id' => 5, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 24
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Sebuah bilangan terdiri dari 3 angka. Jumlah ketiga angkanya sama dengan 16. Jumlah angka pertama dan angka kedua sama dengan angka ketiga dikurangi dua. Niali bilangan itu sama dengan 21 kali jumlah ketiga angkanya, kemudian ditambahkan dengan 13. Berapakah bilangan yang dimaksud?', 'sub_bagian_id' => 5, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 25
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Jumlah tiga bilangan sama dengan 45. Bilangan pertama ditambah 4 sama dengan bilangan kedua, dan bilangan ketiga dikurangi 17 sama dengan bilangan pertama. Masing-masing bilangan tersebut adalah...', 'sub_bagian_id' => 5, 'category_id' => 1, 'paket_id' => 3],
         ];
 
         $soalBagian2Level2 = [
             // Pertanyaan 26
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Pak Panjaitan memiliki dua hektar sawah yang ditanami padi dan sudah saatnya diberi pupuk. Ada tiga (3) jenis pupuk yang harus disediakan, yaitu Urea, SS, TSP. Ketiga jenis pupuk inilah yang harus digunakan para petani agar hasil panen padi maksimal. Harga tiap-tiap karung pupuk berturut-turut adalah Rp75.000,00; Rp120.000,00; dan Rp150.000,00. Pak Panjaitan membutuhkan sebanyak 40 karung untuk sawah yang ditanami padi. Pemakaian pupuk Urea 2 kali banyaknya dari pupuk SS. Sementara dana yang disediakan Pak Panjaitan untuk membeli pupuk adalah Rp4.020.000,00. Berapa karung untuk setiap jenis pupuk yang harus dibeli Pak Panjaitan?', 'sub_bagian_id' => 6, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 27
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Jumlah tiga bilangan sama dengan 60. Bilangan pertama dikurangi 3 sama dengan bilangan kedua, dan bilangan ketiga ditambah 10 sama dengan bilangan pertama. Masing-masing bilangan tersebut adalah...', 'sub_bagian_id' => 6, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 28
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Jumlah tiga bilangan sama dengan 75. Bilangan pertama ditambah 5 sama dengan bilangan kedua, dan bilangan ketiga dikurangi 8 sama dengan bilangan pertama. Masing-masing bilangan tersebut adalah...', 'sub_bagian_id' => 6, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 29
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Sebuah bilangan terdiri dari 3 angka. Jumlah ketiga angkanya sama dengan 18. Jumlah angka pertama dan angka kedua sama dengan angka ketiga ditambah tiga. Nilai bilangan itu sama dengan 15 kali jumlah ketiga angkanya, kemudian ditambahkan dengan 25. Berapakah bilangan yang dimaksud?', 'sub_bagian_id' => 6, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 30
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Sebuah bilangan terdiri dari 3 angka. Jumlah ketiga angkanya sama dengan 14. Jumlah angka pertama dan angka kedua sama dengan angka ketiga ditambah satu. Nilai bilangan itu sama dengan 10 kali jumlah ketiga angkanya, kemudian ditambahkan dengan 50. Berapakah bilangan yang dimaksud?', 'sub_bagian_id' => 6, 'category_id' => 1, 'paket_id' => 3],
         ];
 
         $soalBagian2Level3 = [
             // Pertanyaan 31
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Jumlah tiga bilangan sama dengan 90. Bilangan pertama ditambah 2 sama dengan bilangan kedua, dan bilangan ketiga dikurangi 15 sama dengan bilangan pertama. Masing-masing bilangan tersebut adalah...', 'sub_bagian_id' => 7, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 32
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Sebuah bilangan terdiri dari 3 angka. Jumlah ketiga angkanya sama dengan 19. Jumlah angka pertama dan angka kedua sama dengan angka ketiga dikurangi satu. Nilai bilangan itu sama dengan 18 kali jumlah ketiga angkanya, kemudian ditambahkan dengan 10. Berapakah bilangan yang dimaksud?', 'sub_bagian_id' => 7, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 33
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Jumlah tiga bilangan sama dengan 100. Bilangan pertama dikurangi 5 sama dengan bilangan kedua, dan bilangan ketiga ditambah 20 sama dengan bilangan pertama. Masing-masing bilangan tersebut adalah...', 'sub_bagian_id' => 7, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 34
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Sebuah bilangan terdiri dari 3 angka. Jumlah ketiga angkanya sama dengan 17. Jumlah angka pertama dan angka kedua sama dengan angka ketiga ditambah dua. Nilai bilangan itu sama dengan 12 kali jumlah ketiga angkanya, kemudian ditambahkan dengan 30. Berapakah bilangan yang dimaksud?', 'sub_bagian_id' => 7, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 35
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Jumlah tiga bilangan sama dengan 55. Bilangan pertama ditambah 6 sama dengan bilangan kedua, dan bilangan ketiga dikurangi 10 sama dengan bilangan pertama. Masing-masing bilangan tersebut adalah...', 'sub_bagian_id' => 7, 'category_id' => 1, 'paket_id' => 3],
         ];
 
         $soalBagian2Level4 = [
             // Pertanyaan 36
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Sebuah bilangan terdiri dari 3 angka. Jumlah ketiga angkanya sama dengan 15. Jumlah angka pertama dan angka kedua sama dengan angka ketiga dikurangi tiga. Nilai bilangan itu sama dengan 20 kali jumlah ketiga angkanya, kemudian ditambahkan dengan 8. Berapakah bilangan yang dimaksud?', 'sub_bagian_id' => 8, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 37
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 1, 'paket_id' => 3],
-
+            ['pertanyaan' => 'Jumlah tiga bilangan sama dengan 80. Bilangan pertama ditambah 7 sama dengan bilangan kedua, dan bilangan ketiga dikurangi 5 sama dengan bilangan pertama. Masing-masing bilangan tersebut adalah...', 'sub_bagian_id' => 8, 'category_id' => 1, 'paket_id' => 3],
+            
             // Pertanyaan 38
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Jumlah tiga bilangan sama dengan 95. Bilangan pertama dikurangi 10 sama dengan bilangan kedua, dan bilangan ketiga ditambah 20 sama dengan bilangan pertama. Masing-masing bilangan tersebut adalah...', 'sub_bagian_id' => 8, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 39
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Jumlah tiga bilangan sama dengan 90. Bilangan pertama ditambah 4 sama dengan bilangan kedua, dan bilangan ketiga dikurangi 7 sama dengan bilangan pertama. Masing-masing bilangan tersebut adalah...', 'sub_bagian_id' => 8, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 40
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Sebuah bilangan terdiri dari 3 angka. Jumlah ketiga angkanya sama dengan 21. Jumlah angka pertama dan angka kedua sama dengan angka ketiga ditambah empat. Nilai bilangan itu sama dengan 16 kali jumlah ketiga angkanya, kemudian ditambahkan dengan 20. Berapakah bilangan yang dimaksud?', 'sub_bagian_id' => 8, 'category_id' => 1, 'paket_id' => 3],
         ];
 
         DB::table('soal')->insert(array_merge($soalBagian2Level1, $soalBagian2Level2, $soalBagian2Level3, $soalBagian2Level4));
 
         $pilihanBagian2Level1 = [
             // Pertanyaan 15
-            ['pilihan' => 'London', 'skor' => 0, 'benar' => false, 'soal_id' => 821],
-            ['pilihan' => 'Paris', 'skor' => 20, 'benar' => true, 'soal_id' => 821],
-            ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 821],
-            ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 821],
+            ['pilihan' => 'Rp180.000', 'skor' => 0, 'benar' => false, 'soal_id' => 821],
+            ['pilihan' => 'Rp220.000', 'skor' => 20, 'benar' => true, 'soal_id' => 821],
+            ['pilihan' => 'Rp183.000', 'skor' => 0, 'benar' => false, 'soal_id' => 821],
+            ['pilihan' => 'Rp185.000', 'skor' => 0, 'benar' => false, 'soal_id' => 821],
+            ['pilihan' => 'Rp190.000', 'skor' => 0, 'benar' => false, 'soal_id' => 821],
             // Pertanyaan 16
-            ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 822],
-            ['pilihan' => 'Square', 'skor' => 20, 'benar' => true, 'soal_id' => 822],
-            ['pilihan' => 'Green', 'skor' => 0, 'benar' => false, 'soal_id' => 822],
-            ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 822],
+            ['pilihan' => '43 tahun', 'skor' => 0, 'benar' => false, 'soal_id' => 822],
+            ['pilihan' => '41 tahun', 'skor' => 20, 'benar' => true, 'soal_id' => 822],
+            ['pilihan' => '50 tahun', 'skor' => 0, 'benar' => false, 'soal_id' => 822],
+            ['pilihan' => '42 tahun', 'skor' => 0, 'benar' => false, 'soal_id' => 822],
+            ['pilihan' => '46 tahun', 'skor' => 0, 'benar' => false, 'soal_id' => 822],
             // Pertanyaan 17
-            ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 823],
-            ['pilihan' => 'Eight', 'skor' => 20, 'benar' => true, 'soal_id' => 823],
-            ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 823],
-            ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 823],
+            ['pilihan' => 'y=x2+x-2', 'skor' => 0, 'benar' => false, 'soal_id' => 823],
+            ['pilihan' => 'y=x2-x+2', 'skor' => 20, 'benar' => true, 'soal_id' => 823],
+            ['pilihan' => 'y=x2-x-2', 'skor' => 0, 'benar' => false, 'soal_id' => 823],
+            ['pilihan' => 'y=x2+x+2', 'skor' => 0, 'benar' => false, 'soal_id' => 823],
+            ['pilihan' => 'y=x2+x', 'skor' => 0, 'benar' => false, 'soal_id' => 823],
             // Pertanyaan 18
-            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 824],
-            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 824],
-            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 824],
-            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 824],
+            ['pilihan' => '349', 'skor' => 20, 'benar' => true, 'soal_id' => 824],
+            ['pilihan' => '342', 'skor' => 0, 'benar' => false, 'soal_id' => 824],
+            ['pilihan' => '344', 'skor' => 0, 'benar' => false, 'soal_id' => 824],
+            ['pilihan' => '345', 'skor' => 0, 'benar' => false, 'soal_id' => 824],
+            ['pilihan' => '346', 'skor' => 0, 'benar' => false, 'soal_id' => 824],
             // Pertanyaan 1
-            ['pilihan' => 'Cold', 'skor' => 20, 'benar' => true, 'soal_id' => 825],
-            ['pilihan' => 'Warm', 'skor' => 0, 'benar' => false, 'soal_id' => 825],
-            ['pilihan' => 'Cool', 'skor' => 0, 'benar' => false, 'soal_id' => 825],
-            ['pilihan' => 'Icy', 'skor' => 0, 'benar' => false, 'soal_id' => 825],
+            ['pilihan' => '(8, 12, 25)', 'skor' => 20, 'benar' => true, 'soal_id' => 825],
+            ['pilihan' => '(9, 12, 25)', 'skor' => 0, 'benar' => false, 'soal_id' => 825],
+            ['pilihan' => '(1, 12, 25)', 'skor' => 0, 'benar' => false, 'soal_id' => 825],
+            ['pilihan' => '(8, 2, 25)', 'skor' => 0, 'benar' => false, 'soal_id' => 825],
+            ['pilihan' => '(8, 12, 35)', 'skor' => 0, 'benar' => false, 'soal_id' => 825],
         ];
 
         $pilihanBagian2Level2 = [
             // Pertanyaan 2
-            ['pilihan' => 'Large', 'skor' => 20, 'benar' => true, 'soal_id' => 826],
-            ['pilihan' => 'Little', 'skor' => 0, 'benar' => false, 'soal_id' => 826],
-            ['pilihan' => 'Tiny', 'skor' => 0, 'benar' => false, 'soal_id' => 826],
-            ['pilihan' => 'Miniature', 'skor' => 0, 'benar' => false, 'soal_id' => 826],
+            ['pilihan' => 'Urea = 12; SS = 11; TSP = 7', 'skor' => 0, 'benar' => false, 'soal_id' => 826],
+            ['pilihan' => 'Urea = 23; SS = 21; TSP = 4', 'skor' => 0, 'benar' => false, 'soal_id' => 826],
+            ['pilihan' => 'Urea = 24; SS = 14; TSP = 3', 'skor' => 0, 'benar' => false, 'soal_id' => 826],
+            ['pilihan' => 'Urea = 25; SS = 14; TSP = 3', 'skor' => 0, 'benar' => false, 'soal_id' => 826],
+            ['pilihan' => 'Urea = 22; SS = 11; TSP = 7', 'skor' => 20, 'benar' => true, 'soal_id' => 826],
             // Pertanyaan 3
-            ['pilihan' => 'Bluee', 'skor' => 0, 'benar' => false, 'soal_id' => 827],
-            ['pilihan' => 'Bloue', 'skor' => 0, 'benar' => false, 'soal_id' => 827],
-            ['pilihan' => 'Blue', 'skor' => 20, 'benar' => true, 'soal_id' => 827],
-            ['pilihan' => 'Blhue', 'skor' => 0, 'benar' => false, 'soal_id' => 827],
+            ['pilihan' => '(22, 23, 17)', 'skor' => 0, 'benar' => false, 'soal_id' => 827],
+            ['pilihan' => '(21, 13, 13)', 'skor' => 0, 'benar' => false, 'soal_id' => 827],
+            ['pilihan' => '(20, 33, 14)', 'skor' => 0, 'benar' => false, 'soal_id' => 827],
+            ['pilihan' => '(20, 23, 17)', 'skor' => 20, 'benar' => true, 'soal_id' => 827],
+            ['pilihan' => '(21, 23, 15)', 'skor' => 0, 'benar' => false, 'soal_id' => 827],
             // Pertanyaan 4
-            ['pilihan' => 'Bank', 'skor' => 0, 'benar' => false, 'soal_id' => 828],
-            ['pilihan' => 'School', 'skor' => 0, 'benar' => false, 'soal_id' => 828],
-            ['pilihan' => 'Library', 'skor' => 20, 'benar' => true, 'soal_id' => 828],
-            ['pilihan' => 'Mall', 'skor' => 0, 'benar' => false, 'soal_id' => 828],
+            ['pilihan' => '(21, 23, 15)', 'skor' => 0, 'benar' => false, 'soal_id' => 828],
+            ['pilihan' => '(21, 23, 15)', 'skor' => 0, 'benar' => false, 'soal_id' => 828],
+            ['pilihan' => '(25, 30, 33)', 'skor' => 20, 'benar' => true, 'soal_id' => 828],
+            ['pilihan' => '(20, 23, 13)', 'skor' => 0, 'benar' => false, 'soal_id' => 828],
+            ['pilihan' => '(21, 23, 12)', 'skor' => 0, 'benar' => false, 'soal_id' => 828],
             // Pertanyaan 5
-            ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 829],
-            ['pilihan' => 'Carrot', 'skor' => 20, 'benar' => true, 'soal_id' => 829],
-            ['pilihan' => 'Orange', 'skor' => 0, 'benar' => false, 'soal_id' => 829],
-            ['pilihan' => 'Banana', 'skor' => 0, 'benar' => false, 'soal_id' => 829],
+            ['pilihan' => '992', 'skor' => 0, 'benar' => false, 'soal_id' => 829],
+            ['pilihan' => '999', 'skor' => 20, 'benar' => true, 'soal_id' => 829],
+            ['pilihan' => '1002', 'skor' => 0, 'benar' => false, 'soal_id' => 829],
+            ['pilihan' => '908', 'skor' => 0, 'benar' => false, 'soal_id' => 829],
+            ['pilihan' => '932', 'skor' => 0, 'benar' => false, 'soal_id' => 829],
             // Pertanyaan 6
-            ['pilihan' => 'Angry', 'skor' => 0, 'benar' => false, 'soal_id' => 830],
-            ['pilihan' => 'Happy', 'skor' => 20, 'benar' => true, 'soal_id' => 830],
-            ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 830],
-            ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 830],
+            ['pilihan' => '455', 'skor' => 20, 'benar' => true, 'soal_id' => 830],
+            ['pilihan' => '453', 'skor' => 0, 'benar' => false, 'soal_id' => 830],
+            ['pilihan' => '462', 'skor' => 0, 'benar' => false, 'soal_id' => 830],
+            ['pilihan' => '428', 'skor' => 0, 'benar' => false, 'soal_id' => 830],
+            ['pilihan' => '445', 'skor' => 0, 'benar' => false, 'soal_id' => 830],
         ];
 
         $pilihanBagian2Level3 = [
             // Pertanyaan 7
-            ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 831],
-            ['pilihan' => 'Went', 'skor' => 20, 'benar' => true, 'soal_id' => 831],
-            ['pilihan' => 'Gone', 'skor' => 0, 'benar' => false, 'soal_id' => 831],
-            ['pilihan' => 'Going', 'skor' => 0, 'benar' => false, 'soal_id' => 831],
+            ['pilihan' => '(32, 31, 23)', 'skor' => 0, 'benar' => false, 'soal_id' => 831],
+            ['pilihan' => '(30, 37, 13)', 'skor' => 20, 'benar' => true, 'soal_id' => 831],
+            ['pilihan' => '(23, 31, 33)', 'skor' => 0, 'benar' => false, 'soal_id' => 831],
+            ['pilihan' => '(40, 32, 23)', 'skor' => 0, 'benar' => false, 'soal_id' => 831],
+            ['pilihan' => '(20, 34, 33)', 'skor' => 0, 'benar' => false, 'soal_id' => 831],
             // Pertanyaan 8
-            ['pilihan' => 'Dog', 'skor' => 0, 'benar' => false, 'soal_id' => 832],
-            ['pilihan' => 'Cat', 'skor' => 0, 'benar' => false, 'soal_id' => 832],
-            ['pilihan' => 'Bird', 'skor' => 20, 'benar' => true, 'soal_id' => 832],
-            ['pilihan' => 'Fish', 'skor' => 0, 'benar' => false, 'soal_id' => 832],
+            ['pilihan' => '(33, 22, 41)', 'skor' => 0, 'benar' => false, 'soal_id' => 832],
+            ['pilihan' => '(32, 23, 30)', 'skor' => 0, 'benar' => false, 'soal_id' => 832],
+            ['pilihan' => '(35, 25, 40)', 'skor' => 20, 'benar' => true, 'soal_id' => 832],
+            ['pilihan' => '(25, 24, 50)', 'skor' => 0, 'benar' => false, 'soal_id' => 832],
+            ['pilihan' => '(45, 22, 45)', 'skor' => 0, 'benar' => false, 'soal_id' => 832],
             // Pertanyaan 9
-            ['pilihan' => '5', 'skor' => 0, 'benar' => false, 'soal_id' => 833],
-            ['pilihan' => '6', 'skor' => 0, 'benar' => false, 'soal_id' => 833],
-            ['pilihan' => '7', 'skor' => 20, 'benar' => true, 'soal_id' => 833],
-            ['pilihan' => '8', 'skor' => 0, 'benar' => false, 'soal_id' => 833],
+            ['pilihan' => '(35, 33, 42)', 'skor' => 0, 'benar' => false, 'soal_id' => 833],
+            ['pilihan' => '(35, 32, 44)', 'skor' => 0, 'benar' => false, 'soal_id' => 833],
+            ['pilihan' => '(30, 32, 45)', 'skor' => 20, 'benar' => true, 'soal_id' => 833],
+            ['pilihan' => '(34, 42, 45)', 'skor' => 0, 'benar' => false, 'soal_id' => 833],
+            ['pilihan' => '(32, 12, 47)', 'skor' => 0, 'benar' => false, 'soal_id' => 833],
             // Pertanyaan 10
-            ['pilihan' => 'Biology', 'skor' => 0, 'benar' => false, 'soal_id' => 834],
-            ['pilihan' => 'Chemistry', 'skor' => 0, 'benar' => false, 'soal_id' => 834],
-            ['pilihan' => 'Mathematics', 'skor' => 20, 'benar' => true, 'soal_id' => 834],
-            ['pilihan' => 'Geography', 'skor' => 0, 'benar' => false, 'soal_id' => 834],
+            ['pilihan' => '833', 'skor' => 0, 'benar' => false, 'soal_id' => 834],
+            ['pilihan' => '952', 'skor' => 0, 'benar' => false, 'soal_id' => 834],
+            ['pilihan' => '855', 'skor' => 20, 'benar' => true, 'soal_id' => 834],
+            ['pilihan' => '654', 'skor' => 0, 'benar' => false, 'soal_id' => 834],
+            ['pilihan' => '785', 'skor' => 0, 'benar' => false, 'soal_id' => 834],
             // Pertanyaan 11
-            ['pilihan' => 'Mango', 'skor' => 0, 'benar' => false, 'soal_id' => 835],
-            ['pilihan' => 'Tomato', 'skor' => 0, 'benar' => false, 'soal_id' => 835],
-            ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 835],
-            ['pilihan' => 'Potato', 'skor' => 20, 'benar' => true, 'soal_id' => 835],
+            ['pilihan' => '(32, 24, 21)', 'skor' => 0, 'benar' => false, 'soal_id' => 835],
+            ['pilihan' => '(33, 44, 22)', 'skor' => 0, 'benar' => false, 'soal_id' => 835],
+            ['pilihan' => '(34, 54, 24)', 'skor' => 0, 'benar' => false, 'soal_id' => 835],
+            ['pilihan' => '(35, 24, 22)', 'skor' => 0, 'benar' => false, 'soal_id' => 835],
+            ['pilihan' => '(30, 34, 23)', 'skor' => 20, 'benar' => true, 'soal_id' => 835],
         ];
 
         $pilihanBagian2Level4 = [
             // Pertanyaan 12
-            ['pilihan' => 'Sailor', 'skor' => 0, 'benar' => false, 'soal_id' => 836],
-            ['pilihan' => 'Pilot', 'skor' => 20, 'benar' => true, 'soal_id' => 836],
-            ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 836],
-            ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 836],
+            ['pilihan' => '(42, 15, 35)', 'skor' => 0, 'benar' => false, 'soal_id' => 836],
+            ['pilihan' => '(40, 45, 15)', 'skor' => 20, 'benar' => true, 'soal_id' => 836],
+            ['pilihan' => '(20, 42, 14)', 'skor' => 0, 'benar' => false, 'soal_id' => 836],
+            ['pilihan' => '(30, 44, 15)', 'skor' => 0, 'benar' => false, 'soal_id' => 836],
+            ['pilihan' => '(44, 12, 55)', 'skor' => 0, 'benar' => false, 'soal_id' => 836],
             // Pertanyaan 13
-            ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 837],
-            ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 837],
-            ['pilihan' => 'Table', 'skor' => 0, 'benar' => false, 'soal_id' => 837],
-            ['pilihan' => 'Lamp', 'skor' => 0, 'benar' => false, 'soal_id' => 837],
+            ['pilihan' => '732', 'skor' => 0, 'benar' => false, 'soal_id' => 837],
+            ['pilihan' => '738', 'skor' => 20, 'benar' => true, 'soal_id' => 837],
+            ['pilihan' => '438', 'skor' => 0, 'benar' => false, 'soal_id' => 837],
+            ['pilihan' => '528', 'skor' => 0, 'benar' => false, 'soal_id' => 837],
+            ['pilihan' => '728', 'skor' => 0, 'benar' => false, 'soal_id' => 837],
             // Pertanyaan 14
-            ['pilihan' => 'Night', 'skor' => 20, 'benar' => true, 'soal_id' => 838],
-            ['pilihan' => 'Sun', 'skor' => 0, 'benar' => false, 'soal_id' => 838],
-            ['pilihan' => 'Morning', 'skor' => 0, 'benar' => false, 'soal_id' => 838],
-            ['pilihan' => 'Noon', 'skor' => 0, 'benar' => false, 'soal_id' => 838],
+            ['pilihan' => '962', 'skor' => 20, 'benar' => true, 'soal_id' => 838],
+            ['pilihan' => '922', 'skor' => 0, 'benar' => false, 'soal_id' => 838],
+            ['pilihan' => '742', 'skor' => 0, 'benar' => false, 'soal_id' => 838],
+            ['pilihan' => '961', 'skor' => 0, 'benar' => false, 'soal_id' => 838],
+            ['pilihan' => '832', 'skor' => 0, 'benar' => false, 'soal_id' => 838],
             // Pertanyaan 15
-            ['pilihan' => 'London', 'skor' => 0, 'benar' => false, 'soal_id' => 839],
-            ['pilihan' => 'Paris', 'skor' => 20, 'benar' => true, 'soal_id' => 839],
-            ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 839],
-            ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 839],
+            ['pilihan' => '(24, 36, 17)', 'skor' => 0, 'benar' => false, 'soal_id' => 839],
+            ['pilihan' => '(20, 26, 15)', 'skor' => 20, 'benar' => true, 'soal_id' => 839],
+            ['pilihan' => '(25, 24, 14)', 'skor' => 0, 'benar' => false, 'soal_id' => 839],
+            ['pilihan' => '(22, 25, 25)', 'skor' => 0, 'benar' => false, 'soal_id' => 839],
+            ['pilihan' => '(21, 26, 15)', 'skor' => 0, 'benar' => false, 'soal_id' => 839],
             // Pertanyaan 16
-            ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 840],
-            ['pilihan' => 'Square', 'skor' => 20, 'benar' => true, 'soal_id' => 840],
-            ['pilihan' => 'Green', 'skor' => 0, 'benar' => false, 'soal_id' => 840],
-            ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 840],
+            ['pilihan' => '751', 'skor' => 0, 'benar' => false, 'soal_id' => 840],
+            ['pilihan' => '752', 'skor' => 20, 'benar' => true, 'soal_id' => 840],
+            ['pilihan' => '658', 'skor' => 0, 'benar' => false, 'soal_id' => 840],
+            ['pilihan' => '872', 'skor' => 0, 'benar' => false, 'soal_id' => 840],
+            ['pilihan' => '712', 'skor' => 0, 'benar' => false, 'soal_id' => 840],
         ];
 
 
@@ -389,24 +429,24 @@ class SoalPaketCSeeder extends Seeder
 
         $soalBagian3Level1 = [
             // Pertanyaan 41
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 9, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=x+3 dan g(x)=x2-9. Pernyataan berikut yang bernar terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 9, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 42
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 9, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f:R→R dan g:R→R dengan f(x)=4x+3 dan g(x)=x-1. Rumus komposisi fungsi f∘g(x) adalah...', 'sub_bagian_id' => 9, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 43
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 9, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Fungsi f:R→R dan g:R→R dimana f(x)=2x-1 dan g(x)=x2+3. Bentuk fungsi dari f∘g(x) adalah...', 'sub_bagian_id' => 9, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 44
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 9, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f:R→R dengan f(x)=2x-1, fungsi g:R→R dengan g(x)=4x+5, dan fungsi h:R→R dengan h(x)=2x-3. Rumus fungsi f∘gh(x) adalah...', 'sub_bagian_id' => 9, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 45
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 9, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f:R→R dengan f(x)=4x+3. Rumus invers fungsi dari f(x) adalah...', 'sub_bagian_id' => 9, 'category_id' => 1, 'paket_id' => 3],
         ];
 
         $soalBagian3Level2 = [
             // Pertanyaan 46
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 10, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi fx=x+3 dan gx=x2-9. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 10, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 47
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 10, 'category_id' => 1, 'paket_id' => 3],
@@ -2535,7 +2575,7 @@ class SoalPaketCSeeder extends Seeder
             ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 1075],
             ['pilihan' => 'Potato', 'skor' => 20, 'benar' => true, 'soal_id' => 1075],
         ];
-        
+
         $pilihanBagian2Level4 = [
             // Pertanyaan 12
             ['pilihan' => 'Sailor', 'skor' => 0, 'benar' => false, 'soal_id' => 1076],
@@ -2662,7 +2702,7 @@ class SoalPaketCSeeder extends Seeder
             ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 1085],
             ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 1085],
         ];
-        
+
         $pilihanBagian3Level2 = [
             // Pertanyaan 16
             ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 1086],
@@ -2690,7 +2730,7 @@ class SoalPaketCSeeder extends Seeder
             ['pilihan' => 'Tiny', 'skor' => 0, 'benar' => false, 'soal_id' => 1090],
             ['pilihan' => 'Miniature', 'skor' => 0, 'benar' => false, 'soal_id' => 1090],
         ];
-        
+
         $pilihanBagian3Level3 = [
             // Pertanyaan 3
             ['pilihan' => 'Bluee', 'skor' => 0, 'benar' => false, 'soal_id' => 1091],
@@ -2718,7 +2758,7 @@ class SoalPaketCSeeder extends Seeder
             ['pilihan' => 'Gone', 'skor' => 0, 'benar' => false, 'soal_id' => 1095],
             ['pilihan' => 'Going', 'skor' => 0, 'benar' => false, 'soal_id' => 1095],
         ];
-        
+
         $pilihanBagian3Level4 = [
             // Pertanyaan 8
             ['pilihan' => 'Dog', 'skor' => 0, 'benar' => false, 'soal_id' => 1096],
@@ -2843,7 +2883,7 @@ class SoalPaketCSeeder extends Seeder
             ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 1105],
             ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 1105],
         ];
-        
+
         $pilihanBagian4Level2 = [
             // Pertanyaan 18
             ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 1106],
@@ -2871,7 +2911,7 @@ class SoalPaketCSeeder extends Seeder
             ['pilihan' => 'Green', 'skor' => 0, 'benar' => false, 'soal_id' => 1110],
             ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 1110],
         ];
-        
+
         $pilihanBagian4Level3 = [
             // Pertanyaan 17
             ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 1111],
@@ -2899,7 +2939,7 @@ class SoalPaketCSeeder extends Seeder
             ['pilihan' => 'Blue', 'skor' => 20, 'benar' => true, 'soal_id' => 1115],
             ['pilihan' => 'Blhue', 'skor' => 0, 'benar' => false, 'soal_id' => 1115],
         ];
-        
+
         $pilihanBagian4Level4 = [
             // Pertanyaan 4
             ['pilihan' => 'Bank', 'skor' => 0, 'benar' => false, 'soal_id' => 1116],
@@ -3025,7 +3065,7 @@ class SoalPaketCSeeder extends Seeder
             ['pilihan' => 'Table', 'skor' => 0, 'benar' => false, 'soal_id' => 1125],
             ['pilihan' => 'Lamp', 'skor' => 0, 'benar' => false, 'soal_id' => 1125],
         ];
-        
+
         $pilihanBagian1Level2 = [
             // Pertanyaan 14
             ['pilihan' => 'Night', 'skor' => 20, 'benar' => true, 'soal_id' => 1126],
@@ -3053,7 +3093,7 @@ class SoalPaketCSeeder extends Seeder
             ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 1130],
             ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 1130],
         ];
-        
+
         $pilihanBagian1Level3 = [
             // Pertanyaan 13
             ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 1131],
@@ -3081,7 +3121,7 @@ class SoalPaketCSeeder extends Seeder
             ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 1135],
             ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 1135],
         ];
-        
+
         $pilihanBagian1Level4 = [
             // Pertanyaan 18
             ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 1136],
@@ -3205,7 +3245,7 @@ class SoalPaketCSeeder extends Seeder
             ['pilihan' => '7', 'skor' => 20, 'benar' => true, 'soal_id' => 1145],
             ['pilihan' => '8', 'skor' => 0, 'benar' => false, 'soal_id' => 1145],
         ];
-        
+
         $pilihanBagian2Level2 = [
             // Pertanyaan 10
             ['pilihan' => 'Biology', 'skor' => 0, 'benar' => false, 'soal_id' => 1146],
@@ -3233,7 +3273,7 @@ class SoalPaketCSeeder extends Seeder
             ['pilihan' => 'Morning', 'skor' => 0, 'benar' => false, 'soal_id' => 1150],
             ['pilihan' => 'Noon', 'skor' => 0, 'benar' => false, 'soal_id' => 1150],
         ];
-        
+
         $pilihanBagian2Level3 = [
             // Pertanyaan 15
             ['pilihan' => 'London', 'skor' => 0, 'benar' => false, 'soal_id' => 1151],
@@ -3261,7 +3301,7 @@ class SoalPaketCSeeder extends Seeder
             ['pilihan' => 'Table', 'skor' => 0, 'benar' => false, 'soal_id' => 1155],
             ['pilihan' => 'Lamp', 'skor' => 0, 'benar' => false, 'soal_id' => 1155],
         ];
-        
+
         $pilihanBagian2Level4 = [
             // Pertanyaan 14
             ['pilihan' => 'Night', 'skor' => 20, 'benar' => true, 'soal_id' => 1156],
@@ -3385,7 +3425,7 @@ class SoalPaketCSeeder extends Seeder
             ['pilihan' => 'Orange', 'skor' => 0, 'benar' => false, 'soal_id' => 1165],
             ['pilihan' => 'Banana', 'skor' => 0, 'benar' => false, 'soal_id' => 1165],
         ];
-        
+
         $pilihanBagian3Level2 = [
             // Pertanyaan 6
             ['pilihan' => 'Angry', 'skor' => 0, 'benar' => false, 'soal_id' => 1166],
@@ -3413,7 +3453,7 @@ class SoalPaketCSeeder extends Seeder
             ['pilihan' => 'Mathematics', 'skor' => 20, 'benar' => true, 'soal_id' => 1170],
             ['pilihan' => 'Geography', 'skor' => 0, 'benar' => false, 'soal_id' => 1170],
         ];
-        
+
         $pilihanBagian3Level3 = [
             // Pertanyaan 11
             ['pilihan' => 'Mango', 'skor' => 0, 'benar' => false, 'soal_id' => 1171],
@@ -3441,7 +3481,7 @@ class SoalPaketCSeeder extends Seeder
             ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 1175],
             ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 1175],
         ];
-        
+
         $pilihanBagian3Level4 = [
             // Pertanyaan 16
             ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 1176],
@@ -3594,7 +3634,7 @@ class SoalPaketCSeeder extends Seeder
             ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 1190],
             ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 1190],
         ];
-        
+
         $pilihanBagian4Level3 = [
             // Pertanyaan 7
             ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 1191],
@@ -3622,7 +3662,7 @@ class SoalPaketCSeeder extends Seeder
             ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 1195],
             ['pilihan' => 'Potato', 'skor' => 20, 'benar' => true, 'soal_id' => 1195],
         ];
-        
+
         $pilihanBagian4Level4 = [
             // Pertanyaan 12
             ['pilihan' => 'Sailor', 'skor' => 0, 'benar' => false, 'soal_id' => 1196],
