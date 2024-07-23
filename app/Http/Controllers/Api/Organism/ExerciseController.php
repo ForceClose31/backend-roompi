@@ -37,14 +37,12 @@ class ExerciseController extends Controller
         $activityId = $remaja->activity_id;
         $paketId = $remaja->paket_id;
 
-        // Fetch ReportExercises with their related Bagian, SubBagian, and Category in a single query
         $reportExercises = ReportExercise::with(['bagian', 'subBagian', 'category'])
         ->where('remaja_id', $remaja->id)
             ->where('activity_id', $activityId)
             ->where('paket_id', $paketId)
             ->get();
 
-        // Remove duplicates based on combination of Bagian, SubBagian, and Category
         $uniqueExercises = $reportExercises->unique(function ($item) {
             return $item->bagian_id . '-' . $item->sub_bagian_id . '-' . $item->category_id;
         });
