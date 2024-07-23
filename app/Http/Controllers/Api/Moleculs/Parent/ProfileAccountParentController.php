@@ -4,8 +4,8 @@ namespace App\Http\Controllers\Api\Moleculs\Parent;
 
 use App\Http\Controllers\Controller;
 use App\Models\Parents;
-use Hash;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
 
 class ProfileAccountParentController extends Controller

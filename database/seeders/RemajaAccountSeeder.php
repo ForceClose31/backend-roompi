@@ -11,6 +11,7 @@ use App\Models\Bagian;
 use App\Models\Paket;
 use App\Models\SubBagian;
 use App\Models\ReportExercise;
+use App\Models\Soal;
 use Illuminate\Support\Facades\Hash;
 
 class RemajaAccountSeeder extends Seeder
@@ -23,7 +24,7 @@ class RemajaAccountSeeder extends Seeder
 
         $user = User::create([
             'name' => 'Remaja User',
-            'email' => 'remajaaaadaa@gmail.com',
+            'email' => 'remaja@gmail.com',
             'password' => Hash::make('password'),
             'role' => 'Remaja',
         ]);
@@ -43,15 +44,21 @@ class RemajaAccountSeeder extends Seeder
             foreach ($bagian_ids as $bagian) {
                 $sub_bagian_ids = SubBagian::where('bagian_id', $bagian->id)->get();
                 foreach ($sub_bagian_ids as $sub_bagian) {
-                    ReportExercise::create([
-                        'remaja_id' => $remaja->id,
-                        'bagian_id' => $bagian->id,
-                        'sub_bagian_id' => $sub_bagian->id,
-                        'activity_id' => $activity->id,
-                        'paket_id' => $paket->id,
-                        'nilai' => 0,
-                        'completed' => 0,
-                    ]);
+                    $soals = Soal::where('sub_bagian_id', $sub_bagian->id)
+                        ->where('paket_id', $paket->id)
+                        ->get();
+                    foreach ($soals as $soal) {
+                        ReportExercise::create([
+                            'remaja_id' => $remaja->id,
+                            'bagian_id' => $bagian->id,
+                            'sub_bagian_id' => $sub_bagian->id,
+                            'activity_id' => $activity->id,
+                            'paket_id' => $paket->id,
+                            'category_id' => $soal->category_id, 
+                            'nilai' => 0,
+                            'completed' => 0,
+                        ]);
+                    }
                 }
             }
         }

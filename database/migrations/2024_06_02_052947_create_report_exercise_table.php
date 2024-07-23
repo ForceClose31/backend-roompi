@@ -17,6 +17,7 @@ return new class extends Migration
             $table->integer('bagian_id');
             $table->integer('sub_bagian_id');
             $table->integer('activity_id');
+            $table->integer('category_id');
             $table->integer('paket_id');
             $table->integer('nilai');
             $table->boolean('completed');

@@ -78,6 +78,9 @@ class UserAuthController extends Controller
         } elseif ($user->role === 'Parent') {
             $token = $user->createToken('mobile', ['role:Parent'])->plainTextToken;
             $akun = Parents::where('user_id', $user->id)->first();
+        } elseif ($user->role === 'Mentor'){
+            $token = $user->createToken('mobile', ['role:Mentor'])->plainTextToken;
+            $akun = Mentor::where('user_id', $user->id)->first();
         } else {
             return response()->json([
                 'status' => 'failed',

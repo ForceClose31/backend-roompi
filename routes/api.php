@@ -35,7 +35,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('login/mentor', [MentorAuthController::class, 'login']);
 Route::post('login', [UserAuthController::class, 'login']);
 Route::post('register/remaja', [RegisterRemajaController::class, 'register']);
 Route::post('register/parent', [RegisterParentController::class, 'register']);
@@ -56,8 +55,8 @@ Route::middleware(['auth:api'])->group(function () {
 
     Route::get('exercise/report', [ReportExerciseParentController::class, 'report']);
 
-    Route::get('exercise/start/{bagian_id}/{sub_bagian_id}', [ExerciseController::class, 'startExercise']);
-    Route::post('exercise/submit/{bagian_id}/{sub_bagian_id}', [ExerciseController::class, 'submitExercise']);
+    Route::get('exercise/start/{bagian_id}/{sub_bagian_id}/{category_id}', [ExerciseController::class, 'startExercise']);
+    Route::post('exercise/submit/{bagian_id}/{sub_bagian_id}/{category_id}', [ExerciseController::class, 'submitExercise']);
 
     Route::get('assesment', [AssesmentController::class, 'getAssesment']);
 

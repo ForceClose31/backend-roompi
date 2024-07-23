@@ -16,6 +16,7 @@ class ReportExercise extends Model
         'bagian_id',
         'sub_bagian_id',
         'activity_id',
+        'category_id',
         'paket_id',
         'nilai',
         'completed',

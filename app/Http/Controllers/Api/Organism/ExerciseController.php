@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api\Organism;
 
 use App\Http\Controllers\Controller;
 use App\Models\Bagian;
+use App\Models\Category;
 use App\Models\Pilihan;
 use App\Models\Remaja;
 use App\Models\ReportExercise;
@@ -38,7 +39,6 @@ class ExerciseController extends Controller
 
         $reportExercises = ReportExercise::where('remaja_id', $remaja->id)->get();
 
-
         $exercise = [];
 
         foreach ($reportExercises->groupBy('bagian_id') as $bagianId => $groupedExercises) {
@@ -49,6 +49,7 @@ class ExerciseController extends Controller
                 $subBagian = SubBagian::find($reportExercise->sub_bagian_id);
                 $soals = Soal::where('sub_bagian_id', $subBagian->id)
                     ->where('paket_id', $paketId)
+                    ->where('category_id', $reportExercise->category_id) 
                     ->inRandomOrder()
                     ->take(5)
                     ->get();
@@ -83,7 +84,8 @@ class ExerciseController extends Controller
         return response()->json(['exercise' => $exercise]);
     }
 
-    public function startExercise(Request $request, $bagianId, $subBagianId)
+
+    public function startExercise(Request $request, $bagianId, $subBagianId, $category_id)
     {
         $user = $request->user();
 
@@ -111,11 +113,13 @@ class ExerciseController extends Controller
             ], 404);
         }
 
+
         $paketId = $remaja->paket_id;
         $activityId = $remaja->activity_id;
 
         $soals = Soal::where('sub_bagian_id', $subBagianId)
             ->where('paket_id', $paketId)
+            ->where('category_id', $category_id)
             ->inRandomOrder()
             ->take(5)
             ->get();
@@ -172,11 +176,13 @@ class ExerciseController extends Controller
             ->orderBy('sub_bagian_id')
             ->orderBy('paket_id') 
             ->orderBy('activity_id')
+            ->orderBy('category_id')
             ->get();
 
         $reportExercises->transform(function ($reportExercise) {
             $reportExercise->nama_bagian = Bagian::where('id', $reportExercise->bagian_id)->value('nama_bagian');
             $reportExercise->nama_sub_bagian = SubBagian::where('id', $reportExercise->sub_bagian_id)->value('nama_sub_bagian');
+            $reportExercise->nama_mapel = Category::where('id', $reportExercise->category_id)->value('nama_mapel');
 
             return $reportExercise;
         });
@@ -189,7 +195,7 @@ class ExerciseController extends Controller
 
 
 
-    public function submitExercise(Request $request, $bagianId, $subBagianId)
+    public function submitExercise(Request $request, $bagianId, $subBagianId, $category_id)
     {
 
         $request->validate([
@@ -234,6 +240,7 @@ class ExerciseController extends Controller
         $report = ReportExercise::where('remaja_id', $remaja->id)
             ->where('bagian_id', $bagianId)
             ->where('sub_bagian_id', $subBagianId)
+            ->where('category_id', $category_id)
             ->first();
 
         if ($report) {
@@ -247,6 +254,7 @@ class ExerciseController extends Controller
             $report->remaja_id = $remaja->id;
             $report->bagian_id = $bagianId;
             $report->sub_bagian_id = $subBagianId;
+            $report->category_id = $category_id;
             $report->nilai = $totalNilai;
             $report->completed = true;
             $report->save();

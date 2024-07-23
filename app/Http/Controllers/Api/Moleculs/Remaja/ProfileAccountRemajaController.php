@@ -4,9 +4,9 @@ namespace App\Http\Controllers\Api\Moleculs\Remaja;
 
 use App\Http\Controllers\Controller;
 use App\Models\Remaja;
-use Hash;
 use Illuminate\Http\Request;
-use Storage;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Storage;
 
 class ProfileAccountRemajaController extends Controller
 {
