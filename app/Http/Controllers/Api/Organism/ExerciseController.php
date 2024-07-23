@@ -45,13 +45,25 @@ class ExerciseController extends Controller
             ->whereIn('category_id', $categoryIds)
             ->get();
 
-        $uniqueReportExercises = $reportExercises->groupBy('category_id')->map(function ($group) {
-            return $group->first();
-        });
+        $uniqueCombinations = [];
 
-        $bagianIds = $uniqueReportExercises->pluck('bagian_id')->unique();
-        $subBagianIds = $uniqueReportExercises->pluck('sub_bagian_id')->unique();
-        $categoryIds = $uniqueReportExercises->pluck('category_id')->unique();
+        foreach ($reportExercises as $reportExercise) {
+            $key = $reportExercise->bagian_id . '-' . $reportExercise->sub_bagian_id . '-' . $reportExercise->category_id;
+
+            if (!isset($uniqueCombinations[$key])) {
+                $uniqueCombinations[$key] = [
+                    'bagian_id' => $reportExercise->bagian_id,
+                    'sub_bagian_id' => $reportExercise->sub_bagian_id,
+                    'category_id' => $reportExercise->category_id,
+                ];
+            }
+        }
+
+        $uniqueReportExercises = array_values($uniqueCombinations);
+
+        $bagianIds = array_column($uniqueReportExercises, 'bagian_id');
+        $subBagianIds = array_column($uniqueReportExercises, 'sub_bagian_id');
+        $categoryIds = array_column($uniqueReportExercises, 'category_id');
 
         $bagians = Bagian::whereIn('id', $bagianIds)->get()->keyBy('id');
         $subBagians = SubBagian::whereIn('id', $subBagianIds)->get()->keyBy('id');
@@ -59,10 +71,10 @@ class ExerciseController extends Controller
 
         $exercise = [];
 
-        foreach ($reportExercises as $reportExercise) {
-            $bagian = $bagians[$reportExercise->bagian_id] ?? null;
-            $subBagian = $subBagians[$reportExercise->sub_bagian_id] ?? null;
-            $category = $categories[$reportExercise->category_id] ?? null;
+        foreach ($uniqueReportExercises as $reportExercise) {
+            $bagian = $bagians[$reportExercise['bagian_id']] ?? null;
+            $subBagian = $subBagians[$reportExercise['sub_bagian_id']] ?? null;
+            $category = $categories[$reportExercise['category_id']] ?? null;
 
             if ($bagian && $subBagian && $category) {
                 $exercise[] = [
@@ -72,7 +84,6 @@ class ExerciseController extends Controller
                 ];
             }
         }
-
         return response()->json(['exercise' => $exercise]);
     }
 
