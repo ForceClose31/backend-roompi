@@ -15,8 +15,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
-use function Laravel\Prompts\error;
-
 class RegisterRemajaController extends Controller
 {
     public function register(Request $request)
@@ -52,32 +50,14 @@ class RegisterRemajaController extends Controller
                 'activity_id' => $request->activity_id,
                 'paket_id' => $request->paket_id,
             ]);
+
             $token = $user->createToken('mobile', ['role:Remaja'])->plainTextToken;
 
             $activity = Activity::find($request->activity_id);
             $paket = Paket::find($request->paket_id);
+
             if ($activity->id === 2 && in_array($paket->id, [1, 2, 3])) {
-                $bagian_ids = Bagian::all();
-                foreach ($bagian_ids as $bagian) {
-                    $sub_bagian_ids = SubBagian::where('bagian_id', $bagian->id)->get();
-                    foreach ($sub_bagian_ids as $sub_bagian) {
-                        $soals = Soal::where('sub_bagian_id', $sub_bagian->id)
-                            ->where('paket_id', $paket->id)
-                            ->get();
-                        foreach ($soals as $soal) {
-                            ReportExercise::create([
-                                'remaja_id' => $remaja->id,
-                                'bagian_id' => $bagian->id,
-                                'sub_bagian_id' => $sub_bagian->id,
-                                'activity_id' => $activity->id,
-                                'paket_id' => $paket->id,
-                                'category_id' => $soal->category_id,
-                                'nilai' => 0,
-                                'completed' => 0,
-                            ]);
-                        }
-                    }
-                }
+                $this->bulkInsertReportExercises($remaja->id, $activity->id, $paket->id);
             }
 
             return response()->json([
@@ -85,8 +65,43 @@ class RegisterRemajaController extends Controller
                 'message' => 'Berhasil registrasi',
                 'token' => $token,
                 'data' => $user,
-            ], 200);
+            ], 200); 
         }
+
         return response()->json(['status' => 'error', 'message' => 'Gagal registrasi'], 500);
+    }
+
+    private function bulkInsertReportExercises($remajaId, $activityId, $paketId)
+    {
+        $data = [];
+        $bagians = Bagian::all();
+
+        foreach ($bagians as $bagian) {
+            $subBagians = SubBagian::where('bagian_id', $bagian->id)->get();
+
+            foreach ($subBagians as $subBagian) {
+                $soals = Soal::where('sub_bagian_id', $subBagian->id)
+                    ->where('paket_id', $paketId)
+                    ->get();
+
+                foreach ($soals as $soal) {
+                    $data[] = [
+                        'remaja_id' => $remajaId,
+                        'bagian_id' => $bagian->id,
+                        'sub_bagian_id' => $subBagian->id,
+                        'activity_id' => $activityId,
+                        'category_id' => $soal->category_id,
+                        'paket_id' => $paketId,
+                        'nilai' => 0,
+                        'completed' => 0,
+                        'created_at' => now(),
+                        'updated_at' => now(),
+                    ];
+                }
+            }
+        }
+
+        // Bulk insert data into report_exercise table
+        ReportExercise::insert($data);
     }
 }
