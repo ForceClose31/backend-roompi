@@ -37,53 +37,26 @@ class ExerciseController extends Controller
         $activityId = $remaja->activity_id;
         $paketId = $remaja->paket_id;
 
-        $categoryIds = Category::pluck('id')->toArray();
-
-        $reportExercises = ReportExercise::where('remaja_id', $remaja->id)
+        // Fetch ReportExercises with their related Bagian, SubBagian, and Category in a single query
+        $reportExercises = ReportExercise::with(['bagian', 'subBagian', 'category'])
+        ->where('remaja_id', $remaja->id)
             ->where('activity_id', $activityId)
             ->where('paket_id', $paketId)
-            ->whereIn('category_id', $categoryIds)
             ->get();
 
-        $uniqueCombinations = [];
+        // Remove duplicates based on combination of Bagian, SubBagian, and Category
+        $uniqueExercises = $reportExercises->unique(function ($item) {
+            return $item->bagian_id . '-' . $item->sub_bagian_id . '-' . $item->category_id;
+        });
 
-        foreach ($reportExercises as $reportExercise) {
-            $key = $reportExercise->bagian_id . '-' . $reportExercise->sub_bagian_id . '-' . $reportExercise->category_id;
+        $exercise = $uniqueExercises->map(function ($reportExercise) {
+            return [
+                'bagian' => $reportExercise->bagian,
+                'sub_bagian' => $reportExercise->subBagian,
+                'category' => $reportExercise->category,
+            ];
+        });
 
-            if (!isset($uniqueCombinations[$key])) {
-                $uniqueCombinations[$key] = [
-                    'bagian_id' => $reportExercise->bagian_id,
-                    'sub_bagian_id' => $reportExercise->sub_bagian_id,
-                    'category_id' => $reportExercise->category_id,
-                ];
-            }
-        }
-
-        $uniqueReportExercises = array_values($uniqueCombinations);
-
-        $bagianIds = array_column($uniqueReportExercises, 'bagian_id');
-        $subBagianIds = array_column($uniqueReportExercises, 'sub_bagian_id');
-        $categoryIds = array_column($uniqueReportExercises, 'category_id');
-
-        $bagians = Bagian::whereIn('id', $bagianIds)->get()->keyBy('id');
-        $subBagians = SubBagian::whereIn('id', $subBagianIds)->get()->keyBy('id');
-        $categories = Category::whereIn('id', $categoryIds)->get()->keyBy('id');
-
-        $exercise = [];
-
-        foreach ($uniqueReportExercises as $reportExercise) {
-            $bagian = $bagians[$reportExercise['bagian_id']] ?? null;
-            $subBagian = $subBagians[$reportExercise['sub_bagian_id']] ?? null;
-            $category = $categories[$reportExercise['category_id']] ?? null;
-
-            if ($bagian && $subBagian && $category) {
-                $exercise[] = [
-                    'bagian' => $bagian,
-                    'sub_bagian' => $subBagian,
-                    'category' => $category,
-                ];
-            }
-        }
         return response()->json(['exercise' => $exercise]);
     }
 

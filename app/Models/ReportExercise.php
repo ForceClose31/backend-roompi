@@ -21,4 +21,19 @@ class ReportExercise extends Model
         'nilai',
         'completed',
     ];
+
+    public function bagian()
+    {
+        return $this->belongsTo(Bagian::class, 'bagian_id');
+    }
+
+    public function subBagian()
+    {
+        return $this->belongsTo(SubBagian::class, 'sub_bagian_id');
+    }
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class, 'category_id');
+    }
 }

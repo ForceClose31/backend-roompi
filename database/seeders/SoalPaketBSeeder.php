@@ -13,76 +13,6 @@ class SoalPaketBSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('category')->insert([
-            ['nama_mapel' => 'Matematika'],
-            ['nama_mapel' => 'PPKN'],
-            ['nama_mapel' => 'PAI'],
-            ['nama_mapel' => 'Sejarah'],
-            ['nama_mapel' => 'Bahasa'],
-        ]);
-
-        DB::table('bagian')->insert([
-            ['nama_bagian' => 'Mudah'],
-            ['nama_bagian' => 'Standart'],
-            ['nama_bagian' => 'Sedang'],
-            ['nama_bagian' => 'Susah'],
-        ]);
-
-        DB::table('sub_bagian')->insert([
-
-            /**
-             *Level 1
-             */
-
-            // Sub bagian 1
-            ['nama_sub_bagian' => 'Level 1', 'nilai_maks' => 100, 'bagian_id' => 1],
-            // Sub bagian 2
-            ['nama_sub_bagian' => 'Level 2', 'nilai_maks' => 100, 'bagian_id' => 1],
-            // Sub bagian 3
-            ['nama_sub_bagian' => 'Level 3', 'nilai_maks' => 100, 'bagian_id' => 1],
-            // Sub bagian 4
-            ['nama_sub_bagian' => 'Level 4', 'nilai_maks' => 100, 'bagian_id' => 1],
-
-            /**
-             *Level 2
-             */
-
-            // Sub bagian 5
-            ['nama_sub_bagian' => 'Level 1', 'nilai_maks' => 100, 'bagian_id' => 2],
-            // Sub bagian 6
-            ['nama_sub_bagian' => 'Level 2', 'nilai_maks' => 100, 'bagian_id' => 2],
-            // Sub bagian 7
-            ['nama_sub_bagian' => 'Level 3', 'nilai_maks' => 100, 'bagian_id' => 2],
-            // Sub bagian 8
-            ['nama_sub_bagian' => 'Level 4', 'nilai_maks' => 100, 'bagian_id' => 2],
-
-            /**
-             *Level 3
-             */
-
-            // Sub bagian 9
-            ['nama_sub_bagian' => 'Level 1', 'nilai_maks' => 100, 'bagian_id' => 3],
-            // Sub bagian 10
-            ['nama_sub_bagian' => 'Level 2', 'nilai_maks' => 100, 'bagian_id' => 3],
-            // Sub bagian 11
-            ['nama_sub_bagian' => 'Level 3', 'nilai_maks' => 100, 'bagian_id' => 3],
-            // Sub bagian 12
-            ['nama_sub_bagian' => 'Level 4', 'nilai_maks' => 100, 'bagian_id' => 3],
-
-            /**
-             *Level 4
-             */
-
-            // Sub bagian 13
-            ['nama_sub_bagian' => 'Level 1', 'nilai_maks' => 100, 'bagian_id' => 4],
-            // Sub bagian 14
-            ['nama_sub_bagian' => 'Level 2', 'nilai_maks' => 100, 'bagian_id' => 4],
-            // Sub bagian 15
-            ['nama_sub_bagian' => 'Level 3', 'nilai_maks' => 100, 'bagian_id' => 4],
-            // Sub bagian 16
-            ['nama_sub_bagian' => 'Level 4', 'nilai_maks' => 100, 'bagian_id' => 4],
-        ]);
-
         // Mapel Matematika
         $soalBagian1Level1 = [
             // Pertanyaan 1
@@ -2265,10 +2195,10 @@ class SoalPaketBSeeder extends Seeder
             ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 639],
             ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 639],
             // Pertanyaan 18
-            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 240],
-            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 240],
-            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 240],
-            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 240],
+            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 640],
+            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 640],
+            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 640],
+            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 640],
         ];
 
         DB::table('pilihan')->insert(array_merge($pilihanBagian4Level1, $pilihanBagian4Level2, $pilihanBagian4Level3, $pilihanBagian4Level4));
@@ -2343,114 +2273,114 @@ class SoalPaketBSeeder extends Seeder
 
         $pilihanBagian1Level1 = [
             // Pertanyaan 1
-            ['pilihan' => 'Cold', 'skor' => 20, 'benar' => true, 'soal_id' => 241],
-            ['pilihan' => 'Warm', 'skor' => 0, 'benar' => false, 'soal_id' => 241],
-            ['pilihan' => 'Cool', 'skor' => 0, 'benar' => false, 'soal_id' => 241],
-            ['pilihan' => 'Icy', 'skor' => 0, 'benar' => false, 'soal_id' => 241],
+            ['pilihan' => 'Cold', 'skor' => 20, 'benar' => true, 'soal_id' => 641],
+            ['pilihan' => 'Warm', 'skor' => 0, 'benar' => false, 'soal_id' => 641],
+            ['pilihan' => 'Cool', 'skor' => 0, 'benar' => false, 'soal_id' => 641],
+            ['pilihan' => 'Icy', 'skor' => 0, 'benar' => false, 'soal_id' => 641],
             // Pertanyaan 2
-            ['pilihan' => 'Large', 'skor' => 20, 'benar' => true, 'soal_id' => 242],
-            ['pilihan' => 'Little', 'skor' => 0, 'benar' => false, 'soal_id' => 242],
-            ['pilihan' => 'Tiny', 'skor' => 0, 'benar' => false, 'soal_id' => 242],
-            ['pilihan' => 'Miniature', 'skor' => 0, 'benar' => false, 'soal_id' => 242],
+            ['pilihan' => 'Large', 'skor' => 20, 'benar' => true, 'soal_id' => 642],
+            ['pilihan' => 'Little', 'skor' => 0, 'benar' => false, 'soal_id' => 642],
+            ['pilihan' => 'Tiny', 'skor' => 0, 'benar' => false, 'soal_id' => 642],
+            ['pilihan' => 'Miniature', 'skor' => 0, 'benar' => false, 'soal_id' => 642],
             // Pertanyaan 3
-            ['pilihan' => 'Bluee', 'skor' => 0, 'benar' => false, 'soal_id' => 243],
-            ['pilihan' => 'Bloue', 'skor' => 0, 'benar' => false, 'soal_id' => 243],
-            ['pilihan' => 'Blue', 'skor' => 20, 'benar' => true, 'soal_id' => 243],
-            ['pilihan' => 'Blhue', 'skor' => 0, 'benar' => false, 'soal_id' => 243],
+            ['pilihan' => 'Bluee', 'skor' => 0, 'benar' => false, 'soal_id' => 643],
+            ['pilihan' => 'Bloue', 'skor' => 0, 'benar' => false, 'soal_id' => 643],
+            ['pilihan' => 'Blue', 'skor' => 20, 'benar' => true, 'soal_id' => 643],
+            ['pilihan' => 'Blhue', 'skor' => 0, 'benar' => false, 'soal_id' => 643],
             // Pertanyaan 4
-            ['pilihan' => 'Bank', 'skor' => 0, 'benar' => false, 'soal_id' => 244],
-            ['pilihan' => 'School', 'skor' => 0, 'benar' => false, 'soal_id' => 244],
-            ['pilihan' => 'Library', 'skor' => 20, 'benar' => true, 'soal_id' => 244],
-            ['pilihan' => 'Mall', 'skor' => 0, 'benar' => false, 'soal_id' => 244],
+            ['pilihan' => 'Bank', 'skor' => 0, 'benar' => false, 'soal_id' => 644],
+            ['pilihan' => 'School', 'skor' => 0, 'benar' => false, 'soal_id' => 644],
+            ['pilihan' => 'Library', 'skor' => 20, 'benar' => true, 'soal_id' => 644],
+            ['pilihan' => 'Mall', 'skor' => 0, 'benar' => false, 'soal_id' => 644],
             // Pertanyaan 5
-            ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 245],
-            ['pilihan' => 'Carrot', 'skor' => 20, 'benar' => true, 'soal_id' => 245],
-            ['pilihan' => 'Orange', 'skor' => 0, 'benar' => false, 'soal_id' => 245],
-            ['pilihan' => 'Banana', 'skor' => 0, 'benar' => false, 'soal_id' => 245],
+            ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 645],
+            ['pilihan' => 'Carrot', 'skor' => 20, 'benar' => true, 'soal_id' => 645],
+            ['pilihan' => 'Orange', 'skor' => 0, 'benar' => false, 'soal_id' => 645],
+            ['pilihan' => 'Banana', 'skor' => 0, 'benar' => false, 'soal_id' => 645],
         ];
 
         $pilihanBagian1Level2 = [
             // Pertanyaan 6
-            ['pilihan' => 'Angry', 'skor' => 0, 'benar' => false, 'soal_id' => 246],
-            ['pilihan' => 'Happy', 'skor' => 20, 'benar' => true, 'soal_id' => 246],
-            ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 246],
-            ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 246],
+            ['pilihan' => 'Angry', 'skor' => 0, 'benar' => false, 'soal_id' => 646],
+            ['pilihan' => 'Happy', 'skor' => 20, 'benar' => true, 'soal_id' => 646],
+            ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 646],
+            ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 646],
             // Pertanyaan 7
-            ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 247],
-            ['pilihan' => 'Went', 'skor' => 20, 'benar' => true, 'soal_id' => 247],
-            ['pilihan' => 'Gone', 'skor' => 0, 'benar' => false, 'soal_id' => 247],
-            ['pilihan' => 'Going', 'skor' => 0, 'benar' => false, 'soal_id' => 247],
+            ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 647],
+            ['pilihan' => 'Went', 'skor' => 20, 'benar' => true, 'soal_id' => 647],
+            ['pilihan' => 'Gone', 'skor' => 0, 'benar' => false, 'soal_id' => 647],
+            ['pilihan' => 'Going', 'skor' => 0, 'benar' => false, 'soal_id' => 647],
             // Pertanyaan 8
-            ['pilihan' => 'Dog', 'skor' => 0, 'benar' => false, 'soal_id' => 248],
-            ['pilihan' => 'Cat', 'skor' => 0, 'benar' => false, 'soal_id' => 248],
-            ['pilihan' => 'Bird', 'skor' => 20, 'benar' => true, 'soal_id' => 248],
-            ['pilihan' => 'Fish', 'skor' => 0, 'benar' => false, 'soal_id' => 248],
+            ['pilihan' => 'Dog', 'skor' => 0, 'benar' => false, 'soal_id' => 648],
+            ['pilihan' => 'Cat', 'skor' => 0, 'benar' => false, 'soal_id' => 648],
+            ['pilihan' => 'Bird', 'skor' => 20, 'benar' => true, 'soal_id' => 648],
+            ['pilihan' => 'Fish', 'skor' => 0, 'benar' => false, 'soal_id' => 648],
             // Pertanyaan 9
-            ['pilihan' => '5', 'skor' => 0, 'benar' => false, 'soal_id' => 249],
-            ['pilihan' => '6', 'skor' => 0, 'benar' => false, 'soal_id' => 249],
-            ['pilihan' => '7', 'skor' => 20, 'benar' => true, 'soal_id' => 249],
-            ['pilihan' => '8', 'skor' => 0, 'benar' => false, 'soal_id' => 249],
+            ['pilihan' => '5', 'skor' => 0, 'benar' => false, 'soal_id' => 649],
+            ['pilihan' => '6', 'skor' => 0, 'benar' => false, 'soal_id' => 649],
+            ['pilihan' => '7', 'skor' => 20, 'benar' => true, 'soal_id' => 649],
+            ['pilihan' => '8', 'skor' => 0, 'benar' => false, 'soal_id' => 649],
             // Pertanyaan 10
-            ['pilihan' => 'Biology', 'skor' => 0, 'benar' => false, 'soal_id' => 250],
-            ['pilihan' => 'Chemistry', 'skor' => 0, 'benar' => false, 'soal_id' => 250],
-            ['pilihan' => 'Mathematics', 'skor' => 20, 'benar' => true, 'soal_id' => 250],
-            ['pilihan' => 'Geography', 'skor' => 0, 'benar' => false, 'soal_id' => 250],
+            ['pilihan' => 'Biology', 'skor' => 0, 'benar' => false, 'soal_id' => 650],
+            ['pilihan' => 'Chemistry', 'skor' => 0, 'benar' => false, 'soal_id' => 650],
+            ['pilihan' => 'Mathematics', 'skor' => 20, 'benar' => true, 'soal_id' => 650],
+            ['pilihan' => 'Geography', 'skor' => 0, 'benar' => false, 'soal_id' => 650],
         ];
 
         $pilihanBagian1Level3 = [
             // Pertanyaan 11
-            ['pilihan' => 'Mango', 'skor' => 0, 'benar' => false, 'soal_id' => 251],
-            ['pilihan' => 'Tomato', 'skor' => 0, 'benar' => false, 'soal_id' => 251],
-            ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 251],
-            ['pilihan' => 'Potato', 'skor' => 20, 'benar' => true, 'soal_id' => 251],
+            ['pilihan' => 'Mango', 'skor' => 0, 'benar' => false, 'soal_id' => 651],
+            ['pilihan' => 'Tomato', 'skor' => 0, 'benar' => false, 'soal_id' => 651],
+            ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 651],
+            ['pilihan' => 'Potato', 'skor' => 20, 'benar' => true, 'soal_id' => 651],
             // Pertanyaan 12
-            ['pilihan' => 'Sailor', 'skor' => 0, 'benar' => false, 'soal_id' => 252],
-            ['pilihan' => 'Pilot', 'skor' => 20, 'benar' => true, 'soal_id' => 252],
-            ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 252],
-            ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 252],
+            ['pilihan' => 'Sailor', 'skor' => 0, 'benar' => false, 'soal_id' => 652],
+            ['pilihan' => 'Pilot', 'skor' => 20, 'benar' => true, 'soal_id' => 652],
+            ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 652],
+            ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 652],
             // Pertanyaan 13
-            ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 253],
-            ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 253],
-            ['pilihan' => 'Table', 'skor' => 0, 'benar' => false, 'soal_id' => 253],
-            ['pilihan' => 'Lamp', 'skor' => 0, 'benar' => false, 'soal_id' => 253],
+            ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 653],
+            ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 653],
+            ['pilihan' => 'Table', 'skor' => 0, 'benar' => false, 'soal_id' => 653],
+            ['pilihan' => 'Lamp', 'skor' => 0, 'benar' => false, 'soal_id' => 653],
             // Pertanyaan 14
-            ['pilihan' => 'Night', 'skor' => 20, 'benar' => true, 'soal_id' => 254],
-            ['pilihan' => 'Sun', 'skor' => 0, 'benar' => false, 'soal_id' => 254],
-            ['pilihan' => 'Morning', 'skor' => 0, 'benar' => false, 'soal_id' => 254],
-            ['pilihan' => 'Noon', 'skor' => 0, 'benar' => false, 'soal_id' => 254],
+            ['pilihan' => 'Night', 'skor' => 20, 'benar' => true, 'soal_id' => 654],
+            ['pilihan' => 'Sun', 'skor' => 0, 'benar' => false, 'soal_id' => 654],
+            ['pilihan' => 'Morning', 'skor' => 0, 'benar' => false, 'soal_id' => 654],
+            ['pilihan' => 'Noon', 'skor' => 0, 'benar' => false, 'soal_id' => 654],
             // Pertanyaan 15
-            ['pilihan' => 'London', 'skor' => 0, 'benar' => false, 'soal_id' => 255],
-            ['pilihan' => 'Paris', 'skor' => 20, 'benar' => true, 'soal_id' => 255],
-            ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 255],
-            ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 255],
+            ['pilihan' => 'London', 'skor' => 0, 'benar' => false, 'soal_id' => 655],
+            ['pilihan' => 'Paris', 'skor' => 20, 'benar' => true, 'soal_id' => 655],
+            ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 655],
+            ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 655],
         ];
 
         $pilihanBagian1Level4 = [
             // Pertanyaan 16
-            ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 256],
-            ['pilihan' => 'Square', 'skor' => 20, 'benar' => true, 'soal_id' => 256],
-            ['pilihan' => 'Green', 'skor' => 0, 'benar' => false, 'soal_id' => 256],
-            ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 256],
+            ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 656],
+            ['pilihan' => 'Square', 'skor' => 20, 'benar' => true, 'soal_id' => 656],
+            ['pilihan' => 'Green', 'skor' => 0, 'benar' => false, 'soal_id' => 656],
+            ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 656],
             // Pertanyaan 17
-            ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 257],
-            ['pilihan' => 'Eight', 'skor' => 20, 'benar' => true, 'soal_id' => 257],
-            ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 257],
-            ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 257],
+            ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 657],
+            ['pilihan' => 'Eight', 'skor' => 20, 'benar' => true, 'soal_id' => 657],
+            ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 657],
+            ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 657],
             // Pertanyaan 18
-            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 258],
-            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 258],
-            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 258],
-            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 258],
+            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 658],
+            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 658],
+            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 658],
+            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 658],
             // Pertanyaan 13
-            ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 259],
-            ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 259],
-            ['pilihan' => 'Table', 'skor' => 0, 'benar' => false, 'soal_id' => 259],
-            ['pilihan' => 'Lamp', 'skor' => 0, 'benar' => false, 'soal_id' => 259],
+            ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 659],
+            ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 659],
+            ['pilihan' => 'Table', 'skor' => 0, 'benar' => false, 'soal_id' => 659],
+            ['pilihan' => 'Lamp', 'skor' => 0, 'benar' => false, 'soal_id' => 659],
             // Pertanyaan 14
-            ['pilihan' => 'Night', 'skor' => 20, 'benar' => true, 'soal_id' => 260],
-            ['pilihan' => 'Sun', 'skor' => 0, 'benar' => false, 'soal_id' => 260],
-            ['pilihan' => 'Morning', 'skor' => 0, 'benar' => false, 'soal_id' => 260],
-            ['pilihan' => 'Noon', 'skor' => 0, 'benar' => false, 'soal_id' => 260],
+            ['pilihan' => 'Night', 'skor' => 20, 'benar' => true, 'soal_id' => 660],
+            ['pilihan' => 'Sun', 'skor' => 0, 'benar' => false, 'soal_id' => 660],
+            ['pilihan' => 'Morning', 'skor' => 0, 'benar' => false, 'soal_id' => 660],
+            ['pilihan' => 'Noon', 'skor' => 0, 'benar' => false, 'soal_id' => 660],
         ];
 
         DB::table('pilihan')->insert(array_merge($pilihanBagian1Level1, $pilihanBagian1Level2, $pilihanBagian1Level3, $pilihanBagian1Level4));
@@ -2523,114 +2453,114 @@ class SoalPaketBSeeder extends Seeder
 
         $pilihanBagian2Level1 = [
             // Pertanyaan 15
-            ['pilihan' => 'London', 'skor' => 0, 'benar' => false, 'soal_id' => 261],
-            ['pilihan' => 'Paris', 'skor' => 20, 'benar' => true, 'soal_id' => 261],
-            ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 261],
-            ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 261],
+            ['pilihan' => 'London', 'skor' => 0, 'benar' => false, 'soal_id' => 661],
+            ['pilihan' => 'Paris', 'skor' => 20, 'benar' => true, 'soal_id' => 661],
+            ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 661],
+            ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 661],
             // Pertanyaan 16
-            ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 262],
-            ['pilihan' => 'Square', 'skor' => 20, 'benar' => true, 'soal_id' => 262],
-            ['pilihan' => 'Green', 'skor' => 0, 'benar' => false, 'soal_id' => 262],
-            ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 262],
+            ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 662],
+            ['pilihan' => 'Square', 'skor' => 20, 'benar' => true, 'soal_id' => 662],
+            ['pilihan' => 'Green', 'skor' => 0, 'benar' => false, 'soal_id' => 662],
+            ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 662],
             // Pertanyaan 17
-            ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 263],
-            ['pilihan' => 'Eight', 'skor' => 20, 'benar' => true, 'soal_id' => 263],
-            ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 263],
-            ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 263],
+            ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 663],
+            ['pilihan' => 'Eight', 'skor' => 20, 'benar' => true, 'soal_id' => 663],
+            ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 663],
+            ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 663],
             // Pertanyaan 18
-            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 264],
-            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 264],
-            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 264],
-            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 264],
+            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 664],
+            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 664],
+            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 664],
+            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 664],
             // Pertanyaan 1
-            ['pilihan' => 'Cold', 'skor' => 20, 'benar' => true, 'soal_id' => 265],
-            ['pilihan' => 'Warm', 'skor' => 0, 'benar' => false, 'soal_id' => 265],
-            ['pilihan' => 'Cool', 'skor' => 0, 'benar' => false, 'soal_id' => 265],
-            ['pilihan' => 'Icy', 'skor' => 0, 'benar' => false, 'soal_id' => 265],
+            ['pilihan' => 'Cold', 'skor' => 20, 'benar' => true, 'soal_id' => 665],
+            ['pilihan' => 'Warm', 'skor' => 0, 'benar' => false, 'soal_id' => 665],
+            ['pilihan' => 'Cool', 'skor' => 0, 'benar' => false, 'soal_id' => 665],
+            ['pilihan' => 'Icy', 'skor' => 0, 'benar' => false, 'soal_id' => 665],
         ];
 
         $pilihanBagian2Level2 = [
             // Pertanyaan 2
-            ['pilihan' => 'Large', 'skor' => 20, 'benar' => true, 'soal_id' => 266],
-            ['pilihan' => 'Little', 'skor' => 0, 'benar' => false, 'soal_id' => 266],
-            ['pilihan' => 'Tiny', 'skor' => 0, 'benar' => false, 'soal_id' => 266],
-            ['pilihan' => 'Miniature', 'skor' => 0, 'benar' => false, 'soal_id' => 266],
+            ['pilihan' => 'Large', 'skor' => 20, 'benar' => true, 'soal_id' => 666],
+            ['pilihan' => 'Little', 'skor' => 0, 'benar' => false, 'soal_id' => 666],
+            ['pilihan' => 'Tiny', 'skor' => 0, 'benar' => false, 'soal_id' => 666],
+            ['pilihan' => 'Miniature', 'skor' => 0, 'benar' => false, 'soal_id' => 666],
             // Pertanyaan 3
-            ['pilihan' => 'Bluee', 'skor' => 0, 'benar' => false, 'soal_id' => 267],
-            ['pilihan' => 'Bloue', 'skor' => 0, 'benar' => false, 'soal_id' => 267],
-            ['pilihan' => 'Blue', 'skor' => 20, 'benar' => true, 'soal_id' => 267],
-            ['pilihan' => 'Blhue', 'skor' => 0, 'benar' => false, 'soal_id' => 267],
+            ['pilihan' => 'Bluee', 'skor' => 0, 'benar' => false, 'soal_id' => 667],
+            ['pilihan' => 'Bloue', 'skor' => 0, 'benar' => false, 'soal_id' => 667],
+            ['pilihan' => 'Blue', 'skor' => 20, 'benar' => true, 'soal_id' => 667],
+            ['pilihan' => 'Blhue', 'skor' => 0, 'benar' => false, 'soal_id' => 667],
             // Pertanyaan 4
-            ['pilihan' => 'Bank', 'skor' => 0, 'benar' => false, 'soal_id' => 268],
-            ['pilihan' => 'School', 'skor' => 0, 'benar' => false, 'soal_id' => 268],
-            ['pilihan' => 'Library', 'skor' => 20, 'benar' => true, 'soal_id' => 268],
-            ['pilihan' => 'Mall', 'skor' => 0, 'benar' => false, 'soal_id' => 268],
+            ['pilihan' => 'Bank', 'skor' => 0, 'benar' => false, 'soal_id' => 668],
+            ['pilihan' => 'School', 'skor' => 0, 'benar' => false, 'soal_id' => 668],
+            ['pilihan' => 'Library', 'skor' => 20, 'benar' => true, 'soal_id' => 668],
+            ['pilihan' => 'Mall', 'skor' => 0, 'benar' => false, 'soal_id' => 668],
             // Pertanyaan 5
-            ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 269],
-            ['pilihan' => 'Carrot', 'skor' => 20, 'benar' => true, 'soal_id' => 269],
-            ['pilihan' => 'Orange', 'skor' => 0, 'benar' => false, 'soal_id' => 269],
-            ['pilihan' => 'Banana', 'skor' => 0, 'benar' => false, 'soal_id' => 269],
+            ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 669],
+            ['pilihan' => 'Carrot', 'skor' => 20, 'benar' => true, 'soal_id' => 669],
+            ['pilihan' => 'Orange', 'skor' => 0, 'benar' => false, 'soal_id' => 669],
+            ['pilihan' => 'Banana', 'skor' => 0, 'benar' => false, 'soal_id' => 669],
             // Pertanyaan 6
-            ['pilihan' => 'Angry', 'skor' => 0, 'benar' => false, 'soal_id' => 270],
-            ['pilihan' => 'Happy', 'skor' => 20, 'benar' => true, 'soal_id' => 270],
-            ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 270],
-            ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 270],
+            ['pilihan' => 'Angry', 'skor' => 0, 'benar' => false, 'soal_id' => 670],
+            ['pilihan' => 'Happy', 'skor' => 20, 'benar' => true, 'soal_id' => 670],
+            ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 670],
+            ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 670],
         ];
 
         $pilihanBagian2Level3 = [
             // Pertanyaan 7
-            ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 271],
-            ['pilihan' => 'Went', 'skor' => 20, 'benar' => true, 'soal_id' => 271],
-            ['pilihan' => 'Gone', 'skor' => 0, 'benar' => false, 'soal_id' => 271],
-            ['pilihan' => 'Going', 'skor' => 0, 'benar' => false, 'soal_id' => 271],
+            ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 671],
+            ['pilihan' => 'Went', 'skor' => 20, 'benar' => true, 'soal_id' => 671],
+            ['pilihan' => 'Gone', 'skor' => 0, 'benar' => false, 'soal_id' => 671],
+            ['pilihan' => 'Going', 'skor' => 0, 'benar' => false, 'soal_id' => 671],
             // Pertanyaan 8
-            ['pilihan' => 'Dog', 'skor' => 0, 'benar' => false, 'soal_id' => 272],
-            ['pilihan' => 'Cat', 'skor' => 0, 'benar' => false, 'soal_id' => 272],
-            ['pilihan' => 'Bird', 'skor' => 20, 'benar' => true, 'soal_id' => 272],
-            ['pilihan' => 'Fish', 'skor' => 0, 'benar' => false, 'soal_id' => 272],
+            ['pilihan' => 'Dog', 'skor' => 0, 'benar' => false, 'soal_id' => 672],
+            ['pilihan' => 'Cat', 'skor' => 0, 'benar' => false, 'soal_id' => 672],
+            ['pilihan' => 'Bird', 'skor' => 20, 'benar' => true, 'soal_id' => 672],
+            ['pilihan' => 'Fish', 'skor' => 0, 'benar' => false, 'soal_id' => 672],
             // Pertanyaan 9
-            ['pilihan' => '5', 'skor' => 0, 'benar' => false, 'soal_id' => 273],
-            ['pilihan' => '6', 'skor' => 0, 'benar' => false, 'soal_id' => 273],
-            ['pilihan' => '7', 'skor' => 20, 'benar' => true, 'soal_id' => 273],
-            ['pilihan' => '8', 'skor' => 0, 'benar' => false, 'soal_id' => 273],
+            ['pilihan' => '5', 'skor' => 0, 'benar' => false, 'soal_id' => 673],
+            ['pilihan' => '6', 'skor' => 0, 'benar' => false, 'soal_id' => 673],
+            ['pilihan' => '7', 'skor' => 20, 'benar' => true, 'soal_id' => 673],
+            ['pilihan' => '8', 'skor' => 0, 'benar' => false, 'soal_id' => 673],
             // Pertanyaan 10
-            ['pilihan' => 'Biology', 'skor' => 0, 'benar' => false, 'soal_id' => 274],
-            ['pilihan' => 'Chemistry', 'skor' => 0, 'benar' => false, 'soal_id' => 274],
-            ['pilihan' => 'Mathematics', 'skor' => 20, 'benar' => true, 'soal_id' => 274],
-            ['pilihan' => 'Geography', 'skor' => 0, 'benar' => false, 'soal_id' => 274],
+            ['pilihan' => 'Biology', 'skor' => 0, 'benar' => false, 'soal_id' => 674],
+            ['pilihan' => 'Chemistry', 'skor' => 0, 'benar' => false, 'soal_id' => 674],
+            ['pilihan' => 'Mathematics', 'skor' => 20, 'benar' => true, 'soal_id' => 674],
+            ['pilihan' => 'Geography', 'skor' => 0, 'benar' => false, 'soal_id' => 674],
             // Pertanyaan 11
-            ['pilihan' => 'Mango', 'skor' => 0, 'benar' => false, 'soal_id' => 275],
-            ['pilihan' => 'Tomato', 'skor' => 0, 'benar' => false, 'soal_id' => 275],
-            ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 275],
-            ['pilihan' => 'Potato', 'skor' => 20, 'benar' => true, 'soal_id' => 275],
+            ['pilihan' => 'Mango', 'skor' => 0, 'benar' => false, 'soal_id' => 675],
+            ['pilihan' => 'Tomato', 'skor' => 0, 'benar' => false, 'soal_id' => 675],
+            ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 675],
+            ['pilihan' => 'Potato', 'skor' => 20, 'benar' => true, 'soal_id' => 675],
         ];
 
         $pilihanBagian2Level4 = [
             // Pertanyaan 12
-            ['pilihan' => 'Sailor', 'skor' => 0, 'benar' => false, 'soal_id' => 276],
-            ['pilihan' => 'Pilot', 'skor' => 20, 'benar' => true, 'soal_id' => 276],
-            ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 276],
-            ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 276],
+            ['pilihan' => 'Sailor', 'skor' => 0, 'benar' => false, 'soal_id' => 676],
+            ['pilihan' => 'Pilot', 'skor' => 20, 'benar' => true, 'soal_id' => 676],
+            ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 676],
+            ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 676],
             // Pertanyaan 13
-            ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 277],
-            ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 277],
-            ['pilihan' => 'Table', 'skor' => 0, 'benar' => false, 'soal_id' => 277],
-            ['pilihan' => 'Lamp', 'skor' => 0, 'benar' => false, 'soal_id' => 277],
+            ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 677],
+            ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 677],
+            ['pilihan' => 'Table', 'skor' => 0, 'benar' => false, 'soal_id' => 677],
+            ['pilihan' => 'Lamp', 'skor' => 0, 'benar' => false, 'soal_id' => 677],
             // Pertanyaan 14
-            ['pilihan' => 'Night', 'skor' => 20, 'benar' => true, 'soal_id' => 278],
-            ['pilihan' => 'Sun', 'skor' => 0, 'benar' => false, 'soal_id' => 278],
-            ['pilihan' => 'Morning', 'skor' => 0, 'benar' => false, 'soal_id' => 278],
-            ['pilihan' => 'Noon', 'skor' => 0, 'benar' => false, 'soal_id' => 278],
+            ['pilihan' => 'Night', 'skor' => 20, 'benar' => true, 'soal_id' => 678],
+            ['pilihan' => 'Sun', 'skor' => 0, 'benar' => false, 'soal_id' => 678],
+            ['pilihan' => 'Morning', 'skor' => 0, 'benar' => false, 'soal_id' => 678],
+            ['pilihan' => 'Noon', 'skor' => 0, 'benar' => false, 'soal_id' => 678],
             // Pertanyaan 15
-            ['pilihan' => 'London', 'skor' => 0, 'benar' => false, 'soal_id' => 279],
-            ['pilihan' => 'Paris', 'skor' => 20, 'benar' => true, 'soal_id' => 279],
-            ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 279],
-            ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 279],
+            ['pilihan' => 'London', 'skor' => 0, 'benar' => false, 'soal_id' => 679],
+            ['pilihan' => 'Paris', 'skor' => 20, 'benar' => true, 'soal_id' => 679],
+            ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 679],
+            ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 679],
             // Pertanyaan 16
-            ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 280],
-            ['pilihan' => 'Square', 'skor' => 20, 'benar' => true, 'soal_id' => 280],
-            ['pilihan' => 'Green', 'skor' => 0, 'benar' => false, 'soal_id' => 280],
-            ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 280],
+            ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 680],
+            ['pilihan' => 'Square', 'skor' => 20, 'benar' => true, 'soal_id' => 680],
+            ['pilihan' => 'Green', 'skor' => 0, 'benar' => false, 'soal_id' => 680],
+            ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 680],
         ];
 
 
@@ -2706,114 +2636,114 @@ class SoalPaketBSeeder extends Seeder
 
         $pilihanBagian3Level1 = [
             // Pertanyaan 17
-            ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 281],
-            ['pilihan' => 'Eight', 'skor' => 20, 'benar' => true, 'soal_id' => 281],
-            ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 281],
-            ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 281],
+            ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 681],
+            ['pilihan' => 'Eight', 'skor' => 20, 'benar' => true, 'soal_id' => 681],
+            ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 681],
+            ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 681],
             // Pertanyaan 18
-            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 282],
-            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 282],
-            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 282],
-            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 282],
+            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 682],
+            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 682],
+            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 682],
+            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 682],
             // Pertanyaan 13
-            ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 283],
-            ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 283],
-            ['pilihan' => 'Table', 'skor' => 0, 'benar' => false, 'soal_id' => 283],
-            ['pilihan' => 'Lamp', 'skor' => 0, 'benar' => false, 'soal_id' => 283],
+            ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 683],
+            ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 683],
+            ['pilihan' => 'Table', 'skor' => 0, 'benar' => false, 'soal_id' => 683],
+            ['pilihan' => 'Lamp', 'skor' => 0, 'benar' => false, 'soal_id' => 683],
             // Pertanyaan 14
-            ['pilihan' => 'Night', 'skor' => 20, 'benar' => true, 'soal_id' => 284],
-            ['pilihan' => 'Sun', 'skor' => 0, 'benar' => false, 'soal_id' => 284],
-            ['pilihan' => 'Morning', 'skor' => 0, 'benar' => false, 'soal_id' => 284],
-            ['pilihan' => 'Noon', 'skor' => 0, 'benar' => false, 'soal_id' => 284],
+            ['pilihan' => 'Night', 'skor' => 20, 'benar' => true, 'soal_id' => 684],
+            ['pilihan' => 'Sun', 'skor' => 0, 'benar' => false, 'soal_id' => 684],
+            ['pilihan' => 'Morning', 'skor' => 0, 'benar' => false, 'soal_id' => 684],
+            ['pilihan' => 'Noon', 'skor' => 0, 'benar' => false, 'soal_id' => 684],
             // Pertanyaan 15
-            ['pilihan' => 'London', 'skor' => 0, 'benar' => false, 'soal_id' => 285],
-            ['pilihan' => 'Paris', 'skor' => 20, 'benar' => true, 'soal_id' => 285],
-            ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 285],
-            ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 285],
+            ['pilihan' => 'London', 'skor' => 0, 'benar' => false, 'soal_id' => 685],
+            ['pilihan' => 'Paris', 'skor' => 20, 'benar' => true, 'soal_id' => 685],
+            ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 685],
+            ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 685],
         ];
 
         $pilihanBagian3Level2 = [
             // Pertanyaan 16
-            ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 286],
-            ['pilihan' => 'Square', 'skor' => 20, 'benar' => true, 'soal_id' => 286],
-            ['pilihan' => 'Green', 'skor' => 0, 'benar' => false, 'soal_id' => 286],
-            ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 286],
+            ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 686],
+            ['pilihan' => 'Square', 'skor' => 20, 'benar' => true, 'soal_id' => 686],
+            ['pilihan' => 'Green', 'skor' => 0, 'benar' => false, 'soal_id' => 686],
+            ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 686],
             // Pertanyaan 17
-            ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 287],
-            ['pilihan' => 'Eight', 'skor' => 20, 'benar' => true, 'soal_id' => 287],
-            ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 287],
-            ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 287],
+            ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 687],
+            ['pilihan' => 'Eight', 'skor' => 20, 'benar' => true, 'soal_id' => 687],
+            ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 687],
+            ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 687],
             // Pertanyaan 18
-            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 288],
-            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 288],
-            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 288],
-            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 288],
+            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 688],
+            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 688],
+            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 688],
+            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 688],
             // Pertanyaan 1
-            ['pilihan' => 'Cold', 'skor' => 20, 'benar' => true, 'soal_id' => 289],
-            ['pilihan' => 'Warm', 'skor' => 0, 'benar' => false, 'soal_id' => 289],
-            ['pilihan' => 'Cool', 'skor' => 0, 'benar' => false, 'soal_id' => 289],
-            ['pilihan' => 'Icy', 'skor' => 0, 'benar' => false, 'soal_id' => 289],
+            ['pilihan' => 'Cold', 'skor' => 20, 'benar' => true, 'soal_id' => 689],
+            ['pilihan' => 'Warm', 'skor' => 0, 'benar' => false, 'soal_id' => 689],
+            ['pilihan' => 'Cool', 'skor' => 0, 'benar' => false, 'soal_id' => 689],
+            ['pilihan' => 'Icy', 'skor' => 0, 'benar' => false, 'soal_id' => 689],
             // Pertanyaan 2
-            ['pilihan' => 'Large', 'skor' => 20, 'benar' => true, 'soal_id' => 290],
-            ['pilihan' => 'Little', 'skor' => 0, 'benar' => false, 'soal_id' => 290],
-            ['pilihan' => 'Tiny', 'skor' => 0, 'benar' => false, 'soal_id' => 290],
-            ['pilihan' => 'Miniature', 'skor' => 0, 'benar' => false, 'soal_id' => 290],
+            ['pilihan' => 'Large', 'skor' => 20, 'benar' => true, 'soal_id' => 690],
+            ['pilihan' => 'Little', 'skor' => 0, 'benar' => false, 'soal_id' => 690],
+            ['pilihan' => 'Tiny', 'skor' => 0, 'benar' => false, 'soal_id' => 690],
+            ['pilihan' => 'Miniature', 'skor' => 0, 'benar' => false, 'soal_id' => 690],
         ];
 
         $pilihanBagian3Level3 = [
             // Pertanyaan 3
-            ['pilihan' => 'Bluee', 'skor' => 0, 'benar' => false, 'soal_id' => 291],
-            ['pilihan' => 'Bloue', 'skor' => 0, 'benar' => false, 'soal_id' => 291],
-            ['pilihan' => 'Blue', 'skor' => 20, 'benar' => true, 'soal_id' => 291],
-            ['pilihan' => 'Blhue', 'skor' => 0, 'benar' => false, 'soal_id' => 291],
+            ['pilihan' => 'Bluee', 'skor' => 0, 'benar' => false, 'soal_id' => 691],
+            ['pilihan' => 'Bloue', 'skor' => 0, 'benar' => false, 'soal_id' => 691],
+            ['pilihan' => 'Blue', 'skor' => 20, 'benar' => true, 'soal_id' => 691],
+            ['pilihan' => 'Blhue', 'skor' => 0, 'benar' => false, 'soal_id' => 691],
             // Pertanyaan 4
-            ['pilihan' => 'Bank', 'skor' => 0, 'benar' => false, 'soal_id' => 292],
-            ['pilihan' => 'School', 'skor' => 0, 'benar' => false, 'soal_id' => 292],
-            ['pilihan' => 'Library', 'skor' => 20, 'benar' => true, 'soal_id' => 292],
-            ['pilihan' => 'Mall', 'skor' => 0, 'benar' => false, 'soal_id' => 292],
+            ['pilihan' => 'Bank', 'skor' => 0, 'benar' => false, 'soal_id' => 692],
+            ['pilihan' => 'School', 'skor' => 0, 'benar' => false, 'soal_id' => 692],
+            ['pilihan' => 'Library', 'skor' => 20, 'benar' => true, 'soal_id' => 692],
+            ['pilihan' => 'Mall', 'skor' => 0, 'benar' => false, 'soal_id' => 692],
             // Pertanyaan 5
-            ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 293],
-            ['pilihan' => 'Carrot', 'skor' => 20, 'benar' => true, 'soal_id' => 293],
-            ['pilihan' => 'Orange', 'skor' => 0, 'benar' => false, 'soal_id' => 293],
-            ['pilihan' => 'Banana', 'skor' => 0, 'benar' => false, 'soal_id' => 293],
+            ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 693],
+            ['pilihan' => 'Carrot', 'skor' => 20, 'benar' => true, 'soal_id' => 693],
+            ['pilihan' => 'Orange', 'skor' => 0, 'benar' => false, 'soal_id' => 693],
+            ['pilihan' => 'Banana', 'skor' => 0, 'benar' => false, 'soal_id' => 693],
             // Pertanyaan 6
-            ['pilihan' => 'Angry', 'skor' => 0, 'benar' => false, 'soal_id' => 294],
-            ['pilihan' => 'Happy', 'skor' => 20, 'benar' => true, 'soal_id' => 294],
-            ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 294],
-            ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 294],
+            ['pilihan' => 'Angry', 'skor' => 0, 'benar' => false, 'soal_id' => 694],
+            ['pilihan' => 'Happy', 'skor' => 20, 'benar' => true, 'soal_id' => 694],
+            ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 694],
+            ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 694],
             // Pertanyaan 7
-            ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 295],
-            ['pilihan' => 'Went', 'skor' => 20, 'benar' => true, 'soal_id' => 295],
-            ['pilihan' => 'Gone', 'skor' => 0, 'benar' => false, 'soal_id' => 295],
-            ['pilihan' => 'Going', 'skor' => 0, 'benar' => false, 'soal_id' => 295],
+            ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 695],
+            ['pilihan' => 'Went', 'skor' => 20, 'benar' => true, 'soal_id' => 695],
+            ['pilihan' => 'Gone', 'skor' => 0, 'benar' => false, 'soal_id' => 695],
+            ['pilihan' => 'Going', 'skor' => 0, 'benar' => false, 'soal_id' => 695],
         ];
 
         $pilihanBagian3Level4 = [
             // Pertanyaan 8
-            ['pilihan' => 'Dog', 'skor' => 0, 'benar' => false, 'soal_id' => 296],
-            ['pilihan' => 'Cat', 'skor' => 0, 'benar' => false, 'soal_id' => 296],
-            ['pilihan' => 'Bird', 'skor' => 20, 'benar' => true, 'soal_id' => 296],
-            ['pilihan' => 'Fish', 'skor' => 0, 'benar' => false, 'soal_id' => 296],
+            ['pilihan' => 'Dog', 'skor' => 0, 'benar' => false, 'soal_id' => 696],
+            ['pilihan' => 'Cat', 'skor' => 0, 'benar' => false, 'soal_id' => 696],
+            ['pilihan' => 'Bird', 'skor' => 20, 'benar' => true, 'soal_id' => 696],
+            ['pilihan' => 'Fish', 'skor' => 0, 'benar' => false, 'soal_id' => 696],
             // Pertanyaan 9
-            ['pilihan' => '5', 'skor' => 0, 'benar' => false, 'soal_id' => 297],
-            ['pilihan' => '6', 'skor' => 0, 'benar' => false, 'soal_id' => 297],
-            ['pilihan' => '7', 'skor' => 20, 'benar' => true, 'soal_id' => 297],
-            ['pilihan' => '8', 'skor' => 0, 'benar' => false, 'soal_id' => 297],
+            ['pilihan' => '5', 'skor' => 0, 'benar' => false, 'soal_id' => 697],
+            ['pilihan' => '6', 'skor' => 0, 'benar' => false, 'soal_id' => 697],
+            ['pilihan' => '7', 'skor' => 20, 'benar' => true, 'soal_id' => 697],
+            ['pilihan' => '8', 'skor' => 0, 'benar' => false, 'soal_id' => 697],
             // Pertanyaan 10
-            ['pilihan' => 'Biology', 'skor' => 0, 'benar' => false, 'soal_id' => 298],
-            ['pilihan' => 'Chemistry', 'skor' => 0, 'benar' => false, 'soal_id' => 298],
-            ['pilihan' => 'Mathematics', 'skor' => 20, 'benar' => true, 'soal_id' => 298],
-            ['pilihan' => 'Geography', 'skor' => 0, 'benar' => false, 'soal_id' => 298],
+            ['pilihan' => 'Biology', 'skor' => 0, 'benar' => false, 'soal_id' => 698],
+            ['pilihan' => 'Chemistry', 'skor' => 0, 'benar' => false, 'soal_id' => 698],
+            ['pilihan' => 'Mathematics', 'skor' => 20, 'benar' => true, 'soal_id' => 698],
+            ['pilihan' => 'Geography', 'skor' => 0, 'benar' => false, 'soal_id' => 698],
             // Pertanyaan 11
-            ['pilihan' => 'Mango', 'skor' => 0, 'benar' => false, 'soal_id' => 299],
-            ['pilihan' => 'Tomato', 'skor' => 0, 'benar' => false, 'soal_id' => 299],
-            ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 299],
-            ['pilihan' => 'Potato', 'skor' => 20, 'benar' => true, 'soal_id' => 299],
+            ['pilihan' => 'Mango', 'skor' => 0, 'benar' => false, 'soal_id' => 699],
+            ['pilihan' => 'Tomato', 'skor' => 0, 'benar' => false, 'soal_id' => 699],
+            ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 699],
+            ['pilihan' => 'Potato', 'skor' => 20, 'benar' => true, 'soal_id' => 699],
             // Pertanyaan 12
-            ['pilihan' => 'Sailor', 'skor' => 0, 'benar' => false, 'soal_id' => 300],
-            ['pilihan' => 'Pilot', 'skor' => 20, 'benar' => true, 'soal_id' => 300],
-            ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 300],
-            ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 300],
+            ['pilihan' => 'Sailor', 'skor' => 0, 'benar' => false, 'soal_id' => 700],
+            ['pilihan' => 'Pilot', 'skor' => 20, 'benar' => true, 'soal_id' => 700],
+            ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 700],
+            ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 700],
         ];
 
         DB::table('pilihan')->insert(array_merge($pilihanBagian3Level1, $pilihanBagian3Level2, $pilihanBagian3Level3, $pilihanBagian3Level4));
@@ -2887,114 +2817,114 @@ class SoalPaketBSeeder extends Seeder
 
         $pilihanBagian4Level1 = [
             // Pertanyaan 13
-            ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 301],
-            ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 301],
-            ['pilihan' => 'Table', 'skor' => 0, 'benar' => false, 'soal_id' => 301],
-            ['pilihan' => 'Lamp', 'skor' => 0, 'benar' => false, 'soal_id' => 301],
+            ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 701],
+            ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 701],
+            ['pilihan' => 'Table', 'skor' => 0, 'benar' => false, 'soal_id' => 701],
+            ['pilihan' => 'Lamp', 'skor' => 0, 'benar' => false, 'soal_id' => 701],
             // Pertanyaan 14
-            ['pilihan' => 'Night', 'skor' => 20, 'benar' => true, 'soal_id' => 302],
-            ['pilihan' => 'Sun', 'skor' => 0, 'benar' => false, 'soal_id' => 302],
-            ['pilihan' => 'Morning', 'skor' => 0, 'benar' => false, 'soal_id' => 302],
-            ['pilihan' => 'Noon', 'skor' => 0, 'benar' => false, 'soal_id' => 302],
+            ['pilihan' => 'Night', 'skor' => 20, 'benar' => true, 'soal_id' => 702],
+            ['pilihan' => 'Sun', 'skor' => 0, 'benar' => false, 'soal_id' => 702],
+            ['pilihan' => 'Morning', 'skor' => 0, 'benar' => false, 'soal_id' => 702],
+            ['pilihan' => 'Noon', 'skor' => 0, 'benar' => false, 'soal_id' => 702],
             // Pertanyaan 15
-            ['pilihan' => 'London', 'skor' => 0, 'benar' => false, 'soal_id' => 303],
-            ['pilihan' => 'Paris', 'skor' => 20, 'benar' => true, 'soal_id' => 303],
-            ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 303],
-            ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 303],
+            ['pilihan' => 'London', 'skor' => 0, 'benar' => false, 'soal_id' => 703],
+            ['pilihan' => 'Paris', 'skor' => 20, 'benar' => true, 'soal_id' => 703],
+            ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 703],
+            ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 703],
             // Pertanyaan 16
-            ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 304],
-            ['pilihan' => 'Square', 'skor' => 20, 'benar' => true, 'soal_id' => 304],
-            ['pilihan' => 'Green', 'skor' => 0, 'benar' => false, 'soal_id' => 304],
-            ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 304],
+            ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 704],
+            ['pilihan' => 'Square', 'skor' => 20, 'benar' => true, 'soal_id' => 704],
+            ['pilihan' => 'Green', 'skor' => 0, 'benar' => false, 'soal_id' => 704],
+            ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 704],
             // Pertanyaan 17
-            ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 305],
-            ['pilihan' => 'Eight', 'skor' => 20, 'benar' => true, 'soal_id' => 305],
-            ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 305],
-            ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 305],
+            ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 705],
+            ['pilihan' => 'Eight', 'skor' => 20, 'benar' => true, 'soal_id' => 705],
+            ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 705],
+            ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 705],
         ];
 
         $pilihanBagian4Level2 = [
             // Pertanyaan 18
-            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 306],
-            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 306],
-            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 306],
-            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 306],
+            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 706],
+            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 706],
+            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 706],
+            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 706],
             // Pertanyaan 13
-            ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 307],
-            ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 307],
-            ['pilihan' => 'Table', 'skor' => 0, 'benar' => false, 'soal_id' => 307],
-            ['pilihan' => 'Lamp', 'skor' => 0, 'benar' => false, 'soal_id' => 307],
+            ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 707],
+            ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 707],
+            ['pilihan' => 'Table', 'skor' => 0, 'benar' => false, 'soal_id' => 707],
+            ['pilihan' => 'Lamp', 'skor' => 0, 'benar' => false, 'soal_id' => 707],
             // Pertanyaan 14
-            ['pilihan' => 'Night', 'skor' => 20, 'benar' => true, 'soal_id' => 308],
-            ['pilihan' => 'Sun', 'skor' => 0, 'benar' => false, 'soal_id' => 308],
-            ['pilihan' => 'Morning', 'skor' => 0, 'benar' => false, 'soal_id' => 308],
-            ['pilihan' => 'Noon', 'skor' => 0, 'benar' => false, 'soal_id' => 308],
+            ['pilihan' => 'Night', 'skor' => 20, 'benar' => true, 'soal_id' => 708],
+            ['pilihan' => 'Sun', 'skor' => 0, 'benar' => false, 'soal_id' => 708],
+            ['pilihan' => 'Morning', 'skor' => 0, 'benar' => false, 'soal_id' => 708],
+            ['pilihan' => 'Noon', 'skor' => 0, 'benar' => false, 'soal_id' => 708],
             // Pertanyaan 15
-            ['pilihan' => 'London', 'skor' => 0, 'benar' => false, 'soal_id' => 309],
-            ['pilihan' => 'Paris', 'skor' => 20, 'benar' => true, 'soal_id' => 309],
-            ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 309],
-            ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 309],
+            ['pilihan' => 'London', 'skor' => 0, 'benar' => false, 'soal_id' => 709],
+            ['pilihan' => 'Paris', 'skor' => 20, 'benar' => true, 'soal_id' => 709],
+            ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 709],
+            ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 709],
             // Pertanyaan 16
-            ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 310],
-            ['pilihan' => 'Square', 'skor' => 20, 'benar' => true, 'soal_id' => 310],
-            ['pilihan' => 'Green', 'skor' => 0, 'benar' => false, 'soal_id' => 310],
-            ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 310],
+            ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 710],
+            ['pilihan' => 'Square', 'skor' => 20, 'benar' => true, 'soal_id' => 710],
+            ['pilihan' => 'Green', 'skor' => 0, 'benar' => false, 'soal_id' => 710],
+            ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 710],
         ];
 
         $pilihanBagian4Level3 = [
             // Pertanyaan 17
-            ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 311],
-            ['pilihan' => 'Eight', 'skor' => 20, 'benar' => true, 'soal_id' => 311],
-            ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 311],
-            ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 311],
+            ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 711],
+            ['pilihan' => 'Eight', 'skor' => 20, 'benar' => true, 'soal_id' => 711],
+            ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 711],
+            ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 711],
             // Pertanyaan 18
-            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 312],
-            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 312],
-            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 312],
-            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 312],
+            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 712],
+            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 712],
+            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 712],
+            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 712],
             // Pertanyaan 1
-            ['pilihan' => 'Cold', 'skor' => 20, 'benar' => true, 'soal_id' => 313],
-            ['pilihan' => 'Warm', 'skor' => 0, 'benar' => false, 'soal_id' => 313],
-            ['pilihan' => 'Cool', 'skor' => 0, 'benar' => false, 'soal_id' => 313],
-            ['pilihan' => 'Icy', 'skor' => 0, 'benar' => false, 'soal_id' => 313],
+            ['pilihan' => 'Cold', 'skor' => 20, 'benar' => true, 'soal_id' => 713],
+            ['pilihan' => 'Warm', 'skor' => 0, 'benar' => false, 'soal_id' => 713],
+            ['pilihan' => 'Cool', 'skor' => 0, 'benar' => false, 'soal_id' => 713],
+            ['pilihan' => 'Icy', 'skor' => 0, 'benar' => false, 'soal_id' => 713],
             // Pertanyaan 2
-            ['pilihan' => 'Large', 'skor' => 20, 'benar' => true, 'soal_id' => 314],
-            ['pilihan' => 'Little', 'skor' => 0, 'benar' => false, 'soal_id' => 314],
-            ['pilihan' => 'Tiny', 'skor' => 0, 'benar' => false, 'soal_id' => 314],
-            ['pilihan' => 'Miniature', 'skor' => 0, 'benar' => false, 'soal_id' => 314],
+            ['pilihan' => 'Large', 'skor' => 20, 'benar' => true, 'soal_id' => 714],
+            ['pilihan' => 'Little', 'skor' => 0, 'benar' => false, 'soal_id' => 714],
+            ['pilihan' => 'Tiny', 'skor' => 0, 'benar' => false, 'soal_id' => 714],
+            ['pilihan' => 'Miniature', 'skor' => 0, 'benar' => false, 'soal_id' => 714],
             // Pertanyaan 3
-            ['pilihan' => 'Bluee', 'skor' => 0, 'benar' => false, 'soal_id' => 315],
-            ['pilihan' => 'Bloue', 'skor' => 0, 'benar' => false, 'soal_id' => 315],
-            ['pilihan' => 'Blue', 'skor' => 20, 'benar' => true, 'soal_id' => 315],
-            ['pilihan' => 'Blhue', 'skor' => 0, 'benar' => false, 'soal_id' => 315],
+            ['pilihan' => 'Bluee', 'skor' => 0, 'benar' => false, 'soal_id' => 715],
+            ['pilihan' => 'Bloue', 'skor' => 0, 'benar' => false, 'soal_id' => 715],
+            ['pilihan' => 'Blue', 'skor' => 20, 'benar' => true, 'soal_id' => 715],
+            ['pilihan' => 'Blhue', 'skor' => 0, 'benar' => false, 'soal_id' => 715],
         ];
 
         $pilihanBagian4Level4 = [
             // Pertanyaan 4
-            ['pilihan' => 'Bank', 'skor' => 0, 'benar' => false, 'soal_id' => 316],
-            ['pilihan' => 'School', 'skor' => 0, 'benar' => false, 'soal_id' => 316],
-            ['pilihan' => 'Library', 'skor' => 20, 'benar' => true, 'soal_id' => 316],
-            ['pilihan' => 'Mall', 'skor' => 0, 'benar' => false, 'soal_id' => 316],
+            ['pilihan' => 'Bank', 'skor' => 0, 'benar' => false, 'soal_id' => 716],
+            ['pilihan' => 'School', 'skor' => 0, 'benar' => false, 'soal_id' => 716],
+            ['pilihan' => 'Library', 'skor' => 20, 'benar' => true, 'soal_id' => 716],
+            ['pilihan' => 'Mall', 'skor' => 0, 'benar' => false, 'soal_id' => 716],
             // Pertanyaan 5
-            ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 317],
-            ['pilihan' => 'Carrot', 'skor' => 20, 'benar' => true, 'soal_id' => 317],
-            ['pilihan' => 'Orange', 'skor' => 0, 'benar' => false, 'soal_id' => 317],
-            ['pilihan' => 'Banana', 'skor' => 0, 'benar' => false, 'soal_id' => 317],
+            ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 717],
+            ['pilihan' => 'Carrot', 'skor' => 20, 'benar' => true, 'soal_id' => 717],
+            ['pilihan' => 'Orange', 'skor' => 0, 'benar' => false, 'soal_id' => 717],
+            ['pilihan' => 'Banana', 'skor' => 0, 'benar' => false, 'soal_id' => 717],
             // Pertanyaan 6
-            ['pilihan' => 'Angry', 'skor' => 0, 'benar' => false, 'soal_id' => 318],
-            ['pilihan' => 'Happy', 'skor' => 20, 'benar' => true, 'soal_id' => 318],
-            ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 318],
-            ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 318],
+            ['pilihan' => 'Angry', 'skor' => 0, 'benar' => false, 'soal_id' => 718],
+            ['pilihan' => 'Happy', 'skor' => 20, 'benar' => true, 'soal_id' => 718],
+            ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 718],
+            ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 718],
             // Pertanyaan 7
-            ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 319],
-            ['pilihan' => 'Went', 'skor' => 20, 'benar' => true, 'soal_id' => 319],
-            ['pilihan' => 'Gone', 'skor' => 0, 'benar' => false, 'soal_id' => 319],
-            ['pilihan' => 'Going', 'skor' => 0, 'benar' => false, 'soal_id' => 319],
+            ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 719],
+            ['pilihan' => 'Went', 'skor' => 20, 'benar' => true, 'soal_id' => 719],
+            ['pilihan' => 'Gone', 'skor' => 0, 'benar' => false, 'soal_id' => 719],
+            ['pilihan' => 'Going', 'skor' => 0, 'benar' => false, 'soal_id' => 719],
             // Pertanyaan 8
-            ['pilihan' => 'Dog', 'skor' => 0, 'benar' => false, 'soal_id' => 320],
-            ['pilihan' => 'Cat', 'skor' => 0, 'benar' => false, 'soal_id' => 320],
-            ['pilihan' => 'Bird', 'skor' => 20, 'benar' => true, 'soal_id' => 320],
-            ['pilihan' => 'Fish', 'skor' => 0, 'benar' => false, 'soal_id' => 320],
+            ['pilihan' => 'Dog', 'skor' => 0, 'benar' => false, 'soal_id' => 720],
+            ['pilihan' => 'Cat', 'skor' => 0, 'benar' => false, 'soal_id' => 720],
+            ['pilihan' => 'Bird', 'skor' => 20, 'benar' => true, 'soal_id' => 720],
+            ['pilihan' => 'Fish', 'skor' => 0, 'benar' => false, 'soal_id' => 720],
         ];
 
         DB::table('pilihan')->insert(array_merge($pilihanBagian4Level1, $pilihanBagian4Level2, $pilihanBagian4Level3, $pilihanBagian4Level4));
@@ -3069,114 +2999,114 @@ class SoalPaketBSeeder extends Seeder
 
         $pilihanBagian1Level1 = [
             // Pertanyaan 9
-            ['pilihan' => '5', 'skor' => 0, 'benar' => false, 'soal_id' => 321],
-            ['pilihan' => '6', 'skor' => 0, 'benar' => false, 'soal_id' => 321],
-            ['pilihan' => '7', 'skor' => 20, 'benar' => true, 'soal_id' => 321],
-            ['pilihan' => '8', 'skor' => 0, 'benar' => false, 'soal_id' => 321],
+            ['pilihan' => '5', 'skor' => 0, 'benar' => false, 'soal_id' => 721],
+            ['pilihan' => '6', 'skor' => 0, 'benar' => false, 'soal_id' => 721],
+            ['pilihan' => '7', 'skor' => 20, 'benar' => true, 'soal_id' => 721],
+            ['pilihan' => '8', 'skor' => 0, 'benar' => false, 'soal_id' => 721],
             // Pertanyaan 10
-            ['pilihan' => 'Biology', 'skor' => 0, 'benar' => false, 'soal_id' => 322],
-            ['pilihan' => 'Chemistry', 'skor' => 0, 'benar' => false, 'soal_id' => 322],
-            ['pilihan' => 'Mathematics', 'skor' => 20, 'benar' => true, 'soal_id' => 322],
-            ['pilihan' => 'Geography', 'skor' => 0, 'benar' => false, 'soal_id' => 322],
+            ['pilihan' => 'Biology', 'skor' => 0, 'benar' => false, 'soal_id' => 722],
+            ['pilihan' => 'Chemistry', 'skor' => 0, 'benar' => false, 'soal_id' => 722],
+            ['pilihan' => 'Mathematics', 'skor' => 20, 'benar' => true, 'soal_id' => 722],
+            ['pilihan' => 'Geography', 'skor' => 0, 'benar' => false, 'soal_id' => 722],
             // Pertanyaan 11
-            ['pilihan' => 'Mango', 'skor' => 0, 'benar' => false, 'soal_id' => 323],
-            ['pilihan' => 'Tomato', 'skor' => 0, 'benar' => false, 'soal_id' => 323],
-            ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 323],
-            ['pilihan' => 'Potato', 'skor' => 20, 'benar' => true, 'soal_id' => 323],
+            ['pilihan' => 'Mango', 'skor' => 0, 'benar' => false, 'soal_id' => 723],
+            ['pilihan' => 'Tomato', 'skor' => 0, 'benar' => false, 'soal_id' => 723],
+            ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 723],
+            ['pilihan' => 'Potato', 'skor' => 20, 'benar' => true, 'soal_id' => 723],
             // Pertanyaan 12
-            ['pilihan' => 'Sailor', 'skor' => 0, 'benar' => false, 'soal_id' => 324],
-            ['pilihan' => 'Pilot', 'skor' => 20, 'benar' => true, 'soal_id' => 324],
-            ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 324],
-            ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 324],
+            ['pilihan' => 'Sailor', 'skor' => 0, 'benar' => false, 'soal_id' => 724],
+            ['pilihan' => 'Pilot', 'skor' => 20, 'benar' => true, 'soal_id' => 724],
+            ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 724],
+            ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 724],
             // Pertanyaan 13
-            ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 325],
-            ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 325],
-            ['pilihan' => 'Table', 'skor' => 0, 'benar' => false, 'soal_id' => 325],
-            ['pilihan' => 'Lamp', 'skor' => 0, 'benar' => false, 'soal_id' => 325],
+            ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 725],
+            ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 725],
+            ['pilihan' => 'Table', 'skor' => 0, 'benar' => false, 'soal_id' => 725],
+            ['pilihan' => 'Lamp', 'skor' => 0, 'benar' => false, 'soal_id' => 725],
         ];
 
         $pilihanBagian1Level2 = [
             // Pertanyaan 14
-            ['pilihan' => 'Night', 'skor' => 20, 'benar' => true, 'soal_id' => 326],
-            ['pilihan' => 'Sun', 'skor' => 0, 'benar' => false, 'soal_id' => 326],
-            ['pilihan' => 'Morning', 'skor' => 0, 'benar' => false, 'soal_id' => 326],
-            ['pilihan' => 'Noon', 'skor' => 0, 'benar' => false, 'soal_id' => 326],
+            ['pilihan' => 'Night', 'skor' => 20, 'benar' => true, 'soal_id' => 726],
+            ['pilihan' => 'Sun', 'skor' => 0, 'benar' => false, 'soal_id' => 726],
+            ['pilihan' => 'Morning', 'skor' => 0, 'benar' => false, 'soal_id' => 726],
+            ['pilihan' => 'Noon', 'skor' => 0, 'benar' => false, 'soal_id' => 726],
             // Pertanyaan 15
-            ['pilihan' => 'London', 'skor' => 0, 'benar' => false, 'soal_id' => 327],
-            ['pilihan' => 'Paris', 'skor' => 20, 'benar' => true, 'soal_id' => 327],
-            ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 327],
-            ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 327],
+            ['pilihan' => 'London', 'skor' => 0, 'benar' => false, 'soal_id' => 727],
+            ['pilihan' => 'Paris', 'skor' => 20, 'benar' => true, 'soal_id' => 727],
+            ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 727],
+            ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 727],
             // Pertanyaan 16
-            ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 328],
-            ['pilihan' => 'Square', 'skor' => 20, 'benar' => true, 'soal_id' => 328],
-            ['pilihan' => 'Green', 'skor' => 0, 'benar' => false, 'soal_id' => 328],
-            ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 328],
+            ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 728],
+            ['pilihan' => 'Square', 'skor' => 20, 'benar' => true, 'soal_id' => 728],
+            ['pilihan' => 'Green', 'skor' => 0, 'benar' => false, 'soal_id' => 728],
+            ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 728],
             // Pertanyaan 17
-            ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 329],
-            ['pilihan' => 'Eight', 'skor' => 20, 'benar' => true, 'soal_id' => 329],
-            ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 329],
-            ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 329],
+            ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 729],
+            ['pilihan' => 'Eight', 'skor' => 20, 'benar' => true, 'soal_id' => 729],
+            ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 729],
+            ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 729],
             // Pertanyaan 18
-            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 330],
-            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 330],
-            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 330],
-            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 330],
+            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 730],
+            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 730],
+            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 730],
+            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 730],
         ];
 
         $pilihanBagian1Level3 = [
             // Pertanyaan 13
-            ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 331],
-            ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 331],
-            ['pilihan' => 'Table', 'skor' => 0, 'benar' => false, 'soal_id' => 331],
-            ['pilihan' => 'Lamp', 'skor' => 0, 'benar' => false, 'soal_id' => 331],
+            ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 731],
+            ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 731],
+            ['pilihan' => 'Table', 'skor' => 0, 'benar' => false, 'soal_id' => 731],
+            ['pilihan' => 'Lamp', 'skor' => 0, 'benar' => false, 'soal_id' => 731],
             // Pertanyaan 14
-            ['pilihan' => 'Night', 'skor' => 20, 'benar' => true, 'soal_id' => 332],
-            ['pilihan' => 'Sun', 'skor' => 0, 'benar' => false, 'soal_id' => 332],
-            ['pilihan' => 'Morning', 'skor' => 0, 'benar' => false, 'soal_id' => 332],
-            ['pilihan' => 'Noon', 'skor' => 0, 'benar' => false, 'soal_id' => 332],
+            ['pilihan' => 'Night', 'skor' => 20, 'benar' => true, 'soal_id' => 732],
+            ['pilihan' => 'Sun', 'skor' => 0, 'benar' => false, 'soal_id' => 732],
+            ['pilihan' => 'Morning', 'skor' => 0, 'benar' => false, 'soal_id' => 732],
+            ['pilihan' => 'Noon', 'skor' => 0, 'benar' => false, 'soal_id' => 732],
             // Pertanyaan 15
-            ['pilihan' => 'London', 'skor' => 0, 'benar' => false, 'soal_id' => 333],
-            ['pilihan' => 'Paris', 'skor' => 20, 'benar' => true, 'soal_id' => 333],
-            ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 333],
-            ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 333],
+            ['pilihan' => 'London', 'skor' => 0, 'benar' => false, 'soal_id' => 733],
+            ['pilihan' => 'Paris', 'skor' => 20, 'benar' => true, 'soal_id' => 733],
+            ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 733],
+            ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 733],
             // Pertanyaan 16
-            ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 334],
-            ['pilihan' => 'Square', 'skor' => 20, 'benar' => true, 'soal_id' => 334],
-            ['pilihan' => 'Green', 'skor' => 0, 'benar' => false, 'soal_id' => 334],
-            ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 334],
+            ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 734],
+            ['pilihan' => 'Square', 'skor' => 20, 'benar' => true, 'soal_id' => 734],
+            ['pilihan' => 'Green', 'skor' => 0, 'benar' => false, 'soal_id' => 734],
+            ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 734],
             // Pertanyaan 17
-            ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 335],
-            ['pilihan' => 'Eight', 'skor' => 20, 'benar' => true, 'soal_id' => 335],
-            ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 335],
-            ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 335],
+            ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 735],
+            ['pilihan' => 'Eight', 'skor' => 20, 'benar' => true, 'soal_id' => 735],
+            ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 735],
+            ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 735],
         ];
 
         $pilihanBagian1Level4 = [
             // Pertanyaan 18
-            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 336],
-            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 336],
-            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 336],
-            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 336],
+            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 736],
+            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 736],
+            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 736],
+            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 736],
             // Pertanyaan 1
-            ['pilihan' => 'Cold', 'skor' => 20, 'benar' => true, 'soal_id' => 337],
-            ['pilihan' => 'Warm', 'skor' => 0, 'benar' => false, 'soal_id' => 337],
-            ['pilihan' => 'Cool', 'skor' => 0, 'benar' => false, 'soal_id' => 337],
-            ['pilihan' => 'Icy', 'skor' => 0, 'benar' => false, 'soal_id' => 337],
+            ['pilihan' => 'Cold', 'skor' => 20, 'benar' => true, 'soal_id' => 737],
+            ['pilihan' => 'Warm', 'skor' => 0, 'benar' => false, 'soal_id' => 737],
+            ['pilihan' => 'Cool', 'skor' => 0, 'benar' => false, 'soal_id' => 737],
+            ['pilihan' => 'Icy', 'skor' => 0, 'benar' => false, 'soal_id' => 737],
             // Pertanyaan 2
-            ['pilihan' => 'Large', 'skor' => 20, 'benar' => true, 'soal_id' => 338],
-            ['pilihan' => 'Little', 'skor' => 0, 'benar' => false, 'soal_id' => 338],
-            ['pilihan' => 'Tiny', 'skor' => 0, 'benar' => false, 'soal_id' => 338],
-            ['pilihan' => 'Miniature', 'skor' => 0, 'benar' => false, 'soal_id' => 338],
+            ['pilihan' => 'Large', 'skor' => 20, 'benar' => true, 'soal_id' => 738],
+            ['pilihan' => 'Little', 'skor' => 0, 'benar' => false, 'soal_id' => 738],
+            ['pilihan' => 'Tiny', 'skor' => 0, 'benar' => false, 'soal_id' => 738],
+            ['pilihan' => 'Miniature', 'skor' => 0, 'benar' => false, 'soal_id' => 738],
             // Pertanyaan 3
-            ['pilihan' => 'Bluee', 'skor' => 0, 'benar' => false, 'soal_id' => 339],
-            ['pilihan' => 'Bloue', 'skor' => 0, 'benar' => false, 'soal_id' => 339],
-            ['pilihan' => 'Blue', 'skor' => 20, 'benar' => true, 'soal_id' => 339],
-            ['pilihan' => 'Blhue', 'skor' => 0, 'benar' => false, 'soal_id' => 339],
+            ['pilihan' => 'Bluee', 'skor' => 0, 'benar' => false, 'soal_id' => 739],
+            ['pilihan' => 'Bloue', 'skor' => 0, 'benar' => false, 'soal_id' => 739],
+            ['pilihan' => 'Blue', 'skor' => 20, 'benar' => true, 'soal_id' => 739],
+            ['pilihan' => 'Blhue', 'skor' => 0, 'benar' => false, 'soal_id' => 739],
             // Pertanyaan 4
-            ['pilihan' => 'Bank', 'skor' => 0, 'benar' => false, 'soal_id' => 340],
-            ['pilihan' => 'School', 'skor' => 0, 'benar' => false, 'soal_id' => 340],
-            ['pilihan' => 'Library', 'skor' => 20, 'benar' => true, 'soal_id' => 340],
-            ['pilihan' => 'Mall', 'skor' => 0, 'benar' => false, 'soal_id' => 340],
+            ['pilihan' => 'Bank', 'skor' => 0, 'benar' => false, 'soal_id' => 740],
+            ['pilihan' => 'School', 'skor' => 0, 'benar' => false, 'soal_id' => 740],
+            ['pilihan' => 'Library', 'skor' => 20, 'benar' => true, 'soal_id' => 740],
+            ['pilihan' => 'Mall', 'skor' => 0, 'benar' => false, 'soal_id' => 740],
         ];
 
         DB::table('pilihan')->insert(array_merge($pilihanBagian1Level1, $pilihanBagian1Level2, $pilihanBagian1Level3, $pilihanBagian1Level4));
@@ -3249,15 +3179,15 @@ class SoalPaketBSeeder extends Seeder
 
         $pilihanBagian2Level1 = [
             // Pertanyaan 5
-            ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 341],
-            ['pilihan' => 'Carrot', 'skor' => 20, 'benar' => true, 'soal_id' => 341],
-            ['pilihan' => 'Orange', 'skor' => 0, 'benar' => false, 'soal_id' => 341],
-            ['pilihan' => 'Banana', 'skor' => 0, 'benar' => false, 'soal_id' => 341],
+            ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 741],
+            ['pilihan' => 'Carrot', 'skor' => 20, 'benar' => true, 'soal_id' => 741],
+            ['pilihan' => 'Orange', 'skor' => 0, 'benar' => false, 'soal_id' => 741],
+            ['pilihan' => 'Banana', 'skor' => 0, 'benar' => false, 'soal_id' => 741],
             // Pertanyaan 6
-            ['pilihan' => 'Angry', 'skor' => 0, 'benar' => false, 'soal_id' => 342],
-            ['pilihan' => 'Happy', 'skor' => 20, 'benar' => true, 'soal_id' => 342],
-            ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 342],
-            ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 342],
+            ['pilihan' => 'Angry', 'skor' => 0, 'benar' => false, 'soal_id' => 742],
+            ['pilihan' => 'Happy', 'skor' => 20, 'benar' => true, 'soal_id' => 742],
+            ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 742],
+            ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 742],
             // Pertanyaan 7
             ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 343],
             ['pilihan' => 'Went', 'skor' => 20, 'benar' => true, 'soal_id' => 343],
