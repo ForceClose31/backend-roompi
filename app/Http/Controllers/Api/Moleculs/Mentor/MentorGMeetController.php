@@ -9,11 +9,12 @@ use Illuminate\Http\Request;
 
 class MentorGMeetController extends Controller
 {
-    public function list(){
+    public function list()
+    {
         $user = auth()->user();
         $mentor = Mentor::where('user_id', $user->id)->first();
         $meet = Meet::where('mentor_id', $mentor->id)
-            ->orderBy('status')
+            ->orderByDesc("Status")
             ->get();
 
         return response()->json([
