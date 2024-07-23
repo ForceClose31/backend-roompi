@@ -19,9 +19,11 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
-        // $this->call(ParentAccountSeeder::class);
-        // $this->call(MentorAccountSeeder::class);
-        // $this->call(RemajaAccountSeeder::class);
-        $this->call(ExerciseSeeder::class);
+        $this->call(ParentAccountSeeder::class);
+        $this->call(MentorAccountSeeder::class);
+        $this->call(ActivitySeeder::class);
+        $this->call(PaketSeeder::class);
+        $this->call(SoalSeeder::class);
+        $this->call(RemajaAccountSeeder::class);
     }
 }

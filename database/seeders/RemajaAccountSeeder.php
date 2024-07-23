@@ -24,7 +24,7 @@ class RemajaAccountSeeder extends Seeder
 
         $user = User::create([
             'name' => 'Remaja User',
-            'email' => 'remaja@gmail.com',
+            'email' => 'remaja2@gmail.com',
             'password' => Hash::make('password'),
             'role' => 'Remaja',
         ]);

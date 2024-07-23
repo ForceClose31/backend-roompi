@@ -17,8 +17,6 @@ return new class extends Migration
             $table->string('gelar');
             $table->string('riwayat_pendidikan_terakhir');
             $table->integer('user_id');
-            $table->integer('activity_id');
-            $table->integer('paket_id');
             $table->timestamps();
         });
     }
