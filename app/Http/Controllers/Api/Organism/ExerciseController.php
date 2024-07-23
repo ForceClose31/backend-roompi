@@ -37,28 +37,25 @@ class ExerciseController extends Controller
         $activityId = $remaja->activity_id;
         $paketId = $remaja->paket_id;
 
+        $categoryIds = Category::pluck('id')->toArray();
+
         $reportExercises = ReportExercise::where('remaja_id', $remaja->id)
             ->where('activity_id', $activityId)
             ->where('paket_id', $paketId)
+            ->whereIn('category_id', $categoryIds)
             ->get();
 
-        $bagianIds = $reportExercises->pluck('bagian_id')->unique();
-        $subBagianIds = $reportExercises->pluck('sub_bagian_id')->unique();
-        $categoryIds = $reportExercises->pluck('category_id')->unique();
+        $uniqueReportExercises = $reportExercises->groupBy('category_id')->map(function ($group) {
+            return $group->first();
+        });
+
+        $bagianIds = $uniqueReportExercises->pluck('bagian_id')->unique();
+        $subBagianIds = $uniqueReportExercises->pluck('sub_bagian_id')->unique();
+        $categoryIds = $uniqueReportExercises->pluck('category_id')->unique();
 
         $bagians = Bagian::whereIn('id', $bagianIds)->get()->keyBy('id');
         $subBagians = SubBagian::whereIn('id', $subBagianIds)->get()->keyBy('id');
         $categories = Category::whereIn('id', $categoryIds)->get()->keyBy('id');
-
-        $soals = Soal::whereIn('sub_bagian_id', $subBagianIds)
-            ->where('paket_id', $paketId)
-            ->get();
-
-        $soalGroups = $soals->groupBy(function ($soal) {
-            return $soal->sub_bagian_id . '-' . $soal->category_id;
-        });
-
-        $pilihanSoals = Pilihan::whereIn('soal_id', $soals->pluck('id'))->get()->groupBy('soal_id');
 
         $exercise = [];
 
