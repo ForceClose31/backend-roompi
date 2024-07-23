@@ -23,9 +23,9 @@ class DatabaseSeeder extends Seeder
         $this->call(MentorAccountSeeder::class);
         $this->call(ActivitySeeder::class);
         $this->call(PaketSeeder::class);
-        $this->call(SoalSeeder::class);
         $this->call(SoalPaketASeeder::class);
         $this->call(SoalPaketBSeeder::class);
+        $this->call(SoalPaketCSeeder::class);
         $this->call(RemajaAccountSeeder::class);
     }
 }

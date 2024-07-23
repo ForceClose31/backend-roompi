@@ -13,7 +13,7 @@ class MentorGMeetController extends Controller
         $user = auth()->user();
         $mentor = Mentor::where('user_id', $user->id)->first();
         $meet = Meet::where('mentor_id', $mentor->id)
-            ->where('status', 'Belum dipublish')
+            ->orderBy('status')
             ->get();
 
         return response()->json([
