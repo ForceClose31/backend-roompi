@@ -101,77 +101,77 @@ class UserAuthController extends Controller
         ]);
     }
 
-    // public function register(Request $request)
-    // {
-    //     $request->validate([
-    //         'name' => 'required|string|max:255',
-    //         'email' => 'required|string|email|max:255|unique:users',
-    //         'password' => 'required|string|min:8|confirmed',
-    //         'role' => 'required|in:Remaja,Parent',
-    //         'activity_id' => 'required|exists:activity,id',
-    //         'paket_id' => 'nullable|exists:paket_kesetaraan,id',
-    //     ]);
+    public function register(Request $request)
+    {
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users',
+            'password' => 'required|string|min:8|confirmed',
+            'role' => 'required|in:Remaja,Parent',
+            'activity_id' => 'required|exists:activity,id',
+            'paket_id' => 'nullable|exists:paket_kesetaraan,id',
+        ]);
 
-    //     $user = User::create([
-    //         'name' => $request->name,
-    //         'email' => $request->email,
-    //         'password' => Hash::make($request->password),
-    //         'role' => $request->role,
-    //     ]);
+        $user = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+            'role' => $request->role,
+        ]);
 
-    //     if ($user->role === 'Remaja') {
-    //         $remaja = Remaja::create([
-    //             'user_id' => $user->id,
-    //             'username' => $request->username,
-    //             'exp' => 0,
-    //             'star' => 0,
-    //             'level' => 0,
-    //             'activity_id' => $request->activity_id,
-    //             'paket_id' => $request->paket_id,
-    //         ]);
-    //         $token = $user->createToken('mobile', ['role:Remaja'])->plainTextToken;
+        if ($user->role === 'Remaja') {
+            $remaja = Remaja::create([
+                'user_id' => $user->id,
+                'username' => $request->username,
+                'exp' => 0,
+                'star' => 0,
+                'level' => 0,
+                'activity_id' => $request->activity_id,
+                'paket_id' => $request->paket_id,
+            ]);
+            $token = $user->createToken('mobile', ['role:Remaja'])->plainTextToken;
 
-    //         $activity = Activity::find($request->activity_id);
-    //         $paket = Paket::find($request->paket_id);
-    //         if ($activity->activity === 'pkbm' && in_array($paket->paket, ['A', 'B', 'C'])) {
-    //             $bagian_ids = Bagian::all();
-    //             foreach ($bagian_ids as $bagian) {
-    //                 $sub_bagian_ids = SubBagian::where('bagian_id', $bagian->id)->get();
-    //                 foreach ($sub_bagian_ids as $sub_bagian) {
-    //                     ReportExercise::create([
-    //                         'remaja_id' => $remaja->id,
-    //                         'bagian_id' => $bagian->id,
-    //                         'sub_bagian_id' => $sub_bagian->id,
-    //                         'activity_id' => $activity->id,
-    //                         'paket_id' => $paket->id,
-    //                         'nilai' => 0,
-    //                         'completed' => 0,
-    //                     ]);
-    //                 }
-    //             }
-    //         }
+            $activity = Activity::find($request->activity_id);
+            $paket = Paket::find($request->paket_id);
+            if ($activity->activity === 'pkbm' && in_array($paket->paket, ['A', 'B', 'C'])) {
+                $bagian_ids = Bagian::all();
+                foreach ($bagian_ids as $bagian) {
+                    $sub_bagian_ids = SubBagian::where('bagian_id', $bagian->id)->get();
+                    foreach ($sub_bagian_ids as $sub_bagian) {
+                        ReportExercise::create([
+                            'remaja_id' => $remaja->id,
+                            'bagian_id' => $bagian->id,
+                            'sub_bagian_id' => $sub_bagian->id,
+                            'activity_id' => $activity->id,
+                            'paket_id' => $paket->id,
+                            'nilai' => 0,
+                            'completed' => 0,
+                        ]);
+                    }
+                }
+            }
 
-    //         return response()->json([
-    //             'status' => 'success',
-    //             'message' => 'Berhasil registrasi',
-    //             'token' => $token,
-    //             'data' => $user,
-    //         ]);
-    //     } elseif ($user->role === 'Parent') {
-    //         Parents::create([
-    //             'user_id' => $user->id,
-    //             'nama_lengkap' => $request->name,
-    //             'kode' => $request->kode,
-    //         ]);
-    //         $token = $user->createToken('mobile', ['role:Parent'])->plainTextToken;
-    //         return response()->json([
-    //             'status' => 'success',
-    //             'message' => 'Berhasil registrasi',
-    //             'token' => $token,
-    //             'data' => $user,
-    //         ]);
-    //     }
-    // }
+            return response()->json([
+                'status' => 'success',
+                'message' => 'Berhasil registrasi',
+                'token' => $token,
+                'data' => $user,
+            ]);
+        } elseif ($user->role === 'Parent') {
+            Parents::create([
+                'user_id' => $user->id,
+                'nama_lengkap' => $request->name,
+                'kode' => $request->kode,
+            ]);
+            $token = $user->createToken('mobile', ['role:Parent'])->plainTextToken;
+            return response()->json([
+                'status' => 'success',
+                'message' => 'Berhasil registrasi',
+                'token' => $token,
+                'data' => $user,
+            ]);
+        }
+    }
     
     public function logout(Request $request)
     {

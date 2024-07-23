@@ -26,17 +26,15 @@ class RegisterRemajaController extends Controller
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:8|same:konfirmasi_password',
             'konfirmasi_password' => 'required|string|min:8|same:password',
-            'role' => 'required|in:Remaja,Parent,Mentor',
             'activity_id' => 'required|exists:activity,id',
             'paket_id' => 'nullable|exists:paket_kesetaraan,id',
         ]);
-
 
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            'role' => $request->role,
+            'role' => 'Remaja',
         ]);
 
         if ($user) {

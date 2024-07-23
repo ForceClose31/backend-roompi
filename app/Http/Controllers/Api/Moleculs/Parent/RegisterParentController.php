@@ -17,18 +17,14 @@ class RegisterParentController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:8|same:konfirmasi_password',
-            'role' => 'required|in:Remaja,Parent,Mentor',
             'konfirmasi_password' => 'required|string|min:8|same:password',
         ]);
-
-        \Log::info('Role value:', ['role' => $request->role]);
-
 
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            'role' => $request->role,
+            'role' => 'Parent',
         ]);
 
         if ($user) {
