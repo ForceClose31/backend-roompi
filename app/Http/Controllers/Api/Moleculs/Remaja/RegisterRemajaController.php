@@ -21,19 +21,16 @@ class RegisterRemajaController extends Controller
 {
     public function register(Request $request)
     {
-        $validator = Validator::make($request->all(), [
+        $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:8|same:konfirmasi_password',
             'konfirmasi_password' => 'required|string|min:8|same:password',
-            'role' => 'required|in:Remaja,Parent',
+            'role' => 'required|in:Remaja,Parent,Mentor',
             'activity_id' => 'required|exists:activity,id',
             'paket_id' => 'nullable|exists:paket_kesetaraan,id',
         ]);
 
-        if ($validator->fails()) {
-            return response()->json([$validator->errors(), 422]);
-        }
 
         $user = User::create([
             'name' => $request->name,

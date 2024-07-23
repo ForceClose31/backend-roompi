@@ -7,6 +7,7 @@ use App\Models\Parents;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 
 class RegisterParentController extends Controller
 {
@@ -15,17 +16,22 @@ class RegisterParentController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:8|confirmed',
+            'password' => 'required|string|min:8|same:konfirmasi_password',
+            'role' => 'required|in:Remaja,Parent,Mentor',
+            'konfirmasi_password' => 'required|string|min:8|same:password',
         ]);
+
+        \Log::info('Role value:', ['role' => $request->role]);
+
 
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
-            'role' => 'Parent',
+            'role' => $request->role,
         ]);
 
-        if ($user){
+        if ($user) {
             $kode = $this->generateKodeOrangTua();
             $parent = Parents::create([
                 'user_id' => $user->id,
@@ -34,7 +40,7 @@ class RegisterParentController extends Controller
             ]);
 
             $token = $user->createToken('mobile', ['role:Parent'])->plainTextToken;
-            if ($parent){
+            if ($parent) {
                 return response()->json([
                     'status' => 'success',
                     'message' => 'Berhasil registrasi',
@@ -43,9 +49,12 @@ class RegisterParentController extends Controller
                 ]);
             }
         }
+
+        return response()->json(['status' => 'error', 'message' => 'Gagal registrasi'], 500);
     }
 
-    private function generateKodeOrangTua() {
+    private function generateKodeOrangTua()
+    {
         $now = new \DateTime();
         return 'OT' . $now->format('YmdHis');
     }
