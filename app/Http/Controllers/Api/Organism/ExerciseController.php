@@ -37,48 +37,58 @@ class ExerciseController extends Controller
         $activityId = $remaja->activity_id;
         $paketId = $remaja->paket_id;
 
-        $reportExercises = ReportExercise::where('remaja_id', $remaja->id)->get();
+        $reportExercises = ReportExercise::where('remaja_id', $remaja->id)
+            ->where('activity_id', $activityId)
+            ->where('paket_id', $paketId)
+            ->get();
+
+        $bagianIds = $reportExercises->pluck('bagian_id')->unique();
+        $subBagianIds = $reportExercises->pluck('sub_bagian_id')->unique();
+        $categoryIds = $reportExercises->pluck('category_id')->unique();
+
+        $bagians = Bagian::whereIn('id', $bagianIds)->get()->keyBy('id');
+        $subBagians = SubBagian::whereIn('id', $subBagianIds)->get()->keyBy('id');
+        $categories = Category::whereIn('id', $categoryIds)->get()->keyBy('id');
+
+        $soals = Soal::whereIn('sub_bagian_id', $subBagianIds)
+            ->where('paket_id', $paketId)
+            ->get();
+
+        $soalGroups = $soals->groupBy(function ($soal) {
+            return $soal->sub_bagian_id . '-' . $soal->category_id;
+        });
+
+        $pilihanSoals = Pilihan::whereIn('soal_id', $soals->pluck('id'))->get()->groupBy('soal_id');
 
         $exercise = [];
 
-        foreach ($reportExercises->groupBy('bagian_id') as $bagianId => $groupedExercises) {
-            $bagian = Bagian::find($bagianId);
-            $subBagianExercise = [];
+        foreach ($reportExercises as $reportExercise) {
+            $bagian = $bagians[$reportExercise->bagian_id] ?? null;
+            $subBagian = $subBagians[$reportExercise->sub_bagian_id] ?? null;
+            $category = $categories[$reportExercise->category_id] ?? null;
 
-            foreach ($groupedExercises as $reportExercise) {
-                $subBagian = SubBagian::find($reportExercise->sub_bagian_id);
-                $soals = Soal::where('sub_bagian_id', $subBagian->id)
-                    ->where('paket_id', $paketId)
-                    ->where('category_id', $reportExercise->category_id) 
-                    ->inRandomOrder()
-                    ->take(5)
-                    ->get();
+            if ($bagian && $subBagian && $category) {
+                $soalKey = $subBagian->id . '-' . $category->id;
+                $soalsForSubBagian = $soalGroups[$soalKey] ?? collect();
 
-                if ($activityId == $reportExercise->activity_id) {
-                    $soalExercise = [];
-                    foreach ($soals as $soal) {
-                        $pilihan = Pilihan::where('soal_id', $soal->id)->get();
-                        $soalData = [
-                            'soal' => $soal,
-                            'pilihan' => $pilihan
-                        ];
-                        array_push($soalExercise, $soalData);
-                    }
+                $soalExercise = [];
 
-                    $subBagianData = [
-                        'sub_bagian' => $subBagian,
-                        'soal' => $soalExercise
+                foreach ($soalsForSubBagian->take(5) as $soal) {
+                    $pilihan = $pilihanSoals[$soal->id] ?? [];
+                    $soalData = [
+                        'soal' => $soal,
+                        'pilihan' => $pilihan
                     ];
-                    array_push($subBagianExercise, $subBagianData);
+                    $soalExercise[] = $soalData;
                 }
+
+                $exercise[] = [
+                    'bagian' => $bagian,
+                    'sub_bagian' => $subBagian,
+                    'category' => $category,
+                    'soal' => $soalExercise
+                ];
             }
-
-            $exerciseData = [
-                'bagian' => $bagian,
-                'sub_bagian' => $subBagianExercise
-            ];
-
-            array_push($exercise, $exerciseData);
         }
 
         return response()->json(['exercise' => $exercise]);
@@ -174,7 +184,7 @@ class ExerciseController extends Controller
         $reportExercises = ReportExercise::where('remaja_id', $remaja->id)
             ->orderBy('bagian_id')
             ->orderBy('sub_bagian_id')
-            ->orderBy('paket_id') 
+            ->orderBy('paket_id')
             ->orderBy('activity_id')
             ->orderBy('category_id')
             ->get();
