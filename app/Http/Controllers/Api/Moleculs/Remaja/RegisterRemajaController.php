@@ -21,7 +21,7 @@ class RegisterRemajaController extends Controller
 {
     public function register(Request $request)
     {
-        $request->validate([
+        $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:8|same:konfirmasi_password',
@@ -29,6 +29,10 @@ class RegisterRemajaController extends Controller
             'activity_id' => 'required|exists:activity,id',
             'paket_id' => 'nullable|exists:paket_kesetaraan,id',
         ]);
+
+        if ($validator->fails()) {
+            return response()->json(['errors' => $validator->errors()], 422);
+        }
 
         $user = User::create([
             'name' => $request->name,
@@ -80,7 +84,8 @@ class RegisterRemajaController extends Controller
                 'message' => 'Berhasil registrasi',
                 'token' => $token,
                 'data' => $user,
-            ]);
+            ], 200);
         }
+        return response()->json(['status' => 'error', 'message' => 'Gagal registrasi'], 500);
     }
 }

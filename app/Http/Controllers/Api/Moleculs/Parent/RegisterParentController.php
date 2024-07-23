@@ -13,12 +13,16 @@ class RegisterParentController extends Controller
 {
     public function register(Request $request)
     {
-        $request->validate([
+        $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:8|same:konfirmasi_password',
             'konfirmasi_password' => 'required|string|min:8|same:password',
         ]);
+
+        if ($validator->fails()) {
+            return response()->json(['errors' => $validator->errors()], 422);
+        }
 
         $user = User::create([
             'name' => $request->name,
@@ -45,7 +49,6 @@ class RegisterParentController extends Controller
                 ]);
             }
         }
-
         return response()->json(['status' => 'error', 'message' => 'Gagal registrasi'], 500);
     }
 
