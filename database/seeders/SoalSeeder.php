@@ -87,6 +87,7 @@ class SoalSeeder extends Seeder
         $soalBagian1Level1 = [
             // Pertanyaan 1
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 1, 'category_id' => 1, 'paket_id' => 3],
+
             // Pertanyaan 2
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 1, 'category_id' => 1, 'paket_id' => 3],
 
@@ -98,53 +99,56 @@ class SoalSeeder extends Seeder
 
             // Pertanyaan 5
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 1, 'category_id' => 1, 'paket_id' => 3],
-
-            // Pertanyaan 6
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 1, 'category_id' => 1, 'paket_id' => 3],
         ];
 
         $soalBagian1Level2 = [
-            // Pertanyaan 1
+            // Pertanyaan 6
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 2, 'category_id' => 1, 'paket_id' => 3],
 
+            // Pertanyaan 7
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 2, 'category_id' => 1, 'paket_id' => 3],
 
+            // Pertanyaan 8
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 2, 'category_id' => 1, 'paket_id' => 3],
 
+            // Pertanyaan 9
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 2, 'category_id' => 1, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 2, 'category_id' => 1, 'paket_id' => 3],
-
+            // Pertanyaan 10
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 2, 'category_id' => 1, 'paket_id' => 3],
         ];
 
         $soalBagian1Level3 = [
-            // Pertanyaan 1
+            // Pertanyaan 11
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 3, 'category_id' => 1, 'paket_id' => 3],
 
+            // Pertanyaan 12
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 3, 'category_id' => 1, 'paket_id' => 3],
 
+            // Pertanyaan 13
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 3, 'category_id' => 1, 'paket_id' => 3],
 
+            // Pertanyaan 14
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 3, 'category_id' => 1, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 3, 'category_id' => 1, 'paket_id' => 3],
-
+            // Pertanyaan 15
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 3, 'category_id' => 1, 'paket_id' => 3],
         ];
 
         $soalBagian1Level4 = [
-            // Pertanyaan 1
+            // Pertanyaan 16
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 4, 'category_id' => 1, 'paket_id' => 3],
 
+            // Pertanyaan 17
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 4, 'category_id' => 1, 'paket_id' => 3],
 
+            // Pertanyaan 18
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 4, 'category_id' => 1, 'paket_id' => 3],
 
+            // Pertanyaan 19
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 4, 'category_id' => 1, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 4, 'category_id' => 1, 'paket_id' => 3],
-
+            // Pertanyaan 20
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 4, 'category_id' => 1, 'paket_id' => 3],
         ];
 
@@ -176,14 +180,14 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Carrot', 'skor' => 20, 'benar' => true, 'soal_id' => 5],
             ['pilihan' => 'Orange', 'skor' => 0, 'benar' => false, 'soal_id' => 5],
             ['pilihan' => 'Banana', 'skor' => 0, 'benar' => false, 'soal_id' => 5],
+        ];
+        
+        $pilihanBagian1Level2 = [
             // Pertanyaan 6
             ['pilihan' => 'Angry', 'skor' => 0, 'benar' => false, 'soal_id' => 6],
             ['pilihan' => 'Happy', 'skor' => 20, 'benar' => true, 'soal_id' => 6],
             ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 6],
             ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 6],
-        ];
-        
-        $pilihanBagian1Level2 = [
             // Pertanyaan 7
             ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 7],
             ['pilihan' => 'Went', 'skor' => 20, 'benar' => true, 'soal_id' => 7],
@@ -204,6 +208,9 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Chemistry', 'skor' => 0, 'benar' => false, 'soal_id' => 10],
             ['pilihan' => 'Mathematics', 'skor' => 20, 'benar' => true, 'soal_id' => 10],
             ['pilihan' => 'Geography', 'skor' => 0, 'benar' => false, 'soal_id' => 10],
+        ];
+        
+        $pilihanBagian1Level3 = [
             // Pertanyaan 11
             ['pilihan' => 'Mango', 'skor' => 0, 'benar' => false, 'soal_id' => 11],
             ['pilihan' => 'Tomato', 'skor' => 0, 'benar' => false, 'soal_id' => 11],
@@ -214,9 +221,6 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Pilot', 'skor' => 20, 'benar' => true, 'soal_id' => 12],
             ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 12],
             ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 12],
-        ];
-        
-        $pilihanBagian1Level3 = [
             // Pertanyaan 13
             ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 13],
             ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 13],
@@ -232,6 +236,9 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Paris', 'skor' => 20, 'benar' => true, 'soal_id' => 15],
             ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 15],
             ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 15],
+        ];
+        
+        $pilihanBagian1Level4 = [
             // Pertanyaan 16
             ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 16],
             ['pilihan' => 'Square', 'skor' => 20, 'benar' => true, 'soal_id' => 16],
@@ -247,9 +254,6 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 18],
             ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 18],
             ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 18],
-        ];
-
-        $pilihanBagian1Level4 = [
             // Pertanyaan 13
             ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 19],
             ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 19],
@@ -260,6 +264,82 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Sun', 'skor' => 0, 'benar' => false, 'soal_id' => 20],
             ['pilihan' => 'Morning', 'skor' => 0, 'benar' => false, 'soal_id' => 20],
             ['pilihan' => 'Noon', 'skor' => 0, 'benar' => false, 'soal_id' => 20],
+        ];
+        
+        DB::table('pilihan')->insert(array_merge($pilihanBagian1Level1, $pilihanBagian1Level2, $pilihanBagian1Level3, $pilihanBagian1Level4));
+        
+        $soalBagian2Level1 = [
+
+            // Pertanyaan 21
+            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 1, 'paket_id' => 3],
+
+            // Pertanyaan 22
+            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 1, 'paket_id' => 3],
+
+            // Pertanyaan 23
+            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 1, 'paket_id' => 3],
+
+            // Pertanyaan 24
+            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 1, 'paket_id' => 3],
+
+            // Pertanyaan 25
+            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 1, 'paket_id' => 3],
+        ];
+
+        $soalBagian2Level2 = [
+            // Pertanyaan 26
+            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 1, 'paket_id' => 3],
+
+            // Pertanyaan 27
+            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 1, 'paket_id' => 3],
+
+            // Pertanyaan 28
+            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 1, 'paket_id' => 3],
+
+            // Pertanyaan 29
+            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 1, 'paket_id' => 3],
+
+            // Pertanyaan 30
+            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 1, 'paket_id' => 3],
+        ];
+
+        $soalBagian2Level3 = [
+            // Pertanyaan 31
+            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 1, 'paket_id' => 3],
+
+            // Pertanyaan 32
+            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 1, 'paket_id' => 3],
+
+            // Pertanyaan 33
+            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 1, 'paket_id' => 3],
+
+            // Pertanyaan 34
+            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 1, 'paket_id' => 3],
+
+            // Pertanyaan 35
+            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 1, 'paket_id' => 3],
+        ];
+
+        $soalBagian2Level4 = [
+            // Pertanyaan 36
+            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 1, 'paket_id' => 3],
+
+            // Pertanyaan 37
+            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 1, 'paket_id' => 3],
+
+            // Pertanyaan 38
+            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 1, 'paket_id' => 3],
+
+            // Pertanyaan 39
+            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 1, 'paket_id' => 3],
+
+            // Pertanyaan 40
+            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 1, 'paket_id' => 3],
+        ];
+
+        DB::table('soal')->insert(array_merge($soalBagian2Level1, $soalBagian2Level2, $soalBagian2Level3, $soalBagian2Level4));
+
+        $pilihanBagian2Level1 = [
             // Pertanyaan 15
             ['pilihan' => 'London', 'skor' => 0, 'benar' => false, 'soal_id' => 21],
             ['pilihan' => 'Paris', 'skor' => 20, 'benar' => true, 'soal_id' => 21],
@@ -280,82 +360,14 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 24],
             ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 24],
             ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 24],
-        ];
-
-        DB::table('pilihan')->insert(array_merge($pilihanBagian1Level1, $pilihanBagian1Level2, $pilihanBagian1Level3, $pilihanBagian1Level4));
-        
-        $soalBagian2Level1 = [
-            // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 1, 'paket_id' => 3],
-            // Pertanyaan 2
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 1, 'paket_id' => 3],
-
-            // Pertanyaan 3
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 1, 'paket_id' => 3],
-
-            // Pertanyaan 4
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 1, 'paket_id' => 3],
-
-            // Pertanyaan 5
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 1, 'paket_id' => 3],
-
-            // Pertanyaan 6
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 1, 'paket_id' => 3],
-        ];
-
-        $soalBagian2Level2 = [
-            // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 1, 'paket_id' => 3],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 1, 'paket_id' => 3],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 1, 'paket_id' => 3],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 1, 'paket_id' => 3],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 1, 'paket_id' => 3],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 1, 'paket_id' => 3],
-        ];
-
-        $soalBagian2Level3 = [
-            // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 1, 'paket_id' => 3],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 1, 'paket_id' => 3],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 1, 'paket_id' => 3],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 1, 'paket_id' => 3],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 1, 'paket_id' => 3],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 1, 'paket_id' => 3],
-        ];
-
-        $soalBagian2Level4 = [
-            // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 1, 'paket_id' => 3],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 1, 'paket_id' => 3],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 1, 'paket_id' => 3],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 1, 'paket_id' => 3],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 1, 'paket_id' => 3],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 1, 'paket_id' => 3],
-        ];
-
-        DB::table('soal')->insert(array_merge($soalBagian2Level1, $soalBagian2Level2, $soalBagian2Level3, $soalBagian2Level4));
-
-        $pilihanBagian2Level1 = [
             // Pertanyaan 1
             ['pilihan' => 'Cold', 'skor' => 20, 'benar' => true, 'soal_id' => 25],
             ['pilihan' => 'Warm', 'skor' => 0, 'benar' => false, 'soal_id' => 25],
             ['pilihan' => 'Cool', 'skor' => 0, 'benar' => false, 'soal_id' => 25],
             ['pilihan' => 'Icy', 'skor' => 0, 'benar' => false, 'soal_id' => 25],
+        ];
+        
+        $pilihanBagian2Level2 = [
             // Pertanyaan 2
             ['pilihan' => 'Large', 'skor' => 20, 'benar' => true, 'soal_id' => 26],
             ['pilihan' => 'Little', 'skor' => 0, 'benar' => false, 'soal_id' => 26],
@@ -383,7 +395,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 30],
         ];
         
-        $pilihanBagian2Level2 = [
+        $pilihanBagian2Level3 = [
             // Pertanyaan 7
             ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 31],
             ['pilihan' => 'Went', 'skor' => 20, 'benar' => true, 'soal_id' => 31],
@@ -409,14 +421,14 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Tomato', 'skor' => 0, 'benar' => false, 'soal_id' => 35],
             ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 35],
             ['pilihan' => 'Potato', 'skor' => 20, 'benar' => true, 'soal_id' => 35],
+        ];
+        
+        $pilihanBagian2Level4 = [
             // Pertanyaan 12
             ['pilihan' => 'Sailor', 'skor' => 0, 'benar' => false, 'soal_id' => 36],
             ['pilihan' => 'Pilot', 'skor' => 20, 'benar' => true, 'soal_id' => 36],
             ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 36],
             ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 36],
-        ];
-        
-        $pilihanBagian2Level3 = [
             // Pertanyaan 13
             ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 37],
             ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 37],
@@ -437,117 +449,118 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Square', 'skor' => 20, 'benar' => true, 'soal_id' => 40],
             ['pilihan' => 'Green', 'skor' => 0, 'benar' => false, 'soal_id' => 40],
             ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 40],
-            // Pertanyaan 17
-            ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 41],
-            ['pilihan' => 'Eight', 'skor' => 20, 'benar' => true, 'soal_id' => 41],
-            ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 41],
-            ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 41],
-            // Pertanyaan 18
-            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 42],
-            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 42],
-            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 42],
-            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 42],
-        ];
-
-        $pilihanBagian2Level4 = [
-            // Pertanyaan 13
-            ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 43],
-            ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 43],
-            ['pilihan' => 'Table', 'skor' => 0, 'benar' => false, 'soal_id' => 43],
-            ['pilihan' => 'Lamp', 'skor' => 0, 'benar' => false, 'soal_id' => 43],
-            // Pertanyaan 14
-            ['pilihan' => 'Night', 'skor' => 20, 'benar' => true, 'soal_id' => 44],
-            ['pilihan' => 'Sun', 'skor' => 0, 'benar' => false, 'soal_id' => 44],
-            ['pilihan' => 'Morning', 'skor' => 0, 'benar' => false, 'soal_id' => 44],
-            ['pilihan' => 'Noon', 'skor' => 0, 'benar' => false, 'soal_id' => 44],
-            // Pertanyaan 15
-            ['pilihan' => 'London', 'skor' => 0, 'benar' => false, 'soal_id' => 45],
-            ['pilihan' => 'Paris', 'skor' => 20, 'benar' => true, 'soal_id' => 45],
-            ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 45],
-            ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 45],
-            // Pertanyaan 16
-            ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 46],
-            ['pilihan' => 'Square', 'skor' => 20, 'benar' => true, 'soal_id' => 46],
-            ['pilihan' => 'Green', 'skor' => 0, 'benar' => false, 'soal_id' => 46],
-            ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 46],
-            // Pertanyaan 17
-            ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 47],
-            ['pilihan' => 'Eight', 'skor' => 20, 'benar' => true, 'soal_id' => 47],
-            ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 47],
-            ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 47],
-            // Pertanyaan 18
-            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 48],
-            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 48],
-            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 48],
-            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 48],
+            // // Pertanyaan 17
+            // ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 41],
+            // ['pilihan' => 'Eight', 'skor' => 20, 'benar' => true, 'soal_id' => 41],
+            // ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 41],
+            // ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 41],
+            // // Pertanyaan 18
+            // ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 42],
+            // ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 42],
+            // ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 42],
+            // ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 42],
+            // // Pertanyaan 13
+            // ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 43],
+            // ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 43],
+            // ['pilihan' => 'Table', 'skor' => 0, 'benar' => false, 'soal_id' => 43],
+            // ['pilihan' => 'Lamp', 'skor' => 0, 'benar' => false, 'soal_id' => 43],
+            // // Pertanyaan 14
+            // ['pilihan' => 'Night', 'skor' => 20, 'benar' => true, 'soal_id' => 44],
+            // ['pilihan' => 'Sun', 'skor' => 0, 'benar' => false, 'soal_id' => 44],
+            // ['pilihan' => 'Morning', 'skor' => 0, 'benar' => false, 'soal_id' => 44],
+            // ['pilihan' => 'Noon', 'skor' => 0, 'benar' => false, 'soal_id' => 44],
+            // // Pertanyaan 15
+            // ['pilihan' => 'London', 'skor' => 0, 'benar' => false, 'soal_id' => 45],
+            // ['pilihan' => 'Paris', 'skor' => 20, 'benar' => true, 'soal_id' => 45],
+            // ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 45],
+            // ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 45],
+            // // Pertanyaan 16
+            // ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 46],
+            // ['pilihan' => 'Square', 'skor' => 20, 'benar' => true, 'soal_id' => 46],
+            // ['pilihan' => 'Green', 'skor' => 0, 'benar' => false, 'soal_id' => 46],
+            // ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 46],
+            // // Pertanyaan 17
+            // ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 47],
+            // ['pilihan' => 'Eight', 'skor' => 20, 'benar' => true, 'soal_id' => 47],
+            // ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 47],
+            // ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 47],
+            // // Pertanyaan 18
+            // ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 48],
+            // ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 48],
+            // ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 48],
+            // ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 48],
         ];
 
 
 
         DB::table('pilihan')->insert(array_merge($pilihanBagian2Level1, $pilihanBagian2Level2, $pilihanBagian2Level3, $pilihanBagian2Level4));
-        
-        
+
+
         $soalBagian3Level1 = [
-            // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 9, 'category_id' => 1, 'paket_id' => 3],
-            // Pertanyaan 2
+            // Pertanyaan 41
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 9, 'category_id' => 1, 'paket_id' => 3],
 
-            // Pertanyaan 3
+            // Pertanyaan 42
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 9, 'category_id' => 1, 'paket_id' => 3],
 
-            // Pertanyaan 4
+            // Pertanyaan 43
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 9, 'category_id' => 1, 'paket_id' => 3],
 
-            // Pertanyaan 5
+            // Pertanyaan 44
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 9, 'category_id' => 1, 'paket_id' => 3],
 
-            // Pertanyaan 6
+            // Pertanyaan 45
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 9, 'category_id' => 1, 'paket_id' => 3],
         ];
 
         $soalBagian3Level2 = [
-            // Pertanyaan 1
+            // Pertanyaan 46
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 10, 'category_id' => 1, 'paket_id' => 3],
 
+            // Pertanyaan 47
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 10, 'category_id' => 1, 'paket_id' => 3],
 
+            // Pertanyaan 48
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 10, 'category_id' => 1, 'paket_id' => 3],
 
+            // Pertanyaan 49
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 10, 'category_id' => 1, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 10, 'category_id' => 1, 'paket_id' => 3],
-
+            // Pertanyaan 50
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 10, 'category_id' => 1, 'paket_id' => 3],
         ];
 
         $soalBagian3Level3 = [
-            // Pertanyaan 1
+            // Pertanyaan 51
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 11, 'category_id' => 1, 'paket_id' => 3],
 
+            // Pertanyaan 52
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 11, 'category_id' => 1, 'paket_id' => 3],
 
+            // Pertanyaan 53
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 11, 'category_id' => 1, 'paket_id' => 3],
 
+            // Pertanyaan 54
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 11, 'category_id' => 1, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 11, 'category_id' => 1, 'paket_id' => 3],
-
+            // Pertanyaan 55
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 11, 'category_id' => 1, 'paket_id' => 3],
         ];
 
         $soalBagian3Level4 = [
-            // Pertanyaan 1
+            // Pertanyaan 56
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 12, 'category_id' => 1, 'paket_id' => 3],
 
+            // Pertanyaan 57
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 12, 'category_id' => 1, 'paket_id' => 3],
 
+            // Pertanyaan 58
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 12, 'category_id' => 1, 'paket_id' => 3],
 
+            // Pertanyaan 59
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 12, 'category_id' => 1, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 12, 'category_id' => 1, 'paket_id' => 3],
-
+            // Pertanyaan 60
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 12, 'category_id' => 1, 'paket_id' => 3],
         ];
 
@@ -585,7 +598,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 54],
             ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 54],
         ];
-        
+
         $pilihanBagian3Level2 = [
             // Pertanyaan 7
             ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 55],
@@ -618,7 +631,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 60],
             ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 60],
         ];
-        
+
         $pilihanBagian3Level3 = [
             // Pertanyaan 13
             ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 61],
@@ -686,69 +699,73 @@ class SoalSeeder extends Seeder
         ];
 
         DB::table('pilihan')->insert(array_merge($pilihanBagian3Level1, $pilihanBagian3Level2, $pilihanBagian3Level3, $pilihanBagian3Level4));
-        
-        
+
+
         $soalBagian4Level1 = [
-            // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 13, 'category_id' => 1, 'paket_id' => 3],
-            // Pertanyaan 2
+            // Pertanyaan 61
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 13, 'category_id' => 1, 'paket_id' => 3],
 
-            // Pertanyaan 3
+            // Pertanyaan 62
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 13, 'category_id' => 1, 'paket_id' => 3],
 
-            // Pertanyaan 4
+            // Pertanyaan 63
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 13, 'category_id' => 1, 'paket_id' => 3],
 
-            // Pertanyaan 5
+            // Pertanyaan 64
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 13, 'category_id' => 1, 'paket_id' => 3],
 
-            // Pertanyaan 6
+            // Pertanyaan 65
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 13, 'category_id' => 1, 'paket_id' => 3],
         ];
 
         $soalBagian4Level2 = [
-            // Pertanyaan 1
+            // Pertanyaan 66
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 14, 'category_id' => 1, 'paket_id' => 3],
 
+            // Pertanyaan 67
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 14, 'category_id' => 1, 'paket_id' => 3],
 
+            // Pertanyaan 68
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 14, 'category_id' => 1, 'paket_id' => 3],
 
+            // Pertanyaan 69
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 14, 'category_id' => 1, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 14, 'category_id' => 1, 'paket_id' => 3],
-
+            // Pertanyaan 70
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 14, 'category_id' => 1, 'paket_id' => 3],
         ];
 
         $soalBagian4Level3 = [
-            // Pertanyaan 1
+            // Pertanyaan 71
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 15, 'category_id' => 1, 'paket_id' => 3],
-
+            
+            // Pertanyaan 72
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 15, 'category_id' => 1, 'paket_id' => 3],
-
+            
+            // Pertanyaan 73
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 15, 'category_id' => 1, 'paket_id' => 3],
-
+            
+            // Pertanyaan 74
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 15, 'category_id' => 1, 'paket_id' => 3],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 15, 'category_id' => 1, 'paket_id' => 3],
-
+            
+            // Pertanyaan 75
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 15, 'category_id' => 1, 'paket_id' => 3],
         ];
 
         $soalBagian4Level4 = [
-            // Pertanyaan 1
+            // Pertanyaan 76
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 16, 'category_id' => 1, 'paket_id' => 3],
-
+            
+            // Pertanyaan 77
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 16, 'category_id' => 1, 'paket_id' => 3],
-
+            
+            // Pertanyaan 78
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 16, 'category_id' => 1, 'paket_id' => 3],
-
+            
+            // Pertanyaan 79
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 16, 'category_id' => 1, 'paket_id' => 3],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 16, 'category_id' => 1, 'paket_id' => 3],
-
+            
+            // Pertanyaan 80
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 16, 'category_id' => 1, 'paket_id' => 3],
         ];
 
@@ -786,7 +803,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 78],
             ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 78],
         ];
-        
+
         $pilihanBagian4Level2 = [
             // Pertanyaan 7
             ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 79],
@@ -819,7 +836,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 84],
             ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 84],
         ];
-        
+
         $pilihanBagian4Level3 = [
             // Pertanyaan 13
             ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 85],
@@ -887,8 +904,6 @@ class SoalSeeder extends Seeder
         ];
 
         DB::table('pilihan')->insert(array_merge($pilihanBagian4Level1, $pilihanBagian4Level2, $pilihanBagian4Level3, $pilihanBagian4Level4));
-
-
 
         // Mapel PPKN
         $soalBagian1Level1 = [
@@ -989,7 +1004,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 102],
             ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 102],
         ];
-        
+
         $pilihanBagian1Level2 = [
             // Pertanyaan 7
             ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 103],
@@ -1022,7 +1037,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 108],
             ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 108],
         ];
-        
+
         $pilihanBagian1Level3 = [
             // Pertanyaan 13
             ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 109],
@@ -1090,7 +1105,7 @@ class SoalSeeder extends Seeder
         ];
 
         DB::table('pilihan')->insert(array_merge($pilihanBagian1Level1, $pilihanBagian1Level2, $pilihanBagian1Level3, $pilihanBagian1Level4));
-        
+
         $soalBagian2Level1 = [
             // Pertanyaan 1
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 2, 'paket_id' => 3],
@@ -1189,7 +1204,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 126],
             ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 126],
         ];
-        
+
         $pilihanBagian2Level2 = [
             // Pertanyaan 7
             ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 127],
@@ -1222,7 +1237,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 132],
             ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 132],
         ];
-        
+
         $pilihanBagian2Level3 = [
             // Pertanyaan 13
             ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 133],
@@ -1292,8 +1307,8 @@ class SoalSeeder extends Seeder
 
 
         DB::table('pilihan')->insert(array_merge($pilihanBagian2Level1, $pilihanBagian2Level2, $pilihanBagian2Level3, $pilihanBagian2Level4));
-        
-        
+
+
         $soalBagian3Level1 = [
             // Pertanyaan 1
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 9, 'category_id' => 2, 'paket_id' => 3],
@@ -1392,7 +1407,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 150],
             ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 150],
         ];
-        
+
         $pilihanBagian3Level2 = [
             // Pertanyaan 7
             ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 151],
@@ -1425,7 +1440,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 156],
             ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 156],
         ];
-        
+
         $pilihanBagian3Level3 = [
             // Pertanyaan 13
             ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 157],
@@ -1493,8 +1508,8 @@ class SoalSeeder extends Seeder
         ];
 
         DB::table('pilihan')->insert(array_merge($pilihanBagian3Level1, $pilihanBagian3Level2, $pilihanBagian3Level3, $pilihanBagian3Level4));
-        
-        
+
+
         $soalBagian4Level1 = [
             // Pertanyaan 1
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 13, 'category_id' => 2, 'paket_id' => 3],
@@ -1593,7 +1608,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 174],
             ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 174],
         ];
-        
+
         $pilihanBagian4Level2 = [
             // Pertanyaan 7
             ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 175],
@@ -1626,7 +1641,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 180],
             ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 180],
         ];
-        
+
         $pilihanBagian4Level3 = [
             // Pertanyaan 13
             ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 181],
@@ -1694,7 +1709,7 @@ class SoalSeeder extends Seeder
         ];
 
         DB::table('pilihan')->insert(array_merge($pilihanBagian4Level1, $pilihanBagian4Level2, $pilihanBagian4Level3, $pilihanBagian4Level4));
-        
+
 
 
         // Mapel PAI
@@ -1796,7 +1811,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 198],
             ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 198],
         ];
-        
+
         $pilihanBagian1Level2 = [
             // Pertanyaan 7
             ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 199],
@@ -1829,7 +1844,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 204],
             ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 204],
         ];
-        
+
         $pilihanBagian1Level3 = [
             // Pertanyaan 13
             ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 205],
@@ -1897,7 +1912,7 @@ class SoalSeeder extends Seeder
         ];
 
         DB::table('pilihan')->insert(array_merge($pilihanBagian1Level1, $pilihanBagian1Level2, $pilihanBagian1Level3, $pilihanBagian1Level4));
-        
+
         $soalBagian2Level1 = [
             // Pertanyaan 1
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 3, 'paket_id' => 3],
@@ -1996,7 +2011,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 222],
             ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 222],
         ];
-        
+
         $pilihanBagian2Level2 = [
             // Pertanyaan 7
             ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 223],
@@ -2029,7 +2044,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 228],
             ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 228],
         ];
-        
+
         $pilihanBagian2Level3 = [
             // Pertanyaan 13
             ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 229],
@@ -2099,8 +2114,8 @@ class SoalSeeder extends Seeder
 
 
         DB::table('pilihan')->insert(array_merge($pilihanBagian2Level1, $pilihanBagian2Level2, $pilihanBagian2Level3, $pilihanBagian2Level4));
-        
-        
+
+
         $soalBagian3Level1 = [
             // Pertanyaan 1
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 9, 'category_id' => 3, 'paket_id' => 3],
@@ -2199,7 +2214,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 246],
             ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 246],
         ];
-        
+
         $pilihanBagian3Level2 = [
             // Pertanyaan 7
             ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 247],
@@ -2232,7 +2247,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 252],
             ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 252],
         ];
-        
+
         $pilihanBagian3Level3 = [
             // Pertanyaan 13
             ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 253],
@@ -2300,8 +2315,8 @@ class SoalSeeder extends Seeder
         ];
 
         DB::table('pilihan')->insert(array_merge($pilihanBagian3Level1, $pilihanBagian3Level2, $pilihanBagian3Level3, $pilihanBagian3Level4));
-        
-        
+
+
         $soalBagian4Level1 = [
             // Pertanyaan 1
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 13, 'category_id' => 3, 'paket_id' => 3],
@@ -2400,7 +2415,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 270],
             ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 270],
         ];
-        
+
         $pilihanBagian4Level2 = [
             // Pertanyaan 7
             ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 271],
@@ -2433,7 +2448,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 276],
             ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 276],
         ];
-        
+
         $pilihanBagian4Level3 = [
             // Pertanyaan 13
             ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 277],
@@ -2501,8 +2516,8 @@ class SoalSeeder extends Seeder
         ];
 
         DB::table('pilihan')->insert(array_merge($pilihanBagian4Level1, $pilihanBagian4Level2, $pilihanBagian4Level3, $pilihanBagian4Level4));
-        
-        
+
+
         // Mapel Sejarah
         $soalBagian1Level1 = [
             // Pertanyaan 1
@@ -2602,7 +2617,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 294],
             ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 294],
         ];
-        
+
         $pilihanBagian1Level2 = [
             // Pertanyaan 7
             ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 295],
@@ -2635,7 +2650,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 300],
             ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 300],
         ];
-        
+
         $pilihanBagian1Level3 = [
             // Pertanyaan 13
             ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 301],
@@ -2703,7 +2718,7 @@ class SoalSeeder extends Seeder
         ];
 
         DB::table('pilihan')->insert(array_merge($pilihanBagian1Level1, $pilihanBagian1Level2, $pilihanBagian1Level3, $pilihanBagian1Level4));
-        
+
         $soalBagian2Level1 = [
             // Pertanyaan 1
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 4, 'paket_id' => 3],
@@ -2802,7 +2817,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 318],
             ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 318],
         ];
-        
+
         $pilihanBagian2Level2 = [
             // Pertanyaan 7
             ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 319],
@@ -2835,7 +2850,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 324],
             ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 324],
         ];
-        
+
         $pilihanBagian2Level3 = [
             // Pertanyaan 13
             ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 325],
@@ -2863,10 +2878,10 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 329],
             ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 329],
             // Pertanyaan 18
-            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' =>330],
-            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' =>330],
-            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' =>330],
-            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' =>330],
+            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 330],
+            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 330],
+            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 330],
+            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 330],
         ];
 
         $pilihanBagian2Level4 = [
@@ -2905,8 +2920,8 @@ class SoalSeeder extends Seeder
 
 
         DB::table('pilihan')->insert(array_merge($pilihanBagian2Level1, $pilihanBagian2Level2, $pilihanBagian2Level3, $pilihanBagian2Level4));
-        
-        
+
+
         $soalBagian3Level1 = [
             // Pertanyaan 1
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 9, 'category_id' => 4, 'paket_id' => 3],
@@ -3005,7 +3020,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 342],
             ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 342],
         ];
-        
+
         $pilihanBagian3Level2 = [
             // Pertanyaan 7
             ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 343],
@@ -3038,7 +3053,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 348],
             ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 348],
         ];
-        
+
         $pilihanBagian3Level3 = [
             // Pertanyaan 13
             ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 349],
@@ -3106,8 +3121,8 @@ class SoalSeeder extends Seeder
         ];
 
         DB::table('pilihan')->insert(array_merge($pilihanBagian3Level1, $pilihanBagian3Level2, $pilihanBagian3Level3, $pilihanBagian3Level4));
-        
-        
+
+
         $soalBagian4Level1 = [
             // Pertanyaan 1
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 13, 'category_id' => 4, 'paket_id' => 3],
@@ -3206,7 +3221,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 366],
             ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 366],
         ];
-        
+
         $pilihanBagian4Level2 = [
             // Pertanyaan 7
             ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 367],
@@ -3239,7 +3254,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 372],
             ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 372],
         ];
-        
+
         $pilihanBagian4Level3 = [
             // Pertanyaan 13
             ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 373],
@@ -3307,8 +3322,8 @@ class SoalSeeder extends Seeder
         ];
 
         DB::table('pilihan')->insert(array_merge($pilihanBagian4Level1, $pilihanBagian4Level2, $pilihanBagian4Level3, $pilihanBagian4Level4));
-        
-        
+
+
         // Mapel Bahasa
         $soalBagian1Level1 = [
             // Pertanyaan 1
@@ -3408,7 +3423,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 390],
             ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 390],
         ];
-        
+
         $pilihanBagian1Level2 = [
             // Pertanyaan 7
             ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 391],
@@ -3441,7 +3456,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 396],
             ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 396],
         ];
-        
+
         $pilihanBagian1Level3 = [
             // Pertanyaan 13
             ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 397],
@@ -3509,7 +3524,7 @@ class SoalSeeder extends Seeder
         ];
 
         DB::table('pilihan')->insert(array_merge($pilihanBagian1Level1, $pilihanBagian1Level2, $pilihanBagian1Level3, $pilihanBagian1Level4));
-        
+
         $soalBagian2Level1 = [
             // Pertanyaan 1
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 5, 'paket_id' => 3],
@@ -3608,7 +3623,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 414],
             ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 414],
         ];
-        
+
         $pilihanBagian2Level2 = [
             // Pertanyaan 7
             ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 415],
@@ -3641,7 +3656,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 420],
             ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 420],
         ];
-        
+
         $pilihanBagian2Level3 = [
             // Pertanyaan 13
             ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 421],
@@ -3711,8 +3726,8 @@ class SoalSeeder extends Seeder
 
 
         DB::table('pilihan')->insert(array_merge($pilihanBagian2Level1, $pilihanBagian2Level2, $pilihanBagian2Level3, $pilihanBagian2Level4));
-        
-        
+
+
         $soalBagian3Level1 = [
             // Pertanyaan 1
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 9, 'category_id' => 5, 'paket_id' => 3],
@@ -3811,7 +3826,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 438],
             ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 438],
         ];
-        
+
         $pilihanBagian3Level2 = [
             // Pertanyaan 7
             ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 439],
@@ -3844,7 +3859,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 444],
             ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 444],
         ];
-        
+
         $pilihanBagian3Level3 = [
             // Pertanyaan 13
             ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 445],
@@ -3912,8 +3927,8 @@ class SoalSeeder extends Seeder
         ];
 
         DB::table('pilihan')->insert(array_merge($pilihanBagian3Level1, $pilihanBagian3Level2, $pilihanBagian3Level3, $pilihanBagian3Level4));
-        
-        
+
+
         $soalBagian4Level1 = [
             // Pertanyaan 1
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 13, 'category_id' => 5, 'paket_id' => 3],
@@ -4012,7 +4027,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 462],
             ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 462],
         ];
-        
+
         $pilihanBagian4Level2 = [
             // Pertanyaan 7
             ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 463],
@@ -4045,7 +4060,7 @@ class SoalSeeder extends Seeder
             ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 468],
             ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 468],
         ];
-        
+
         $pilihanBagian4Level3 = [
             // Pertanyaan 13
             ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 469],
