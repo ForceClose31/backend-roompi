@@ -68,25 +68,10 @@ class ExerciseController extends Controller
             $category = $categories[$reportExercise->category_id] ?? null;
 
             if ($bagian && $subBagian && $category) {
-                $soalKey = $subBagian->id . '-' . $category->id;
-                $soalsForSubBagian = $soalGroups[$soalKey] ?? collect();
-
-                $soalExercise = [];
-
-                foreach ($soalsForSubBagian->take(5) as $soal) {
-                    $pilihan = $pilihanSoals[$soal->id] ?? [];
-                    $soalData = [
-                        'soal' => $soal,
-                        'pilihan' => $pilihan
-                    ];
-                    $soalExercise[] = $soalData;
-                }
-
                 $exercise[] = [
                     'bagian' => $bagian,
                     'sub_bagian' => $subBagian,
                     'category' => $category,
-                    'soal' => $soalExercise
                 ];
             }
         }
