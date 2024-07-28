@@ -988,169 +988,189 @@ class SoalPaketCSeeder extends Seeder
 
         $soalBagian2Level1 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Siapakah yang menjabat sebagai Presiden pertama Republik Indonesia?', 'sub_bagian_id' => 5, 'category_id' => 2, 'paket_id' => 3],
             
             // Pertanyaan 2
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Apa dasar negara Indonesia yang tercantum dalam Pembukaan UUD 1945?', 'sub_bagian_id' => 5, 'category_id' => 2, 'paket_id' => 3],
 
             // Pertanyaan 3
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Apa nama lagu kebangsaan Indonesia?', 'sub_bagian_id' => 5, 'category_id' => 2, 'paket_id' => 3],
 
             // Pertanyaan 4
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Siapakah tokoh yang dikenal sebagai Bapak Pendidikan Indonesia?', 'sub_bagian_id' => 5, 'category_id' => 2, 'paket_id' => 3],
 
             // Pertanyaan 5
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Apa nama lambang negara Indonesia?', 'sub_bagian_id' => 5, 'category_id' => 2, 'paket_id' => 3],
         ];
 
         $soalBagian2Level2 = [
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Bagaimana cara memilih presiden dan wakil presiden di Indonesia?', 'sub_bagian_id' => 6, 'category_id' => 2, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Apa fungsi utama DPR dalam sistem pemerintahan Indonesia?', 'sub_bagian_id' => 6, 'category_id' => 2, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Apakah yang dimaksud dengan otonomi daerah?', 'sub_bagian_id' => 6, 'category_id' => 2, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Apa yang dimaksud dengan hak asasi manusia?', 'sub_bagian_id' => 6, 'category_id' => 2, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Sistem pemerintahan Indonesia saat ini menggunakan sistem?', 'sub_bagian_id' => 6, 'category_id' => 2, 'paket_id' => 3],
         ];
 
         $soalBagian2Level3 = [
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Apa tujuan dari pembentukan Mahkamah Konstitusi di Indonesia?', 'sub_bagian_id' => 7, 'category_id' => 2, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Siapakah yang memiliki hak untuk mengajukan RUU di Indonesia?', 'sub_bagian_id' => 7, 'category_id' => 2, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Apa yang dimaksud dengan asas persatuan dalam negara Indonesia?', 'sub_bagian_id' => 7, 'category_id' => 2, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Apa yang dimaksud dengan demokrasi Pancasila?', 'sub_bagian_id' => 7, 'category_id' => 2, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Apa fungsi dari KPU dalam sistem politik Indonesia?', 'sub_bagian_id' => 7, 'category_id' => 2, 'paket_id' => 3],
         ];
 
         $soalBagian2Level4 = [
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Apa yang dimaksud dengan sistem checks and balances dalam pemerintahan Indonesia?', 'sub_bagian_id' => 8, 'category_id' => 2, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Bagaimana cara perubahan UUD 1945 dilakukan di Indonesia?', 'sub_bagian_id' => 8, 'category_id' => 2, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Apa perbedaan antara sistem multipartai dan sistem dwipartai?', 'sub_bagian_id' => 8, 'category_id' => 2, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Apa yang dimaksud dengan supremasi hukum dalam negara hukum?', 'sub_bagian_id' => 8, 'category_id' => 2, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Apa yang dimaksud dengan hak prerogatif presiden?', 'sub_bagian_id' => 8, 'category_id' => 2, 'paket_id' => 3],
         ];
 
         DB::table('soal')->insert(array_merge($soalBagian2Level1, $soalBagian2Level2, $soalBagian2Level3, $soalBagian2Level4));
 
         $pilihanBagian2Level1 = [
             // Pertanyaan 5
-            ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 901],
-            ['pilihan' => 'Carrot', 'skor' => 20, 'benar' => true, 'soal_id' => 901],
-            ['pilihan' => 'Orange', 'skor' => 0, 'benar' => false, 'soal_id' => 901],
-            ['pilihan' => 'Banana', 'skor' => 0, 'benar' => false, 'soal_id' => 901],
+            ['pilihan' => 'Soeharto', 'skor' => 0, 'benar' => false, 'soal_id' => 901],
+            ['pilihan' => 'Soekarno', 'skor' => 20, 'benar' => true, 'soal_id' => 901],
+            ['pilihan' => 'B.J. Habibie', 'skor' => 0, 'benar' => false, 'soal_id' => 901],
+            ['pilihan' => 'Megawati Soekarnoputri', 'skor' => 0, 'benar' => false, 'soal_id' => 901],
+            ['pilihan' => 'Susilo Bambang Yudhoyono', 'skor' => 0, 'benar' => false, 'soal_id' => 901],
             // Pertanyaan 6
-            ['pilihan' => 'Angry', 'skor' => 0, 'benar' => false, 'soal_id' => 902],
-            ['pilihan' => 'Happy', 'skor' => 20, 'benar' => true, 'soal_id' => 902],
-            ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 902],
-            ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 902],
+            ['pilihan' => 'Trisakti', 'skor' => 0, 'benar' => false, 'soal_id' => 902],
+            ['pilihan' => 'Tri Dharma', 'skor' => 0, 'benar' => false, 'soal_id' => 902],
+            ['pilihan' => 'Pancasila', 'skor' => 20, 'benar' => true, 'soal_id' => 902],
+            ['pilihan' => 'Dwikora', 'skor' => 0, 'benar' => false, 'soal_id' => 902],
+            ['pilihan' => 'Tritura', 'skor' => 0, 'benar' => false, 'soal_id' => 902],
             // Pertanyaan 7
-            ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 903],
-            ['pilihan' => 'Went', 'skor' => 20, 'benar' => true, 'soal_id' => 903],
-            ['pilihan' => 'Gone', 'skor' => 0, 'benar' => false, 'soal_id' => 903],
-            ['pilihan' => 'Going', 'skor' => 0, 'benar' => false, 'soal_id' => 903],
+            ['pilihan' => 'Indonesia Merdeka', 'skor' => 0, 'benar' => false, 'soal_id' => 903],
+            ['pilihan' => 'Garuda Pancasila', 'skor' => 0, 'benar' => false, 'soal_id' => 903],
+            ['pilihan' => 'Indonesia Raya', 'skor' => 20, 'benar' => true, 'soal_id' => 903],
+            ['pilihan' => 'Rayuan Pulau Kelapa', 'skor' => 0, 'benar' => false, 'soal_id' => 903],
+            ['pilihan' => 'Bagimu Negeri', 'skor' => 0, 'benar' => false, 'soal_id' => 903],
             // Pertanyaan 8
-            ['pilihan' => 'Dog', 'skor' => 0, 'benar' => false, 'soal_id' => 904],
-            ['pilihan' => 'Cat', 'skor' => 0, 'benar' => false, 'soal_id' => 904],
-            ['pilihan' => 'Bird', 'skor' => 20, 'benar' => true, 'soal_id' => 904],
-            ['pilihan' => 'Fish', 'skor' => 0, 'benar' => false, 'soal_id' => 904],
+            ['pilihan' => 'Soekarno', 'skor' => 0, 'benar' => false, 'soal_id' => 904],
+            ['pilihan' => 'Mohammad Hatta', 'skor' => 0, 'benar' => false, 'soal_id' => 904],
+            ['pilihan' => 'Tan Malaka', 'skor' => 0, 'benar' => false, 'soal_id' => 904],
+            ['pilihan' => 'Ki Hajar Dewantara', 'skor' => 20, 'benar' => true, 'soal_id' => 904],
+            ['pilihan' => 'R.A. Kartini', 'skor' => 0, 'benar' => false, 'soal_id' => 904],
             // Pertanyaan 9
-            ['pilihan' => '5', 'skor' => 0, 'benar' => false, 'soal_id' => 905],
-            ['pilihan' => '6', 'skor' => 0, 'benar' => false, 'soal_id' => 905],
-            ['pilihan' => '7', 'skor' => 20, 'benar' => true, 'soal_id' => 905],
-            ['pilihan' => '8', 'skor' => 0, 'benar' => false, 'soal_id' => 905],
+            ['pilihan' => 'Bhineka Tunggal Ika', 'skor' => 0, 'benar' => false, 'soal_id' => 905],
+            ['pilihan' => 'Sumpah Pemuda', 'skor' => 0, 'benar' => false, 'soal_id' => 905],
+            ['pilihan' => 'Bendera Merah Putih', 'skor' => 0, 'benar' => false, 'soal_id' => 905],
+            ['pilihan' => 'Garuda Pancasila', 'skor' => 20, 'benar' => true, 'soal_id' => 905],
+            ['pilihan' => 'Burung Garuda', 'skor' => 0, 'benar' => false, 'soal_id' => 905],
         ];
 
         $pilihanBagian2Level2 = [
             // Pertanyaan 10
-            ['pilihan' => 'Biology', 'skor' => 0, 'benar' => false, 'soal_id' => 906],
-            ['pilihan' => 'Chemistry', 'skor' => 0, 'benar' => false, 'soal_id' => 906],
-            ['pilihan' => 'Mathematics', 'skor' => 20, 'benar' => true, 'soal_id' => 906],
-            ['pilihan' => 'Geography', 'skor' => 0, 'benar' => false, 'soal_id' => 906],
+            ['pilihan' => 'Dipilih oleh DPR', 'skor' => 0, 'benar' => false, 'soal_id' => 906],
+            ['pilihan' => 'Ditunjuk oleh presiden sebelumnya', 'skor' => 0, 'benar' => false, 'soal_id' => 906],
+            ['pilihan' => 'Melalui sidang MPR', 'skor' => 0, 'benar' => false, 'soal_id' => 906],
+            ['pilihan' => 'Melalui pemilihan umum', 'skor' => 20, 'benar' => true, 'soal_id' => 906],
+            ['pilihan' => 'Diangkat oleh kabinet', 'skor' => 0, 'benar' => false, 'soal_id' => 906],
             // Pertanyaan 11
-            ['pilihan' => 'Mango', 'skor' => 0, 'benar' => false, 'soal_id' => 907],
-            ['pilihan' => 'Tomato', 'skor' => 0, 'benar' => false, 'soal_id' => 907],
-            ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 907],
-            ['pilihan' => 'Potato', 'skor' => 20, 'benar' => true, 'soal_id' => 907],
+            ['pilihan' => 'Menjalankan pemerintahan', 'skor' => 0, 'benar' => false, 'soal_id' => 907],
+            ['pilihan' => 'Melantik presiden', 'skor' => 0, 'benar' => false, 'soal_id' => 907],
+            ['pilihan' => 'Mengadili kasus-kasus hukum', 'skor' => 0, 'benar' => false, 'soal_id' => 907],
+            ['pilihan' => 'Mengawasi jalannya pemerintahan', 'skor' => 0, 'benar' => false, 'soal_id' => 907],
+            ['pilihan' => 'Membuat undang-undang', 'skor' => 20, 'benar' => true, 'soal_id' => 907],
             // Pertanyaan 12
-            ['pilihan' => 'Sailor', 'skor' => 0, 'benar' => false, 'soal_id' => 908],
-            ['pilihan' => 'Pilot', 'skor' => 20, 'benar' => true, 'soal_id' => 908],
-            ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 908],
-            ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 908],
+            ['pilihan' => 'Kewenangan pusat untuk mengatur daerah', 'skor' => 0, 'benar' => false, 'soal_id' => 908],
+            ['pilihan' => 'Kewenangan masyarakat untuk memilih kepala daerah', 'skor' => 0, 'benar' => false, 'soal_id' => 908],
+            ['pilihan' => 'Kewenangan daerah untuk mengatur dan mengurus rumah tangganya sendiri', 'skor' => 20, 'benar' => true, 'soal_id' => 908],
+            ['pilihan' => 'Kewenangan DPR untuk membuat peraturan daerah', 'skor' => 0, 'benar' => false, 'soal_id' => 908],
+            ['pilihan' => 'Kewenangan MPR untuk mengawasi daerah', 'skor' => 0, 'benar' => false, 'soal_id' => 908],
             // Pertanyaan 13
-            ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 909],
-            ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 909],
-            ['pilihan' => 'Table', 'skor' => 0, 'benar' => false, 'soal_id' => 909],
-            ['pilihan' => 'Lamp', 'skor' => 0, 'benar' => false, 'soal_id' => 909],
+            ['pilihan' => 'Hak yang diberikan oleh pemerintah kepada warganya', 'skor' => 0, 'benar' => false, 'soal_id' => 909],
+            ['pilihan' => 'Hak yang dimiliki oleh golongan tertentu', 'skor' => 0, 'benar' => false, 'soal_id' => 909],
+            ['pilihan' => 'Hak yang dimiliki setiap manusia sejak lahir', 'skor' => 20, 'benar' => true, 'soal_id' => 909],
+            ['pilihan' => 'Hak yang diberikan oleh negara kepada penduduknya', 'skor' => 0, 'benar' => false, 'soal_id' => 909],
+            ['pilihan' => 'Hak yang diberikan oleh konstitusi', 'skor' => 0, 'benar' => false, 'soal_id' => 909],
             // Pertanyaan 14
-            ['pilihan' => 'Night', 'skor' => 20, 'benar' => true, 'soal_id' => 910],
-            ['pilihan' => 'Sun', 'skor' => 0, 'benar' => false, 'soal_id' => 910],
-            ['pilihan' => 'Morning', 'skor' => 0, 'benar' => false, 'soal_id' => 910],
-            ['pilihan' => 'Noon', 'skor' => 0, 'benar' => false, 'soal_id' => 910],
+            ['pilihan' => 'Presidensial', 'skor' => 20, 'benar' => true, 'soal_id' => 910],
+            ['pilihan' => 'Parlementer', 'skor' => 0, 'benar' => false, 'soal_id' => 910],
+            ['pilihan' => 'Monarki Konstitusional', 'skor' => 0, 'benar' => false, 'soal_id' => 910],
+            ['pilihan' => 'Demokrasi Langsung', 'skor' => 0, 'benar' => false, 'soal_id' => 910],
+            ['pilihan' => 'Sosialis', 'skor' => 0, 'benar' => false, 'soal_id' => 910],
         ];
 
         $pilihanBagian2Level3 = [
             // Pertanyaan 15
-            ['pilihan' => 'London', 'skor' => 0, 'benar' => false, 'soal_id' => 911],
-            ['pilihan' => 'Paris', 'skor' => 20, 'benar' => true, 'soal_id' => 911],
-            ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 911],
-            ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 911],
+            ['pilihan' => 'Mengadili kasus korupsi', 'skor' => 0, 'benar' => false, 'soal_id' => 911],
+            ['pilihan' => 'Menguji undang-undang terhadap UUD 1945', 'skor' => 20, 'benar' => true, 'soal_id' => 911],
+            ['pilihan' => 'Mengawasi kinerja DPR', 'skor' => 0, 'benar' => false, 'soal_id' => 911],
+            ['pilihan' => 'Menangani pelanggaran HAM berat', 'skor' => 0, 'benar' => false, 'soal_id' => 911],
+            ['pilihan' => 'Menyelesaikan sengketa pemilu', 'skor' => 0, 'benar' => false, 'soal_id' => 911],
             // Pertanyaan 16
-            ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 912],
-            ['pilihan' => 'Square', 'skor' => 20, 'benar' => true, 'soal_id' => 912],
-            ['pilihan' => 'Green', 'skor' => 0, 'benar' => false, 'soal_id' => 912],
-            ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 912],
+            ['pilihan' => 'Presiden', 'skor' => 0, 'benar' => false, 'soal_id' => 912],
+            ['pilihan' => 'DPR', 'skor' => 0, 'benar' => false, 'soal_id' => 912],
+            ['pilihan' => 'Semua jawaban benar', 'skor' => 20, 'benar' => true, 'soal_id' => 912],
+            ['pilihan' => 'DPD', 'skor' => 0, 'benar' => false, 'soal_id' => 912],
+            ['pilihan' => 'MPR', 'skor' => 0, 'benar' => false, 'soal_id' => 912],
             // Pertanyaan 17
-            ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 913],
-            ['pilihan' => 'Eight', 'skor' => 20, 'benar' => true, 'soal_id' => 913],
-            ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 913],
-            ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 913],
+            ['pilihan' => 'Setiap warga negara harus tunduk pada pemerintah', 'skor' => 0, 'benar' => false, 'soal_id' => 913],
+            ['pilihan' => 'Setiap warga negara harus menghormati perbedaan', 'skor' => 0, 'benar' => false, 'soal_id' => 913],
+            ['pilihan' => 'Setiap warga negara harus bersatu dalam kesatuan yang utuh', 'skor' => 20, 'benar' => true, 'soal_id' => 913],
+            ['pilihan' => 'Setiap warga negara harus bekerja sama dengan negara lain', 'skor' => 0, 'benar' => false, 'soal_id' => 913],
+            ['pilihan' => 'Setiap warga negara harus memiliki hak yang sama', 'skor' => 0, 'benar' => false, 'soal_id' => 913],
             // Pertanyaan 18
-            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 914],
-            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 914],
-            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 914],
-            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 914],
+            ['pilihan' => 'Demokrasi yang hanya diikuti oleh warga negara Indonesia', 'skor' => 0, 'benar' => false, 'soal_id' => 914],
+            ['pilihan' => 'Demokrasi yang berdasarkan nilai-nilai Pancasila', 'skor' => 20, 'benar' => true, 'soal_id' => 914],
+            ['pilihan' => 'Demokrasi yang tidak ada kaitannya dengan Pancasila', 'skor' => 0, 'benar' => false, 'soal_id' => 914],
+            ['pilihan' => 'Demokrasi yang ditentukan oleh presiden', 'skor' => 0, 'benar' => false, 'soal_id' => 914],
+            ['pilihan' => 'Demokrasi yang dijalankan oleh MPR', 'skor' => 0, 'benar' => false, 'soal_id' => 914],
             // Pertanyaan 13
-            ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 915],
-            ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 915],
-            ['pilihan' => 'Table', 'skor' => 0, 'benar' => false, 'soal_id' => 915],
-            ['pilihan' => 'Lamp', 'skor' => 0, 'benar' => false, 'soal_id' => 915],
+            ['pilihan' => 'Melakukan kampanye politik', 'skor' => 0, 'benar' => false, 'soal_id' => 915],
+            ['pilihan' => 'Menentukan hasil pemilu', 'skor' => 0, 'benar' => false, 'soal_id' => 915],
+            ['pilihan' => 'Menyusun daftar pemilih', 'skor' => 0, 'benar' => false, 'soal_id' => 915],
+            ['pilihan' => 'Mengawasi pelaksanaan pemilu', 'skor' => 20, 'benar' => true, 'soal_id' => 915],
+            ['pilihan' => 'Mengatur dana kampanye', 'skor' => 0, 'benar' => false, 'soal_id' => 915],
         ];
 
         $pilihanBagian2Level4 = [
             // Pertanyaan 14
-            ['pilihan' => 'Night', 'skor' => 20, 'benar' => true, 'soal_id' => 916],
-            ['pilihan' => 'Sun', 'skor' => 0, 'benar' => false, 'soal_id' => 916],
-            ['pilihan' => 'Morning', 'skor' => 0, 'benar' => false, 'soal_id' => 916],
-            ['pilihan' => 'Noon', 'skor' => 0, 'benar' => false, 'soal_id' => 916],
+            ['pilihan' => 'Sistem yang memungkinkan lembaga eksekutif memiliki kekuasaan penuh', 'skor' => 0, 'benar' => false, 'soal_id' => 916],
+            ['pilihan' => 'Sistem yang memungkinkan satu lembaga mengawasi dan mengendalikan lembaga lain', 'skor' => 20, 'benar' => true, 'soal_id' => 916],
+            ['pilihan' => 'Sistem yang memungkinkan masyarakat memilih wakilnya', 'skor' => 0, 'benar' => false, 'soal_id' => 916],
+            ['pilihan' => 'Sistem yang memungkinkan peradilan bebas dari campur tangan pemerintah', 'skor' => 0, 'benar' => false, 'soal_id' => 916],
+            ['pilihan' => 'Sistem yang memastikan semua lembaga memiliki kekuasaan yang sama', 'skor' => 0, 'benar' => false, 'soal_id' => 916],
             // Pertanyaan 15
-            ['pilihan' => 'London', 'skor' => 0, 'benar' => false, 'soal_id' => 917],
-            ['pilihan' => 'Paris', 'skor' => 20, 'benar' => true, 'soal_id' => 917],
-            ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 917],
-            ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 917],
+            ['pilihan' => 'Melalui keputusan presiden', 'skor' => 0, 'benar' => false, 'soal_id' => 917],
+            ['pilihan' => 'Melalui referendum nasional', 'skor' => 0, 'benar' => false, 'soal_id' => 917],
+            ['pilihan' => 'Melalui sidang MPR', 'skor' => 20, 'benar' => true, 'soal_id' => 917],
+            ['pilihan' => 'Melalui sidang DPR', 'skor' => 0, 'benar' => false, 'soal_id' => 917],
+            ['pilihan' => 'Melalui sidang gabungan DPR dan DPD', 'skor' => 0, 'benar' => false, 'soal_id' => 917],
             // Pertanyaan 16
-            ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 918],
-            ['pilihan' => 'Square', 'skor' => 20, 'benar' => true, 'soal_id' => 918],
-            ['pilihan' => 'Green', 'skor' => 0, 'benar' => false, 'soal_id' => 918],
-            ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 918],
+            ['pilihan' => 'Sistem multipartai hanya memiliki dua partai, sedangkan sistem dwipartai memiliki lebih dari dua partai', 'skor' => 0, 'benar' => false, 'soal_id' => 918],
+            ['pilihan' => 'Sistem multipartai tidak ada partai, sedangkan sistem dwipartai memiliki partai', 'skor' => 0, 'benar' => false, 'soal_id' => 918],
+            ['pilihan' => 'Sistem dwipartai hanya memiliki dua partai, sedangkan sistem multipartai memiliki lebih dari dua partai', 'skor' => 20, 'benar' => true, 'soal_id' => 918],
+            ['pilihan' => 'Sistem dwipartai memiliki lebih dari dua partai, sedangkan sistem multipartai memiliki dua partai', 'skor' => 0, 'benar' => false, 'soal_id' => 918],
+            ['pilihan' => 'Sistem multipartai memiliki partai yang dominan, sedangkan sistem dwipartai tidak memiliki partai dominan', 'skor' => 0, 'benar' => false, 'soal_id' => 918],
             // Pertanyaan 17
-            ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 919],
-            ['pilihan' => 'Eight', 'skor' => 20, 'benar' => true, 'soal_id' => 919],
-            ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 919],
-            ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 919],
+            ['pilihan' => 'Kekuasaan tertinggi berada pada rakyat', 'skor' => 0, 'benar' => false, 'soal_id' => 919],
+            ['pilihan' => 'Kekuasaan tertinggi berada pada hukum', 'skor' => 20, 'benar' => true, 'soal_id' => 919],
+            ['pilihan' => 'Kekuasaan tertinggi berada pada presiden', 'skor' => 0, 'benar' => false, 'soal_id' => 919],
+            ['pilihan' => 'Kekuasaan tertinggi berada pada militer', 'skor' => 0, 'benar' => false, 'soal_id' => 919],
+            ['pilihan' => 'Kekuasaan tertinggi berada pada MPR', 'skor' => 0, 'benar' => false, 'soal_id' => 919],
             // Pertanyaan 18
-            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 920],
-            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 920],
-            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 920],
-            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 920],
+            ['pilihan' => 'Hak presiden untuk membuat undang-undang', 'skor' => 0, 'benar' => false, 'soal_id' => 920],
+            ['pilihan' => 'Hak presiden untuk memerintah tanpa persetujuan DPR', 'skor' => 0, 'benar' => false, 'soal_id' => 920],
+            ['pilihan' => 'Hak presiden untuk mengeluarkan dekrit', 'skor' => 0, 'benar' => false, 'soal_id' => 920],
+            ['pilihan' => 'Hak presiden untuk mengubah UUD 1945', 'skor' => 0, 'benar' => false, 'soal_id' => 920],
+            ['pilihan' => 'Hak presiden untuk mengangkat dan memberhentikan menteri', 'skor' => 20, 'benar' => true, 'soal_id' => 920],
         ];
 
         DB::table('pilihan')->insert(array_merge($pilihanBagian2Level1, $pilihanBagian2Level2, $pilihanBagian2Level3, $pilihanBagian2Level4));
