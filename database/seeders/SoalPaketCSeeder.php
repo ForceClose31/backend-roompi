@@ -304,11 +304,11 @@ class SoalPaketCSeeder extends Seeder
             ['pilihan' => '42 tahun', 'skor' => 0, 'benar' => false, 'soal_id' => 822],
             ['pilihan' => '46 tahun', 'skor' => 0, 'benar' => false, 'soal_id' => 822],
             // Pertanyaan 17
-            ['pilihan' => 'y=x2+x-2', 'skor' => 0, 'benar' => false, 'soal_id' => 823],
-            ['pilihan' => 'y=x2-x+2', 'skor' => 20, 'benar' => true, 'soal_id' => 823],
-            ['pilihan' => 'y=x2-x-2', 'skor' => 0, 'benar' => false, 'soal_id' => 823],
-            ['pilihan' => 'y=x2+x+2', 'skor' => 0, 'benar' => false, 'soal_id' => 823],
-            ['pilihan' => 'y=x2+x', 'skor' => 0, 'benar' => false, 'soal_id' => 823],
+            ['pilihan' => 'y=x^2+x-2', 'skor' => 0, 'benar' => false, 'soal_id' => 823],
+            ['pilihan' => 'y=x^2-x+2', 'skor' => 20, 'benar' => true, 'soal_id' => 823],
+            ['pilihan' => 'y=x^2-x-2', 'skor' => 0, 'benar' => false, 'soal_id' => 823],
+            ['pilihan' => 'y=x^2+x+2', 'skor' => 0, 'benar' => false, 'soal_id' => 823],
+            ['pilihan' => 'y=x^2+x', 'skor' => 0, 'benar' => false, 'soal_id' => 823],
             // Pertanyaan 18
             ['pilihan' => '349', 'skor' => 20, 'benar' => true, 'soal_id' => 824],
             ['pilihan' => '342', 'skor' => 0, 'benar' => false, 'soal_id' => 824],
@@ -429,13 +429,13 @@ class SoalPaketCSeeder extends Seeder
 
         $soalBagian3Level1 = [
             // Pertanyaan 41
-            ['pertanyaan' => 'Diketahui fungsi f(x)=x+3 dan g(x)=x2-9. Pernyataan berikut yang bernar terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 9, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=x+3 dan g(x)=x^2-9. Pernyataan berikut yang bernar terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 9, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 42
             ['pertanyaan' => 'Diketahui fungsi f:R→R dan g:R→R dengan f(x)=4x+3 dan g(x)=x-1. Rumus komposisi fungsi f∘g(x) adalah...', 'sub_bagian_id' => 9, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 43
-            ['pertanyaan' => 'Fungsi f:R→R dan g:R→R dimana f(x)=2x-1 dan g(x)=x2+3. Bentuk fungsi dari f∘g(x) adalah...', 'sub_bagian_id' => 9, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Fungsi f:R→R dan g:R→R dimana f(x)=2x-1 dan g(x)=x^2+3. Bentuk fungsi dari f∘g(x) adalah...', 'sub_bagian_id' => 9, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 44
             ['pertanyaan' => 'Diketahui fungsi f:R→R dengan f(x)=2x-1, fungsi g:R→R dengan g(x)=4x+5, dan fungsi h:R→R dengan h(x)=2x-3. Rumus fungsi f∘gh(x) adalah...', 'sub_bagian_id' => 9, 'category_id' => 1, 'paket_id' => 3],
@@ -446,53 +446,53 @@ class SoalPaketCSeeder extends Seeder
 
         $soalBagian3Level2 = [
             // Pertanyaan 46
-            ['pertanyaan' => 'Diketahui fungsi fx=x+3 dan gx=x2-9. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 10, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=x+3 dan g(x)=x^2-9. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 10, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 47
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 10, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=2x+5 dan g(x)=x^2-4. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 10, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 48
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 10, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=x-2 dan g(x)=x^2+3. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 10, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 49
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 10, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=3x+4 dan g(x)=x^2-1. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 10, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 50
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 10, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=x+6 dan g(x)=x^2-2. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 10, 'category_id' => 1, 'paket_id' => 3],
         ];
 
         $soalBagian3Level3 = [
             // Pertanyaan 51
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 11, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=5x-3 dan g(x)=x^+1. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 11, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 52
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 11, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=x+7 dan g(x)=x^2-5. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 11, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 53
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 11, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=4x+2 dan g(x)=x^2+2. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 11, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 54
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 11, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=x-5 dan g(x)=x^2-6. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 11, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 55
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 11, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=2x+3 dan g(x)=x^2-7. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 11, 'category_id' => 1, 'paket_id' => 3],
         ];
 
         $soalBagian3Level4 = [
             // Pertanyaan 56
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 12, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=x+8 dan g(x)=x^2-3. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 12, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 57
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 12, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=3x-1 dan g(x)=x^2+5. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 12, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 58
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 12, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=x+9 dan g(x)=x^2-8. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 12, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 59
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 12, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=6x+1 dan g(x)=x^2+7. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 12, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 60
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 12, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=x-4 dan g(x)=x^2-10. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 12, 'category_id' => 1, 'paket_id' => 3],
         ];
 
         DB::table('soal')->insert(array_merge($soalBagian3Level1, $soalBagian3Level2, $soalBagian3Level3, $soalBagian3Level4));
@@ -799,180 +799,189 @@ class SoalPaketCSeeder extends Seeder
         // Mapel PPKN
         $soalBagian1Level1 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 1, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Dokumen untuk mencatat persetujuan yang bersifat sementara adalah?', 'sub_bagian_id' => 1, 'category_id' => 2, 'paket_id' => 3],
+            
             // Pertanyaan 2
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 1, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Wakil diplomatik yang pangkatnya lebih rendah dibanding duta besar adalah?', 'sub_bagian_id' => 1, 'category_id' => 2, 'paket_id' => 3],
 
             // Pertanyaan 3
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 1, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Perjanjian yang melibatkan lebih dari dua negara disebut?', 'sub_bagian_id' => 1, 'category_id' => 2, 'paket_id' => 3],
 
             // Pertanyaan 4
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 1, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Tugas kekonsulan di bidang kebudayaan adalah?', 'sub_bagian_id' => 1, 'category_id' => 2, 'paket_id' => 3],
 
             // Pertanyaan 5
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 1, 'category_id' => 2, 'paket_id' => 3],
-
-            // Pertanyaan 6
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 1, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Demokrasi terpimpin adalah?', 'sub_bagian_id' => 1, 'category_id' => 2, 'paket_id' => 3],
         ];
 
         $soalBagian1Level2 = [
-            // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 2, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Tujuan sosialisai remaja adalah?', 'sub_bagian_id' => 2, 'category_id' => 2, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 2, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Budaya politik di mana tingkat partisipasi politiknya rendah, merupakan jenis budaya politik?', 'sub_bagian_id' => 2, 'category_id' => 2, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 2, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Pada budaya politik parokial, tingkat partisipasi masyarakat rendah karena rendahnya?', 'sub_bagian_id' => 2, 'category_id' => 2, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 2, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Budaya politik yang berkembang di masyarakat Indonesia sekarang adalah?', 'sub_bagian_id' => 2, 'category_id' => 2, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 2, 'category_id' => 2, 'paket_id' => 3],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 2, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Di bawah ini yang merupakan agen sosialisasi politik adalah?', 'sub_bagian_id' => 2, 'category_id' => 2, 'paket_id' => 3],
         ];
 
         $soalBagian1Level3 = [
-            // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 3, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Sikap bangsa Indonesia terhadap berbagai kemungkinan yang menjadi ancaman kedaulatan bangsa adalah?', 'sub_bagian_id' => 3, 'category_id' => 2, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 3, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Lembaga Tinggi Negara yang berwenang mengadili pada tingkat pertama dan terakhir yang putusannya bersifat final adalah...', 'sub_bagian_id' => 3, 'category_id' => 2, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 3, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Struktur Ketatanegaraan Republik Indonesia berdasarkan UUD 1945 sebelum perubahan Lembaga Negara yang anggota - anggotanya berasal dari unsur ABRI , Utusan Daerah adalah...', 'sub_bagian_id' => 3, 'category_id' => 2, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 3, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Berikut adalah bukti bahwa Pancasila adalh ideologi terbuka , kecuali...', 'sub_bagian_id' => 3, 'category_id' => 2, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 3, 'category_id' => 2, 'paket_id' => 3],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 3, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Hak Asasi Manusia dalam nilai Instrumental salah satunya UU Nomor 26 tahun 2000 mengatur tentang...', 'sub_bagian_id' => 3, 'category_id' => 2, 'paket_id' => 3],
         ];
 
         $soalBagian1Level4 = [
-            // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 4, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Nilai yang merupakan eksplisit , penjabaran , lebih lanjut dari nilai - nilai dasar dalam rangka pelaksanaan nilai - nilai dasar Pancasila adalah...', 'sub_bagian_id' => 4, 'category_id' => 2, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 4, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Pancasila sebagai ideologi terbuka maksudnya ideologi yang mau menerima perubahan pada nilai...', 'sub_bagian_id' => 4, 'category_id' => 2, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 4, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Pancasila sebagai ideologi terbuka , nilai - nilainya telah hidup dan berkembang sejak...', 'sub_bagian_id' => 4, 'category_id' => 2, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 4, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Negara yang tidak mau menangani kasus pelanggaran HAM yang terjadi di negaranya , disebut...', 'sub_bagian_id' => 4, 'category_id' => 2, 'paket_id' => 3],
 
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 4, 'category_id' => 2, 'paket_id' => 3],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 4, 'category_id' => 2, 'paket_id' => 3],
+            ['pertanyaan' => 'Setelah dilakukan perubahan Undang - Undang Dasar Negara Republik Indonesia Tahun 1945 lembaga tinggi negara yang kekuasaannya mengontrol setiap kebiakan Pemerintah dan memiliki hak interpelasi , hak angket , hak menyatakan pendapat , adalah...', 'sub_bagian_id' => 4, 'category_id' => 2, 'paket_id' => 3],
         ];
 
         DB::table('soal')->insert(array_merge($soalBagian1Level1, $soalBagian1Level2, $soalBagian1Level3, $soalBagian1Level4));
 
         $pilihanBagian1Level1 = [
             // Pertanyaan 9
-            ['pilihan' => '5', 'skor' => 0, 'benar' => false, 'soal_id' => 881],
-            ['pilihan' => '6', 'skor' => 0, 'benar' => false, 'soal_id' => 881],
-            ['pilihan' => '7', 'skor' => 20, 'benar' => true, 'soal_id' => 881],
-            ['pilihan' => '8', 'skor' => 0, 'benar' => false, 'soal_id' => 881],
+            ['pilihan' => 'covenant', 'skor' => 0, 'benar' => false, 'soal_id' => 881],
+            ['pilihan' => 'surat keputusan', 'skor' => 0, 'benar' => false, 'soal_id' => 881],
+            ['pilihan' => 'modus vivendi', 'skor' => 20, 'benar' => true, 'soal_id' => 881],
+            ['pilihan' => 'charter', 'skor' => 0, 'benar' => false, 'soal_id' => 881],
+            ['pilihan' => 'konvensi', 'skor' => 0, 'benar' => false, 'soal_id' => 881],
             // Pertanyaan 10
-            ['pilihan' => 'Biology', 'skor' => 0, 'benar' => false, 'soal_id' => 882],
-            ['pilihan' => 'Chemistry', 'skor' => 0, 'benar' => false, 'soal_id' => 882],
-            ['pilihan' => 'Mathematics', 'skor' => 20, 'benar' => true, 'soal_id' => 882],
-            ['pilihan' => 'Geography', 'skor' => 0, 'benar' => false, 'soal_id' => 882],
+            ['pilihan' => 'kuasa usaha', 'skor' => 0, 'benar' => false, 'soal_id' => 882],
+            ['pilihan' => 'duta besar', 'skor' => 0, 'benar' => false, 'soal_id' => 882],
+            ['pilihan' => 'duta', 'skor' => 20, 'benar' => true, 'soal_id' => 882],
+            ['pilihan' => 'atase', 'skor' => 0, 'benar' => false, 'soal_id' => 882],
+            ['pilihan' => 'kuasa usaha tetap', 'skor' => 0, 'benar' => false, 'soal_id' => 882],
             // Pertanyaan 11
-            ['pilihan' => 'Mango', 'skor' => 0, 'benar' => false, 'soal_id' => 883],
-            ['pilihan' => 'Tomato', 'skor' => 0, 'benar' => false, 'soal_id' => 883],
-            ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 883],
-            ['pilihan' => 'Potato', 'skor' => 20, 'benar' => true, 'soal_id' => 883],
+            ['pilihan' => 'bilateral', 'skor' => 0, 'benar' => false, 'soal_id' => 883],
+            ['pilihan' => 'internasional', 'skor' => 0, 'benar' => false, 'soal_id' => 883],
+            ['pilihan' => 'hubungan banyak negara', 'skor' => 0, 'benar' => false, 'soal_id' => 883],
+            ['pilihan' => 'multilateral', 'skor' => 20, 'benar' => true, 'soal_id' => 883],
+            ['pilihan' => 'duateral', 'skor' => 0, 'benar' => false, 'soal_id' => 883],
             // Pertanyaan 12
-            ['pilihan' => 'Sailor', 'skor' => 0, 'benar' => false, 'soal_id' => 884],
-            ['pilihan' => 'Pilot', 'skor' => 20, 'benar' => true, 'soal_id' => 884],
-            ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 884],
-            ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 884],
+            ['pilihan' => 'memberikan dokumen perjalanan', 'skor' => 0, 'benar' => false, 'soal_id' => 884],
+            ['pilihan' => 'mengawasi pelayanan pelaksanaan', 'skor' => 0, 'benar' => false, 'soal_id' => 884],
+            ['pilihan' => 'bertindak sebagai sumber hukum', 'skor' => 0, 'benar' => false, 'soal_id' => 884],
+            ['pilihan' => 'menjual budaya dalam negeri', 'skor' => 0, 'benar' => false, 'soal_id' => 884],
+            ['pilihan' => 'mempromosikan kebudayaan', 'skor' => 20, 'benar' => true, 'soal_id' => 884],
             // Pertanyaan 13
-            ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 885],
-            ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 885],
-            ['pilihan' => 'Table', 'skor' => 0, 'benar' => false, 'soal_id' => 885],
-            ['pilihan' => 'Lamp', 'skor' => 0, 'benar' => false, 'soal_id' => 885],
+            ['pilihan' => 'segala keputusan di tangan pemimpin', 'skor' => 0, 'benar' => false, 'soal_id' => 885],
+            ['pilihan' => 'demokrasi berdasarkan hikmat kebijaksanaan dalam permusyawaratan/perwakilan', 'skor' => 20, 'benar' => true, 'soal_id' => 885],
+            ['pilihan' => 'kekuasaan di tangan rakyat', 'skor' => 0, 'benar' => false, 'soal_id' => 885],
+            ['pilihan' => 'demokrasi yang dijiwai nilai-nilai pancasila', 'skor' => 0, 'benar' => false, 'soal_id' => 885],
+            ['pilihan' => 'demokrasi yang dipimpin oleh rakyat', 'skor' => 0, 'benar' => false, 'soal_id' => 885],
         ];
 
         $pilihanBagian1Level2 = [
             // Pertanyaan 14
-            ['pilihan' => 'Night', 'skor' => 20, 'benar' => true, 'soal_id' => 886],
-            ['pilihan' => 'Sun', 'skor' => 0, 'benar' => false, 'soal_id' => 886],
-            ['pilihan' => 'Morning', 'skor' => 0, 'benar' => false, 'soal_id' => 886],
-            ['pilihan' => 'Noon', 'skor' => 0, 'benar' => false, 'soal_id' => 886],
+            ['pilihan' => 'menjadikan warga negara memiliki pengetahuan politik', 'skor' => 20, 'benar' => true, 'soal_id' => 886],
+            ['pilihan' => 'menjadi warga negara berperan aktif', 'skor' => 0, 'benar' => false, 'soal_id' => 886],
+            ['pilihan' => 'mendorong warga negara berpolitik', 'skor' => 0, 'benar' => false, 'soal_id' => 886],
+            ['pilihan' => 'agar negara memiliki perilaku politik', 'skor' => 0, 'benar' => false, 'soal_id' => 886],
+            ['pilihan' => 'agar warga negara berpartisipasi politik', 'skor' => 0, 'benar' => false, 'soal_id' => 886],
             // Pertanyaan 15
-            ['pilihan' => 'London', 'skor' => 0, 'benar' => false, 'soal_id' => 887],
-            ['pilihan' => 'Paris', 'skor' => 20, 'benar' => true, 'soal_id' => 887],
-            ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 887],
-            ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 887],
+            ['pilihan' => 'partisipan', 'skor' => 0, 'benar' => false, 'soal_id' => 887],
+            ['pilihan' => 'parokial', 'skor' => 20, 'benar' => true, 'soal_id' => 887],
+            ['pilihan' => 'kaula', 'skor' => 0, 'benar' => false, 'soal_id' => 887],
+            ['pilihan' => 'pasif', 'skor' => 0, 'benar' => false, 'soal_id' => 887],
+            ['pilihan' => 'kolonial', 'skor' => 0, 'benar' => false, 'soal_id' => 887],
             // Pertanyaan 16
-            ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 888],
-            ['pilihan' => 'Square', 'skor' => 20, 'benar' => true, 'soal_id' => 888],
-            ['pilihan' => 'Green', 'skor' => 0, 'benar' => false, 'soal_id' => 888],
-            ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 888],
+            ['pilihan' => 'tingkat ekonomi', 'skor' => 0, 'benar' => false, 'soal_id' => 888],
+            ['pilihan' => 'tingkat pendidikan', 'skor' => 20, 'benar' => true, 'soal_id' => 888],
+            ['pilihan' => 'kesadaran berdemokrasi', 'skor' => 0, 'benar' => false, 'soal_id' => 888],
+            ['pilihan' => 'sikap politik', 'skor' => 0, 'benar' => false, 'soal_id' => 888],
+            ['pilihan' => 'kepedulian masyarakat', 'skor' => 0, 'benar' => false, 'soal_id' => 888],
             // Pertanyaan 17
-            ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 889],
-            ['pilihan' => 'Eight', 'skor' => 20, 'benar' => true, 'soal_id' => 889],
-            ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 889],
-            ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 889],
+            ['pilihan' => 'budaya politik kaula', 'skor' => 0, 'benar' => false, 'soal_id' => 889],
+            ['pilihan' => 'budaya politik pasif', 'skor' => 0, 'benar' => false, 'soal_id' => 889],
+            ['pilihan' => 'budaya politik kolonial', 'skor' => 0, 'benar' => false, 'soal_id' => 889],
+            ['pilihan' => 'budaya politik parokial', 'skor' => 0, 'benar' => false, 'soal_id' => 889],
+            ['pilihan' => 'budaya politik partisipan', 'skor' => 20, 'benar' => true, 'soal_id' => 889],
             // Pertanyaan 18
-            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 890],
-            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 890],
-            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 890],
-            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 890],
+            ['pilihan' => 'kelompok kepentingan', 'skor' => 0, 'benar' => false, 'soal_id' => 890],
+            ['pilihan' => 'pemerintah', 'skor' => 0, 'benar' => false, 'soal_id' => 890],
+            ['pilihan' => 'kelompok mayoritas', 'skor' => 0, 'benar' => false, 'soal_id' => 890],
+            ['pilihan' => 'organisasi masyarakat', 'skor' => 0, 'benar' => false, 'soal_id' => 890],
+            ['pilihan' => 'partai politik', 'skor' => 20, 'benar' => true, 'soal_id' => 890],
         ];
 
         $pilihanBagian1Level3 = [
             // Pertanyaan 13
-            ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 891],
-            ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 891],
-            ['pilihan' => 'Table', 'skor' => 0, 'benar' => false, 'soal_id' => 891],
-            ['pilihan' => 'Lamp', 'skor' => 0, 'benar' => false, 'soal_id' => 891],
+            ['pilihan' => 'selalu percaya diri bahwa tidak ada bangsa lain yang berani mengancam Indonesia', 'skor' => 0, 'benar' => false, 'soal_id' => 891],
+            ['pilihan' => 'tetap mewaspadai segala kemungkinan ancaman yang terjadi', 'skor' => 20, 'benar' => true, 'soal_id' => 891],
+            ['pilihan' => 'menjaga hubungan baik dengan negara lain yang meskipun mengambil wilayah negara kita', 'skor' => 0, 'benar' => false, 'soal_id' => 891],
+            ['pilihan' => 'selalu mengandalkan bantuan dari negara sahabat kita', 'skor' => 0, 'benar' => false, 'soal_id' => 891],
+            ['pilihan' => 'tidak peduli karena merupakan tanggung jawab dari kementerian pertahanan', 'skor' => 0, 'benar' => false, 'soal_id' => 891],
             // Pertanyaan 14
-            ['pilihan' => 'Night', 'skor' => 20, 'benar' => true, 'soal_id' => 892],
-            ['pilihan' => 'Sun', 'skor' => 0, 'benar' => false, 'soal_id' => 892],
-            ['pilihan' => 'Morning', 'skor' => 0, 'benar' => false, 'soal_id' => 892],
-            ['pilihan' => 'Noon', 'skor' => 0, 'benar' => false, 'soal_id' => 892],
+            ['pilihan' => 'Mahkamah Konstitusi', 'skor' => 20, 'benar' => true, 'soal_id' => 892],
+            ['pilihan' => 'Mahkamah Agung', 'skor' => 0, 'benar' => false, 'soal_id' => 892],
+            ['pilihan' => 'Kejaksaan Agung', 'skor' => 0, 'benar' => false, 'soal_id' => 892],
+            ['pilihan' => 'Mahkamah Militer Luar Biasa Mahmilub', 'skor' => 0, 'benar' => false, 'soal_id' => 892],
+            ['pilihan' => 'Arbitrase', 'skor' => 0, 'benar' => false, 'soal_id' => 892],
             // Pertanyaan 15
-            ['pilihan' => 'London', 'skor' => 0, 'benar' => false, 'soal_id' => 893],
-            ['pilihan' => 'Paris', 'skor' => 20, 'benar' => true, 'soal_id' => 893],
-            ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 893],
-            ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 893],
+            ['pilihan' => 'Dewan Perwakilan Rakyat ( DPR )', 'skor' => 0, 'benar' => false, 'soal_id' => 893],
+            ['pilihan' => 'Majelis Permusyawatan Rakyat (MPR )', 'skor' => 20, 'benar' => true, 'soal_id' => 893],
+            ['pilihan' => 'Mahkamah Agung', 'skor' => 0, 'benar' => false, 'soal_id' => 893],
+            ['pilihan' => 'Dewan Pertimbangan Agung ( DPA )', 'skor' => 0, 'benar' => false, 'soal_id' => 893],
+            ['pilihan' => 'Badan Pemeriksa Keuangan ( BPK )', 'skor' => 0, 'benar' => false, 'soal_id' => 893],
             // Pertanyaan 16
-            ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 894],
-            ['pilihan' => 'Square', 'skor' => 20, 'benar' => true, 'soal_id' => 894],
-            ['pilihan' => 'Green', 'skor' => 0, 'benar' => false, 'soal_id' => 894],
-            ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 894],
+            ['pilihan' => 'merupakan cita - cita yang hidup dalam mayarakat', 'skor' => 0, 'benar' => false, 'soal_id' => 894],
+            ['pilihan' => 'hasil musyawarah dankonsensus masyarakat', 'skor' => 0, 'benar' => false, 'soal_id' => 894],
+            ['pilihan' => 'isinya operasional', 'skor' => 20, 'benar' => true, 'soal_id' => 894],
+            ['pilihan' => 'bersifat dinamis dan reformis', 'skor' => 0, 'benar' => false, 'soal_id' => 894],
+            ['pilihan' => 'memiliki dimensi idealistis , normatif , dan realistis', 'skor' => 0, 'benar' => false, 'soal_id' => 894],
             // Pertanyaan 17
-            ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 895],
-            ['pilihan' => 'Eight', 'skor' => 20, 'benar' => true, 'soal_id' => 895],
-            ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 895],
-            ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 895],
+            ['pilihan' => 'Piagam HAM', 'skor' => 0, 'benar' => false, 'soal_id' => 895],
+            ['pilihan' => 'Pengadilan HAM', 'skor' => 20, 'benar' => true, 'soal_id' => 895],
+            ['pilihan' => 'KOMNAS HAM', 'skor' => 0, 'benar' => false, 'soal_id' => 895],
+            ['pilihan' => 'Hak Asasi Manusia', 'skor' => 0, 'benar' => false, 'soal_id' => 895],
+            ['pilihan' => 'Kebebasan berserikat dan perlindungan untuk berorganisasi', 'skor' => 0, 'benar' => false, 'soal_id' => 895],
         ];
 
         $pilihanBagian1Level4 = [
             // Pertanyaan 18
-            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 896],
-            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 896],
-            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 896],
-            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 896],
+            ['pilihan' => 'nilai praktis', 'skor' => 0, 'benar' => false, 'soal_id' => 896],
+            ['pilihan' => 'nilai sosial', 'skor' => 0, 'benar' => false, 'soal_id' => 896],
+            ['pilihan' => 'nilai rohaniah', 'skor' => 0, 'benar' => false, 'soal_id' => 896],
+            ['pilihan' => 'nilai dasar', 'skor' => 0, 'benar' => false, 'soal_id' => 896],
+            ['pilihan' => 'nilai instrumental', 'skor' => 20, 'benar' => true, 'soal_id' => 896],
             // Pertanyaan 1
-            ['pilihan' => 'Cold', 'skor' => 20, 'benar' => true, 'soal_id' => 897],
-            ['pilihan' => 'Warm', 'skor' => 0, 'benar' => false, 'soal_id' => 897],
-            ['pilihan' => 'Cool', 'skor' => 0, 'benar' => false, 'soal_id' => 897],
-            ['pilihan' => 'Icy', 'skor' => 0, 'benar' => false, 'soal_id' => 897],
+            ['pilihan' => 'instrumen dan praksis', 'skor' => 20, 'benar' => true, 'soal_id' => 897],
+            ['pilihan' => 'Sila Pertama Pancasila', 'skor' => 0, 'benar' => false, 'soal_id' => 897],
+            ['pilihan' => 'Sila kedua Pancasila', 'skor' => 0, 'benar' => false, 'soal_id' => 897],
+            ['pilihan' => 'nilai rohaniah', 'skor' => 0, 'benar' => false, 'soal_id' => 897],
+            ['pilihan' => 'nilai instrumental', 'skor' => 0, 'benar' => false, 'soal_id' => 897],
             // Pertanyaan 2
-            ['pilihan' => 'Large', 'skor' => 20, 'benar' => true, 'soal_id' => 898],
-            ['pilihan' => 'Little', 'skor' => 0, 'benar' => false, 'soal_id' => 898],
-            ['pilihan' => 'Tiny', 'skor' => 0, 'benar' => false, 'soal_id' => 898],
-            ['pilihan' => 'Miniature', 'skor' => 0, 'benar' => false, 'soal_id' => 898],
+            ['pilihan' => '17 Agustus 1945', 'skor' => 0, 'benar' => false, 'soal_id' => 898],
+            ['pilihan' => 'dijajah Belanda', 'skor' => 0, 'benar' => false, 'soal_id' => 898],
+            ['pilihan' => 'sidang I BPUPKI', 'skor' => 0, 'benar' => false, 'soal_id' => 898],
+            ['pilihan' => 'Manusia ada', 'skor' => 20, 'benar' => true, 'soal_id' => 898],
+            ['pilihan' => '18 Agustus 1945', 'skor' => 0, 'benar' => false, 'soal_id' => 898],
             // Pertanyaan 3
-            ['pilihan' => 'Bluee', 'skor' => 0, 'benar' => false, 'soal_id' => 899],
-            ['pilihan' => 'Bloue', 'skor' => 0, 'benar' => false, 'soal_id' => 899],
-            ['pilihan' => 'Blue', 'skor' => 20, 'benar' => true, 'soal_id' => 899],
-            ['pilihan' => 'Blhue', 'skor' => 0, 'benar' => false, 'soal_id' => 899],
+            ['pilihan' => 'negara sekuler', 'skor' => 0, 'benar' => false, 'soal_id' => 899],
+            ['pilihan' => 'negara netral', 'skor' => 0, 'benar' => false, 'soal_id' => 899],
+            ['pilihan' => 'negara nonblok', 'skor' => 0, 'benar' => false, 'soal_id' => 899],
+            ['pilihan' => 'Unwillingness State', 'skor' => 20, 'benar' => true, 'soal_id' => 899],
+            ['pilihan' => 'Welfare State', 'skor' => 0, 'benar' => false, 'soal_id' => 899],
             // Pertanyaan 4
-            ['pilihan' => 'Bank', 'skor' => 0, 'benar' => false, 'soal_id' => 900],
-            ['pilihan' => 'School', 'skor' => 0, 'benar' => false, 'soal_id' => 900],
-            ['pilihan' => 'Library', 'skor' => 20, 'benar' => true, 'soal_id' => 900],
-            ['pilihan' => 'Mall', 'skor' => 0, 'benar' => false, 'soal_id' => 900],
+            ['pilihan' => 'Mahkamah Konstitusi', 'skor' => 0, 'benar' => false, 'soal_id' => 900],
+            ['pilihan' => 'Dewan Perwakilan Daerah', 'skor' => 0, 'benar' => false, 'soal_id' => 900],
+            ['pilihan' => 'Dewan Perwakilan Rakyat', 'skor' => 20, 'benar' => true, 'soal_id' => 900],
+            ['pilihan' => 'Majelis Permusyawaratan Rakyat', 'skor' => 0, 'benar' => false, 'soal_id' => 900],
+            ['pilihan' => 'Komisi Pemilihan Umum', 'skor' => 0, 'benar' => false, 'soal_id' => 900],
         ];
 
         DB::table('pilihan')->insert(array_merge($pilihanBagian1Level1, $pilihanBagian1Level2, $pilihanBagian1Level3, $pilihanBagian1Level4));
@@ -980,6 +989,7 @@ class SoalPaketCSeeder extends Seeder
         $soalBagian2Level1 = [
             // Pertanyaan 1
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 2, 'paket_id' => 3],
+            
             // Pertanyaan 2
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 2, 'paket_id' => 3],
 
@@ -991,15 +1001,9 @@ class SoalPaketCSeeder extends Seeder
 
             // Pertanyaan 5
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 2, 'paket_id' => 3],
-
-            // Pertanyaan 6
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 2, 'paket_id' => 3],
         ];
 
         $soalBagian2Level2 = [
-            // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 2, 'paket_id' => 3],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 2, 'paket_id' => 3],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 2, 'paket_id' => 3],
@@ -1012,9 +1016,6 @@ class SoalPaketCSeeder extends Seeder
         ];
 
         $soalBagian2Level3 = [
-            // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 2, 'paket_id' => 3],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 2, 'paket_id' => 3],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 2, 'paket_id' => 3],
@@ -1027,9 +1028,6 @@ class SoalPaketCSeeder extends Seeder
         ];
 
         $soalBagian2Level4 = [
-            // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 2, 'paket_id' => 3],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 2, 'paket_id' => 3],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 2, 'paket_id' => 3],
@@ -1161,6 +1159,7 @@ class SoalPaketCSeeder extends Seeder
         $soalBagian3Level1 = [
             // Pertanyaan 1
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 9, 'category_id' => 2, 'paket_id' => 3],
+
             // Pertanyaan 2
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 9, 'category_id' => 2, 'paket_id' => 3],
 
@@ -1172,15 +1171,9 @@ class SoalPaketCSeeder extends Seeder
 
             // Pertanyaan 5
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 9, 'category_id' => 2, 'paket_id' => 3],
-
-            // Pertanyaan 6
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 9, 'category_id' => 2, 'paket_id' => 3],
         ];
 
         $soalBagian3Level2 = [
-            // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 10, 'category_id' => 2, 'paket_id' => 3],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 10, 'category_id' => 2, 'paket_id' => 3],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 10, 'category_id' => 2, 'paket_id' => 3],
@@ -1193,9 +1186,6 @@ class SoalPaketCSeeder extends Seeder
         ];
 
         $soalBagian3Level3 = [
-            // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 11, 'category_id' => 2, 'paket_id' => 3],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 11, 'category_id' => 2, 'paket_id' => 3],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 11, 'category_id' => 2, 'paket_id' => 3],
@@ -1208,9 +1198,6 @@ class SoalPaketCSeeder extends Seeder
         ];
 
         $soalBagian3Level4 = [
-            // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 12, 'category_id' => 2, 'paket_id' => 3],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 12, 'category_id' => 2, 'paket_id' => 3],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 12, 'category_id' => 2, 'paket_id' => 3],
@@ -1342,6 +1329,7 @@ class SoalPaketCSeeder extends Seeder
         $soalBagian4Level1 = [
             // Pertanyaan 1
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 13, 'category_id' => 2, 'paket_id' => 3],
+
             // Pertanyaan 2
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 13, 'category_id' => 2, 'paket_id' => 3],
 
@@ -1353,15 +1341,9 @@ class SoalPaketCSeeder extends Seeder
 
             // Pertanyaan 5
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 13, 'category_id' => 2, 'paket_id' => 3],
-
-            // Pertanyaan 6
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 13, 'category_id' => 2, 'paket_id' => 3],
         ];
 
         $soalBagian4Level2 = [
-            // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 14, 'category_id' => 2, 'paket_id' => 3],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 14, 'category_id' => 2, 'paket_id' => 3],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 14, 'category_id' => 2, 'paket_id' => 3],
@@ -1374,9 +1356,6 @@ class SoalPaketCSeeder extends Seeder
         ];
 
         $soalBagian4Level3 = [
-            // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 15, 'category_id' => 2, 'paket_id' => 3],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 15, 'category_id' => 2, 'paket_id' => 3],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 15, 'category_id' => 2, 'paket_id' => 3],
@@ -1389,9 +1368,6 @@ class SoalPaketCSeeder extends Seeder
         ];
 
         $soalBagian4Level4 = [
-            // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 16, 'category_id' => 2, 'paket_id' => 3],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 16, 'category_id' => 2, 'paket_id' => 3],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 16, 'category_id' => 2, 'paket_id' => 3],
@@ -1523,6 +1499,7 @@ class SoalPaketCSeeder extends Seeder
         $soalBagian1Level1 = [
             // Pertanyaan 1
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 1, 'category_id' => 3, 'paket_id' => 3],
+
             // Pertanyaan 2
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 1, 'category_id' => 3, 'paket_id' => 3],
 
@@ -1533,9 +1510,6 @@ class SoalPaketCSeeder extends Seeder
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 1, 'category_id' => 3, 'paket_id' => 3],
 
             // Pertanyaan 5
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 1, 'category_id' => 3, 'paket_id' => 3],
-
-            // Pertanyaan 6
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 1, 'category_id' => 3, 'paket_id' => 3],
         ];
 
