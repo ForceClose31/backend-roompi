@@ -161,9 +161,22 @@ class ExerciseController extends Controller
             return $reportExercise;
         });
 
+
+        $groupedExercises = $reportExercises->groupBy('category_id');
+
+        $response = [];
+
+        foreach ($groupedExercises as $categoryId => $exercises) {
+            $response[] = [
+                    'category_id' => $categoryId,
+                    'data_mapel' => $exercises->toArray()
+            ];
+        }
+
+
         return response()->json([
             'status' => 'success',
-            'data' => $reportExercises
+            'data' => $response
         ]);
     }
 
