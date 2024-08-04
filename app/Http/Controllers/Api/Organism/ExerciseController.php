@@ -145,34 +145,62 @@ class ExerciseController extends Controller
             ], 404);
         }
 
-        $reportExercises = ReportExercise::where('remaja_id', $remaja->id)
-            ->orderBy('bagian_id')
-            ->orderBy('sub_bagian_id')
-            ->orderBy('paket_id')
-            ->orderBy('activity_id')
-            ->orderBy('category_id')
-            ->get();
-
-        $reportExercises->transform(function ($reportExercise) {
-            $reportExercise->nama_bagian = Bagian::where('id', $reportExercise->bagian_id)->value('nama_bagian');
-            $reportExercise->nama_sub_bagian = SubBagian::where('id', $reportExercise->sub_bagian_id)->value('nama_sub_bagian');
-            $reportExercise->nama_mapel = Category::where('id', $reportExercise->category_id)->value('nama_mapel');
-
-            return $reportExercise;
-        });
-
+        $reportExercises = ReportExercise::with([
+            'bagian:id,nama_bagian',
+            'subBagian:id,nama_sub_bagian',
+            'category:id,nama_mapel'
+        ])
+        ->where('remaja_id', $remaja->id)
+        ->orderBy('category_id')
+        ->orderBy('bagian_id')
+        ->orderBy('sub_bagian_id')
+        ->orderBy('paket_id')
+        ->orderBy('activity_id')
+        ->get();
 
         $groupedExercises = $reportExercises->groupBy('category_id');
 
         $response = [];
 
-        foreach ($groupedExercises as $categoryId => $exercises) {
+        foreach ($groupedExercises as $categoryId => $exercisesByCategory) {
+            $categoryName = $exercisesByCategory->first()->category->nama_mapel;
+
+            $groupedByBagian = $exercisesByCategory->groupBy('bagian_id');
+
+            $bagianData = [];
+
+            foreach ($groupedByBagian as $bagianId => $exercisesByBagian) {
+                $bagianName = $exercisesByBagian->first()->bagian->nama_bagian;
+                $groupedBySubBagian = $exercisesByBagian->groupBy('sub_bagian_id');
+                foreach ($groupedBySubBagian as $subBagianId => $exercisesBySubBagian) {
+                    $subBagianName = $exercisesBySubBagian->first()->subBagian->nama_sub_bagian;
+
+                    $subBagianData = [
+                        'bagian_id' => $bagianId,
+                        'sub_bagian_id' => $subBagianId,
+                        'nama_bagian' => $bagianName,
+                        'nama_sub_bagian' => $subBagianName,
+                        'data_sub_bagian' => $exercisesBySubBagian->map(function ($exercise) {
+                            return [
+                                'id' => $exercise->id,
+                                'nilai' => $exercise->nilai,
+                                'completed' => $exercise->completed,
+                                'created_at' => $exercise->created_at,
+                                'updated_at' => $exercise->updated_at,
+                            ];
+                        })->values()->toArray(),
+                    ];
+
+                    $bagianData[] = $subBagianData;
+                }
+            }
+
             $response[] = [
-                    'category_id' => $categoryId,
-                    'data_mapel' => $exercises->toArray()
+                'category_id' => $categoryId,
+                'nama_mapel' => $categoryName,
+                'data_bagian' => $bagianData,
             ];
         }
-
 
         return response()->json([
             'status' => 'success',
