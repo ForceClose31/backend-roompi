@@ -156,43 +156,38 @@ class ExerciseController extends Controller
         ->orderBy('sub_bagian_id')
         ->orderBy('paket_id')
         ->orderBy('activity_id')
-        ->get();
-
-        $groupedExercises = $reportExercises->groupBy('category_id');
+        ->get()
+        ->groupBy(['category_id', 'bagian_id', 'sub_bagian_id']);
 
         $response = [];
-
-        foreach ($groupedExercises as $categoryId => $exercisesByCategory) {
-            $categoryName = $exercisesByCategory->first()->category->nama_mapel;
-
-            $groupedByBagian = $exercisesByCategory->groupBy('bagian_id');
+        foreach ($reportExercises as $categoryId => $bagians) {
+            $categoryName = $bagians->first()->first()->first()->category->nama_mapel;
 
             $bagianData = [];
 
-            foreach ($groupedByBagian as $bagianId => $exercisesByBagian) {
-                $bagianName = $exercisesByBagian->first()->bagian->nama_bagian;
-                $groupedBySubBagian = $exercisesByBagian->groupBy('sub_bagian_id');
-                foreach ($groupedBySubBagian as $subBagianId => $exercisesBySubBagian) {
-                    $subBagianName = $exercisesBySubBagian->first()->subBagian->nama_sub_bagian;
+            foreach ($bagians as $bagianId => $subBagians) {
+                $bagianName = $subBagians->first()->first()->bagian->nama_bagian;
 
-                    $subBagianData = [
-                        'bagian_id' => $bagianId,
+                $subBagianData = [];
+
+                foreach ($subBagians as $subBagianId => $exercises) {
+                    $subBagianName = $exercises->first()->subBagian->nama_sub_bagian;
+
+                    $subBagianData[] = [
                         'sub_bagian_id' => $subBagianId,
-                        'nama_bagian' => $bagianName,
                         'nama_sub_bagian' => $subBagianName,
-                        'data_sub_bagian' => $exercisesBySubBagian->map(function ($exercise) {
-                            return [
-                                'id' => $exercise->id,
-                                'nilai' => $exercise->nilai,
-                                'completed' => $exercise->completed,
-                                'created_at' => $exercise->created_at,
-                                'updated_at' => $exercise->updated_at,
-                            ];
-                        })->values()->toArray(),
+                        'nilai' => $exercises->first()->nilai,
+                        'completed' => $exercises->first()->completed,
+                        'created_at' => $exercises->first()->created_at,
+                        'updated_at' => $exercises->first()->updated_at,
                     ];
-
-                    $bagianData[] = $subBagianData;
                 }
+
+                $bagianData[] = [
+                    'bagian_id' => $bagianId,
+                    'nama_bagian' => $bagianName,
+                    'data_sub_bagian' => $subBagianData,
+                ];
             }
 
             $response[] = [
@@ -207,8 +202,6 @@ class ExerciseController extends Controller
             'data' => $response
         ]);
     }
-
-
 
     public function submitExercise(Request $request, $bagianId, $subBagianId, $category_id)
     {
