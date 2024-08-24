@@ -198,14 +198,13 @@ class ExerciseController extends Controller
         }
 
         return response()->json([
-            'status' => 'success',
+            'status' => 'p',
             'data' => $response
         ]);
     }
 
     public function submitExercise(Request $request, $bagianId, $subBagianId, $category_id)
     {
-
         $request->validate([
             'soal_id' => 'required|array',
             'jawaban' => 'required|array',
@@ -244,19 +243,20 @@ class ExerciseController extends Controller
 
         $isCompleted = $totalNilai >= 100;
 
-
-        $report = ReportExercise::where('remaja_id', $remaja->id)
+        $reports = ReportExercise::where('remaja_id', $remaja->id)
             ->where('bagian_id', $bagianId)
             ->where('sub_bagian_id', $subBagianId)
             ->where('category_id', $category_id)
-            ->first();
+            ->get();
 
-        if ($report) {
-            $report->nilai = $totalNilai;
-            $report->completed = $isCompleted;
-            $remaja->exp += $totalNilai;
-            $remaja->save();
-            $report->save();
+        if ($reports->isNotEmpty()) {
+            foreach ($reports as $report) {
+                $report->nilai = $totalNilai;
+                $report->completed = $isCompleted;
+                $remaja->exp += $totalNilai;
+                $remaja->save();
+                $report->save();
+            }
         } else {
             $report = new ReportExercise();
             $report->remaja_id = $remaja->id;
@@ -271,7 +271,9 @@ class ExerciseController extends Controller
         return response()->json([
             'status' => 'success',
             'message' => 'Exercise submitted successfully',
-            'nilai' => $totalNilai
+            'nilai' => $totalNilai,
+            'completed' => $isCompleted
         ]);
     }
+
 }
