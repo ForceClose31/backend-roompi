@@ -13,75 +13,75 @@ class SoalPaketASeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('category')->insert([
-            ['nama_mapel' => 'Matematika'],
-            ['nama_mapel' => 'PPKN'],
-            ['nama_mapel' => 'PAI'],
-            ['nama_mapel' => 'Sejarah'],
-            ['nama_mapel' => 'Bahasa'],
-        ]);
+        // DB::table('category')->insert([
+        //     ['nama_mapel' => 'Matematika'],
+        //     ['nama_mapel' => 'PPKN'],
+        //     ['nama_mapel' => 'PAI'],
+        //     ['nama_mapel' => 'Sejarah'],
+        //     ['nama_mapel' => 'Bahasa'],
+        // ]);
 
-        DB::table('bagian')->insert([
-            ['nama_bagian' => 'Mudah'],
-            ['nama_bagian' => 'Standart'],
-            ['nama_bagian' => 'Sedang'],
-            ['nama_bagian' => 'Susah'],
-        ]);
+        // DB::table('bagian')->insert([
+        //     ['nama_bagian' => 'Mudah'],
+        //     ['nama_bagian' => 'Standart'],
+        //     ['nama_bagian' => 'Sedang'],
+        //     ['nama_bagian' => 'Susah'],
+        // ]);
 
-        DB::table('sub_bagian')->insert([
+        // DB::table('sub_bagian')->insert([
 
-            /**
-             *Level 1
-             */
+        //     /**
+        //      *Level 1
+        //      */
 
-            // Sub bagian 1
-            ['nama_sub_bagian' => 'Level 1', 'nilai_maks' => 100, 'bagian_id' => 1],
-            // Sub bagian 2
-            ['nama_sub_bagian' => 'Level 2', 'nilai_maks' => 100, 'bagian_id' => 1],
-            // Sub bagian 3
-            ['nama_sub_bagian' => 'Level 3', 'nilai_maks' => 100, 'bagian_id' => 1],
-            // Sub bagian 4
-            ['nama_sub_bagian' => 'Level 4', 'nilai_maks' => 100, 'bagian_id' => 1],
+        //     // Sub bagian 1
+        //     ['nama_sub_bagian' => 'Level 1', 'nilai_maks' => 100, 'bagian_id' => 1],
+        //     // Sub bagian 2
+        //     ['nama_sub_bagian' => 'Level 2', 'nilai_maks' => 100, 'bagian_id' => 1],
+        //     // Sub bagian 3
+        //     ['nama_sub_bagian' => 'Level 3', 'nilai_maks' => 100, 'bagian_id' => 1],
+        //     // Sub bagian 4
+        //     ['nama_sub_bagian' => 'Level 4', 'nilai_maks' => 100, 'bagian_id' => 1],
 
-            /**
-             *Level 2
-             */
+        //     /**
+        //      *Level 2
+        //      */
 
-            // Sub bagian 5
-            ['nama_sub_bagian' => 'Level 1', 'nilai_maks' => 100, 'bagian_id' => 2],
-            // Sub bagian 6
-            ['nama_sub_bagian' => 'Level 2', 'nilai_maks' => 100, 'bagian_id' => 2],
-            // Sub bagian 7
-            ['nama_sub_bagian' => 'Level 3', 'nilai_maks' => 100, 'bagian_id' => 2],
-            // Sub bagian 8
-            ['nama_sub_bagian' => 'Level 4', 'nilai_maks' => 100, 'bagian_id' => 2],
+        //     // Sub bagian 5
+        //     ['nama_sub_bagian' => 'Level 1', 'nilai_maks' => 100, 'bagian_id' => 2],
+        //     // Sub bagian 6
+        //     ['nama_sub_bagian' => 'Level 2', 'nilai_maks' => 100, 'bagian_id' => 2],
+        //     // Sub bagian 7
+        //     ['nama_sub_bagian' => 'Level 3', 'nilai_maks' => 100, 'bagian_id' => 2],
+        //     // Sub bagian 8
+        //     ['nama_sub_bagian' => 'Level 4', 'nilai_maks' => 100, 'bagian_id' => 2],
 
-            /**
-             *Level 3
-             */
+        //     /**
+        //      *Level 3
+        //      */
 
-            // Sub bagian 9
-            ['nama_sub_bagian' => 'Level 1', 'nilai_maks' => 100, 'bagian_id' => 3],
-            // Sub bagian 10
-            ['nama_sub_bagian' => 'Level 2', 'nilai_maks' => 100, 'bagian_id' => 3],
-            // Sub bagian 11
-            ['nama_sub_bagian' => 'Level 3', 'nilai_maks' => 100, 'bagian_id' => 3],
-            // Sub bagian 12
-            ['nama_sub_bagian' => 'Level 4', 'nilai_maks' => 100, 'bagian_id' => 3],
+        //     // Sub bagian 9
+        //     ['nama_sub_bagian' => 'Level 1', 'nilai_maks' => 100, 'bagian_id' => 3],
+        //     // Sub bagian 10
+        //     ['nama_sub_bagian' => 'Level 2', 'nilai_maks' => 100, 'bagian_id' => 3],
+        //     // Sub bagian 11
+        //     ['nama_sub_bagian' => 'Level 3', 'nilai_maks' => 100, 'bagian_id' => 3],
+        //     // Sub bagian 12
+        //     ['nama_sub_bagian' => 'Level 4', 'nilai_maks' => 100, 'bagian_id' => 3],
 
-            /**
-             *Level 4
-             */
+        //     /**
+        //      *Level 4
+        //      */
 
-            // Sub bagian 13
-            ['nama_sub_bagian' => 'Level 1', 'nilai_maks' => 100, 'bagian_id' => 4],
-            // Sub bagian 14
-            ['nama_sub_bagian' => 'Level 2', 'nilai_maks' => 100, 'bagian_id' => 4],
-            // Sub bagian 15
-            ['nama_sub_bagian' => 'Level 3', 'nilai_maks' => 100, 'bagian_id' => 4],
-            // Sub bagian 16
-            ['nama_sub_bagian' => 'Level 4', 'nilai_maks' => 100, 'bagian_id' => 4],
-        ]);
+        //     // Sub bagian 13
+        //     ['nama_sub_bagian' => 'Level 1', 'nilai_maks' => 100, 'bagian_id' => 4],
+        //     // Sub bagian 14
+        //     ['nama_sub_bagian' => 'Level 2', 'nilai_maks' => 100, 'bagian_id' => 4],
+        //     // Sub bagian 15
+        //     ['nama_sub_bagian' => 'Level 3', 'nilai_maks' => 100, 'bagian_id' => 4],
+        //     // Sub bagian 16
+        //     ['nama_sub_bagian' => 'Level 4', 'nilai_maks' => 100, 'bagian_id' => 4],
+        // ]);
 
         // Mapel Matematika
         $soalBagian1Level1 = [
@@ -451,10 +451,7 @@ class SoalPaketASeeder extends Seeder
             ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 40],
         ];
 
-
-
         DB::table('pilihan')->insert(array_merge($pilihanBagian2Level1, $pilihanBagian2Level2, $pilihanBagian2Level3, $pilihanBagian2Level4));
-
 
         $soalBagian3Level1 = [
             // Pertanyaan 41
@@ -840,15 +837,10 @@ class SoalPaketASeeder extends Seeder
 
             // Pertanyaan 5
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 1, 'category_id' => 2, 'paket_id' => 1],
-
-            // Pertanyaan 6
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 1, 'category_id' => 2, 'paket_id' => 1],
         ];
 
         $soalBagian1Level2 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 2, 'category_id' => 2, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 2, 'category_id' => 2, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 2, 'category_id' => 2, 'paket_id' => 1],
@@ -871,14 +863,10 @@ class SoalPaketASeeder extends Seeder
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 3, 'category_id' => 2, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 3, 'category_id' => 2, 'paket_id' => 1],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 3, 'category_id' => 2, 'paket_id' => 1],
         ];
 
         $soalBagian1Level4 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 4, 'category_id' => 2, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 4, 'category_id' => 2, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 4, 'category_id' => 2, 'paket_id' => 1],
@@ -1020,15 +1008,10 @@ class SoalPaketASeeder extends Seeder
 
             // Pertanyaan 5
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 2, 'paket_id' => 1],
-
-            // Pertanyaan 6
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 2, 'paket_id' => 1],
         ];
 
         $soalBagian2Level2 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 2, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 2, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 2, 'paket_id' => 1],
@@ -1051,14 +1034,10 @@ class SoalPaketASeeder extends Seeder
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 2, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 2, 'paket_id' => 1],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 2, 'paket_id' => 1],
         ];
 
         $soalBagian2Level4 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 2, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 2, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 2, 'paket_id' => 1],
@@ -1201,15 +1180,10 @@ class SoalPaketASeeder extends Seeder
 
             // Pertanyaan 5
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 9, 'category_id' => 2, 'paket_id' => 1],
-
-            // Pertanyaan 6
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 9, 'category_id' => 2, 'paket_id' => 1],
         ];
 
         $soalBagian3Level2 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 10, 'category_id' => 2, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 10, 'category_id' => 2, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 10, 'category_id' => 2, 'paket_id' => 1],
@@ -1232,14 +1206,10 @@ class SoalPaketASeeder extends Seeder
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 11, 'category_id' => 2, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 11, 'category_id' => 2, 'paket_id' => 1],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 11, 'category_id' => 2, 'paket_id' => 1],
         ];
 
         $soalBagian3Level4 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 12, 'category_id' => 2, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 12, 'category_id' => 2, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 12, 'category_id' => 2, 'paket_id' => 1],
@@ -1382,15 +1352,10 @@ class SoalPaketASeeder extends Seeder
 
             // Pertanyaan 5
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 13, 'category_id' => 2, 'paket_id' => 1],
-
-            // Pertanyaan 6
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 13, 'category_id' => 2, 'paket_id' => 1],
         ];
 
         $soalBagian4Level2 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 14, 'category_id' => 2, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 14, 'category_id' => 2, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 14, 'category_id' => 2, 'paket_id' => 1],
@@ -1413,14 +1378,10 @@ class SoalPaketASeeder extends Seeder
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 15, 'category_id' => 2, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 15, 'category_id' => 2, 'paket_id' => 1],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 15, 'category_id' => 2, 'paket_id' => 1],
         ];
 
         $soalBagian4Level4 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 16, 'category_id' => 2, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 16, 'category_id' => 2, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 16, 'category_id' => 2, 'paket_id' => 1],
@@ -1563,15 +1524,10 @@ class SoalPaketASeeder extends Seeder
 
             // Pertanyaan 5
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 1, 'category_id' => 3, 'paket_id' => 1],
-
-            // Pertanyaan 6
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 1, 'category_id' => 3, 'paket_id' => 1],
         ];
 
         $soalBagian1Level2 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 2, 'category_id' => 3, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 2, 'category_id' => 3, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 2, 'category_id' => 3, 'paket_id' => 1],
@@ -1594,14 +1550,10 @@ class SoalPaketASeeder extends Seeder
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 3, 'category_id' => 3, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 3, 'category_id' => 3, 'paket_id' => 1],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 3, 'category_id' => 3, 'paket_id' => 1],
         ];
 
         $soalBagian1Level4 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 4, 'category_id' => 3, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 4, 'category_id' => 3, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 4, 'category_id' => 3, 'paket_id' => 1],
@@ -1743,15 +1695,10 @@ class SoalPaketASeeder extends Seeder
 
             // Pertanyaan 5
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 3, 'paket_id' => 1],
-
-            // Pertanyaan 6
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 3, 'paket_id' => 1],
         ];
 
         $soalBagian2Level2 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 3, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 3, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 3, 'paket_id' => 1],
@@ -1774,14 +1721,10 @@ class SoalPaketASeeder extends Seeder
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 3, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 3, 'paket_id' => 1],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 3, 'paket_id' => 1],
         ];
 
         $soalBagian2Level4 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 3, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 3, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 3, 'paket_id' => 1],
@@ -1926,15 +1869,10 @@ class SoalPaketASeeder extends Seeder
 
             // Pertanyaan 5
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 9, 'category_id' => 3, 'paket_id' => 1],
-
-            // Pertanyaan 6
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 9, 'category_id' => 3, 'paket_id' => 1],
         ];
 
         $soalBagian3Level2 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 10, 'category_id' => 3, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 10, 'category_id' => 3, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 10, 'category_id' => 3, 'paket_id' => 1],
@@ -1957,14 +1895,10 @@ class SoalPaketASeeder extends Seeder
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 11, 'category_id' => 3, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 11, 'category_id' => 3, 'paket_id' => 1],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 11, 'category_id' => 3, 'paket_id' => 1],
         ];
 
         $soalBagian3Level4 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 12, 'category_id' => 3, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 12, 'category_id' => 3, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 12, 'category_id' => 3, 'paket_id' => 1],
@@ -2107,15 +2041,10 @@ class SoalPaketASeeder extends Seeder
 
             // Pertanyaan 5
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 13, 'category_id' => 3, 'paket_id' => 1],
-
-            // Pertanyaan 6
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 13, 'category_id' => 3, 'paket_id' => 1],
         ];
 
         $soalBagian4Level2 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 14, 'category_id' => 3, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 14, 'category_id' => 3, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 14, 'category_id' => 3, 'paket_id' => 1],
@@ -2138,14 +2067,10 @@ class SoalPaketASeeder extends Seeder
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 15, 'category_id' => 3, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 15, 'category_id' => 3, 'paket_id' => 1],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 15, 'category_id' => 3, 'paket_id' => 1],
         ];
 
         $soalBagian4Level4 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 16, 'category_id' => 3, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 16, 'category_id' => 3, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 16, 'category_id' => 3, 'paket_id' => 1],
@@ -2289,15 +2214,10 @@ class SoalPaketASeeder extends Seeder
 
             // Pertanyaan 5
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 1, 'category_id' => 4, 'paket_id' => 1],
-
-            // Pertanyaan 6
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 1, 'category_id' => 4, 'paket_id' => 1],
         ];
 
         $soalBagian1Level2 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 2, 'category_id' => 4, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 2, 'category_id' => 4, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 2, 'category_id' => 4, 'paket_id' => 1],
@@ -2320,14 +2240,10 @@ class SoalPaketASeeder extends Seeder
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 3, 'category_id' => 4, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 3, 'category_id' => 4, 'paket_id' => 1],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 3, 'category_id' => 4, 'paket_id' => 1],
         ];
 
         $soalBagian1Level4 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 4, 'category_id' => 4, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 4, 'category_id' => 4, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 4, 'category_id' => 4, 'paket_id' => 1],
@@ -2469,15 +2385,10 @@ class SoalPaketASeeder extends Seeder
 
             // Pertanyaan 5
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 4, 'paket_id' => 1],
-
-            // Pertanyaan 6
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 4, 'paket_id' => 1],
         ];
 
         $soalBagian2Level2 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 4, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 4, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 4, 'paket_id' => 1],
@@ -2500,14 +2411,10 @@ class SoalPaketASeeder extends Seeder
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 4, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 4, 'paket_id' => 1],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 4, 'paket_id' => 1],
         ];
 
         $soalBagian2Level4 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 4, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 4, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 4, 'paket_id' => 1],
@@ -2652,15 +2559,10 @@ class SoalPaketASeeder extends Seeder
 
             // Pertanyaan 5
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 9, 'category_id' => 4, 'paket_id' => 1],
-
-            // Pertanyaan 6
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 9, 'category_id' => 4, 'paket_id' => 1],
         ];
 
         $soalBagian3Level2 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 10, 'category_id' => 4, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 10, 'category_id' => 4, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 10, 'category_id' => 4, 'paket_id' => 1],
@@ -2683,14 +2585,10 @@ class SoalPaketASeeder extends Seeder
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 11, 'category_id' => 4, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 11, 'category_id' => 4, 'paket_id' => 1],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 11, 'category_id' => 4, 'paket_id' => 1],
         ];
 
         $soalBagian3Level4 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 12, 'category_id' => 4, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 12, 'category_id' => 4, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 12, 'category_id' => 4, 'paket_id' => 1],
@@ -2833,15 +2731,10 @@ class SoalPaketASeeder extends Seeder
 
             // Pertanyaan 5
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 13, 'category_id' => 4, 'paket_id' => 1],
-
-            // Pertanyaan 6
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 13, 'category_id' => 4, 'paket_id' => 1],
         ];
 
         $soalBagian4Level2 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 14, 'category_id' => 4, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 14, 'category_id' => 4, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 14, 'category_id' => 4, 'paket_id' => 1],
@@ -2864,14 +2757,10 @@ class SoalPaketASeeder extends Seeder
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 15, 'category_id' => 4, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 15, 'category_id' => 4, 'paket_id' => 1],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 15, 'category_id' => 4, 'paket_id' => 1],
         ];
 
         $soalBagian4Level4 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 16, 'category_id' => 4, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 16, 'category_id' => 4, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 16, 'category_id' => 4, 'paket_id' => 1],
@@ -3015,15 +2904,10 @@ class SoalPaketASeeder extends Seeder
 
             // Pertanyaan 5
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 1, 'category_id' => 5, 'paket_id' => 1],
-
-            // Pertanyaan 6
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 1, 'category_id' => 5, 'paket_id' => 1],
         ];
 
         $soalBagian1Level2 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 2, 'category_id' => 5, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 2, 'category_id' => 5, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 2, 'category_id' => 5, 'paket_id' => 1],
@@ -3046,14 +2930,10 @@ class SoalPaketASeeder extends Seeder
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 3, 'category_id' => 5, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 3, 'category_id' => 5, 'paket_id' => 1],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 3, 'category_id' => 5, 'paket_id' => 1],
         ];
 
         $soalBagian1Level4 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 4, 'category_id' => 5, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 4, 'category_id' => 5, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 4, 'category_id' => 5, 'paket_id' => 1],
@@ -3195,15 +3075,10 @@ class SoalPaketASeeder extends Seeder
 
             // Pertanyaan 5
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 5, 'paket_id' => 1],
-
-            // Pertanyaan 6
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 5, 'category_id' => 5, 'paket_id' => 1],
         ];
 
         $soalBagian2Level2 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 5, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 5, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 6, 'category_id' => 5, 'paket_id' => 1],
@@ -3226,14 +3101,10 @@ class SoalPaketASeeder extends Seeder
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 5, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 5, 'paket_id' => 1],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 7, 'category_id' => 5, 'paket_id' => 1],
         ];
 
         $soalBagian2Level4 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 5, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 5, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 8, 'category_id' => 5, 'paket_id' => 1],
@@ -3375,15 +3246,10 @@ class SoalPaketASeeder extends Seeder
 
             // Pertanyaan 5
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 9, 'category_id' => 5, 'paket_id' => 1],
-
-            // Pertanyaan 6
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 9, 'category_id' => 5, 'paket_id' => 1],
         ];
 
         $soalBagian3Level2 = [
             // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 10, 'category_id' => 5, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 10, 'category_id' => 5, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 10, 'category_id' => 5, 'paket_id' => 1],
@@ -3406,14 +3272,9 @@ class SoalPaketASeeder extends Seeder
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 11, 'category_id' => 5, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 11, 'category_id' => 5, 'paket_id' => 1],
-
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 11, 'category_id' => 5, 'paket_id' => 1],
         ];
 
         $soalBagian3Level4 = [
-            // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 12, 'category_id' => 5, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 12, 'category_id' => 5, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 12, 'category_id' => 5, 'paket_id' => 1],
@@ -3543,8 +3404,6 @@ class SoalPaketASeeder extends Seeder
 
 
         $soalBagian4Level1 = [
-            // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 13, 'category_id' => 5, 'paket_id' => 1],
             // Pertanyaan 2
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 13, 'category_id' => 5, 'paket_id' => 1],
 
@@ -3562,9 +3421,6 @@ class SoalPaketASeeder extends Seeder
         ];
 
         $soalBagian4Level2 = [
-            // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 14, 'category_id' => 5, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 14, 'category_id' => 5, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 14, 'category_id' => 5, 'paket_id' => 1],
@@ -3577,9 +3433,6 @@ class SoalPaketASeeder extends Seeder
         ];
 
         $soalBagian4Level3 = [
-            // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 15, 'category_id' => 5, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 15, 'category_id' => 5, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 15, 'category_id' => 5, 'paket_id' => 1],
@@ -3592,9 +3445,6 @@ class SoalPaketASeeder extends Seeder
         ];
 
         $soalBagian4Level4 = [
-            // Pertanyaan 1
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 16, 'category_id' => 5, 'paket_id' => 1],
-
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 16, 'category_id' => 5, 'paket_id' => 1],
 
             ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 16, 'category_id' => 5, 'paket_id' => 1],
