@@ -277,7 +277,7 @@ class SoalPaketCSeeder extends Seeder
 
             // Pertanyaan 37
             ['pertanyaan' => 'Jumlah tiga bilangan sama dengan 80. Bilangan pertama ditambah 7 sama dengan bilangan kedua, dan bilangan ketiga dikurangi 5 sama dengan bilangan pertama. Masing-masing bilangan tersebut adalah...', 'sub_bagian_id' => 8, 'category_id' => 1, 'paket_id' => 3],
-            
+
             // Pertanyaan 38
             ['pertanyaan' => 'Jumlah tiga bilangan sama dengan 95. Bilangan pertama dikurangi 10 sama dengan bilangan kedua, dan bilangan ketiga ditambah 20 sama dengan bilangan pertama. Masing-masing bilangan tersebut adalah...', 'sub_bagian_id' => 8, 'category_id' => 1, 'paket_id' => 3],
 
@@ -432,13 +432,13 @@ class SoalPaketCSeeder extends Seeder
             ['pertanyaan' => 'Diketahui fungsi f(x)=x+3 dan g(x)=x^2-9. Pernyataan berikut yang bernar terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 9, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 42
-            ['pertanyaan' => 'Diketahui fungsi f:R→R dan g:R→R dengan f(x)=4x+3 dan g(x)=x-1. Rumus komposisi fungsi f∘g(x) adalah...', 'sub_bagian_id' => 9, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f:R→R dan g:R→R dengan f(x)=4x+3 dan g(x)=x-1. Rumus komposisi fungsi (f∘g)(x) adalah...', 'sub_bagian_id' => 9, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 43
-            ['pertanyaan' => 'Fungsi f:R→R dan g:R→R dimana f(x)=2x-1 dan g(x)=x^2+3. Bentuk fungsi dari f∘g(x) adalah...', 'sub_bagian_id' => 9, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Fungsi f:R→R dan g:R→R dimana f(x)=2x-1 dan g(x)=x^2+3. Bentuk fungsi dari (f∘g)(x) adalah...', 'sub_bagian_id' => 9, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 44
-            ['pertanyaan' => 'Diketahui fungsi f:R→R dengan f(x)=2x-1, fungsi g:R→R dengan g(x)=4x+5, dan fungsi h:R→R dengan h(x)=2x-3. Rumus fungsi f∘gh(x) adalah...', 'sub_bagian_id' => 9, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f:R→R dengan f(x)=2x-1, fungsi g:R→R dengan g(x)=4x+5, dan fungsi h:R→R dengan h(x)=2x-3. Rumus fungsi f∘(g∘h)(x) adalah...', 'sub_bagian_id' => 9, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 45
             ['pertanyaan' => 'Diketahui fungsi f:R→R dengan f(x)=4x+3. Rumus invers fungsi dari f(x) adalah...', 'sub_bagian_id' => 9, 'category_id' => 1, 'paket_id' => 3],
@@ -449,349 +449,388 @@ class SoalPaketCSeeder extends Seeder
             ['pertanyaan' => 'Diketahui fungsi f(x)=x+3 dan g(x)=x^2-9. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 10, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 47
-            ['pertanyaan' => 'Diketahui fungsi f(x)=2x+5 dan g(x)=x^2-4. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 10, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=2x+1 dan g(x)=x^2-4. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 10, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 48
-            ['pertanyaan' => 'Diketahui fungsi f(x)=x-2 dan g(x)=x^2+3. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 10, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=3x-1 dan g(x)=x^2+2x. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 10, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 49
-            ['pertanyaan' => 'Diketahui fungsi f(x)=3x+4 dan g(x)=x^2-1. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 10, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=x+4 dan g(x)=x^2-10. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 10, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 50
-            ['pertanyaan' => 'Diketahui fungsi f(x)=x+6 dan g(x)=x^2-2. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 10, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=4x+2 dan g(x)=x^2-6x. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 10, 'category_id' => 1, 'paket_id' => 3],
         ];
 
         $soalBagian3Level3 = [
             // Pertanyaan 51
-            ['pertanyaan' => 'Diketahui fungsi f(x)=5x-3 dan g(x)=x^+1. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 11, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=x+5 dan g(x)=x^2-8. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 11, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 52
-            ['pertanyaan' => 'Diketahui fungsi f(x)=x+7 dan g(x)=x^2-5. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 11, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=2x-3 dan g(x)=x^2+7x. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 11, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 53
-            ['pertanyaan' => 'Diketahui fungsi f(x)=4x+2 dan g(x)=x^2+2. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 11, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=x-4 dan g(x)=x^2+2x. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 11, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 54
-            ['pertanyaan' => 'Diketahui fungsi f(x)=x-5 dan g(x)=x^2-6. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 11, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=3x+1 dan g(x)=x^2-2x. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 11, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 55
-            ['pertanyaan' => 'Diketahui fungsi f(x)=2x+3 dan g(x)=x^2-7. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 11, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=x+2 dan g(x)=x^2+5x. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 11, 'category_id' => 1, 'paket_id' => 3],
         ];
 
         $soalBagian3Level4 = [
             // Pertanyaan 56
-            ['pertanyaan' => 'Diketahui fungsi f(x)=x+8 dan g(x)=x^2-3. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 12, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=5x-3 dan g(x)=x^2+4x. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 12, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 57
-            ['pertanyaan' => 'Diketahui fungsi f(x)=3x-1 dan g(x)=x^2+5. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 12, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=x+6 dan g(x)=x^2-7x. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 12, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 58
-            ['pertanyaan' => 'Diketahui fungsi f(x)=x+9 dan g(x)=x^2-8. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 12, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=2x+4 dan g(x)=x^2-9x. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 12, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 59
-            ['pertanyaan' => 'Diketahui fungsi f(x)=6x+1 dan g(x)=x^2+7. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 12, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=x-5 dan g(x)=x^2+6x. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 12, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 60
-            ['pertanyaan' => 'Diketahui fungsi f(x)=x-4 dan g(x)=x^2-10. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 12, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f(x)=4x+3 dan g(x)=x^2-11x. Pernyataan berikut yang bernar  terkait dua fungsi tersebut adalah...', 'sub_bagian_id' => 12, 'category_id' => 1, 'paket_id' => 3],
         ];
 
         DB::table('soal')->insert(array_merge($soalBagian3Level1, $soalBagian3Level2, $soalBagian3Level3, $soalBagian3Level4));
 
         $pilihanBagian3Level1 = [
             // Pertanyaan 17
-            ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 841],
-            ['pilihan' => 'Eight', 'skor' => 20, 'benar' => true, 'soal_id' => 841],
-            ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 841],
-            ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 841],
+            ['pilihan' => '(f+g)(x)=x^2+x+12', 'skor' => 0, 'benar' => false, 'soal_id' => 841],
+            ['pilihan' => '(f+g)(x)=x^2+x-6', 'skor' => 20, 'benar' => true, 'soal_id' => 841],
+            ['pilihan' => '(fxg)(x)=x^2+x+2', 'skor' => 0, 'benar' => false, 'soal_id' => 841],
+            ['pilihan' => '(f-g)(x)=x^2+x+10', 'skor' => 0, 'benar' => false, 'soal_id' => 841],
+            ['pilihan' => '(f+g)(x)=x^2+x+9', 'skor' => 0, 'benar' => false, 'soal_id' => 841],
             // Pertanyaan 18
-            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 842],
-            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 842],
-            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 842],
-            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 842],
+            ['pilihan' => '(f∘g)(x)=4x-1', 'skor' => 20, 'benar' => true, 'soal_id' => 842],
+            ['pilihan' => '(f∘g)(x)=4x^2-x-3', 'skor' => 0, 'benar' => false, 'soal_id' => 842],
+            ['pilihan' => '(f∘g)(x)=4x+2', 'skor' => 0, 'benar' => false, 'soal_id' => 842],
+            ['pilihan' => '(f∘g)(x)=5x+2', 'skor' => 0, 'benar' => false, 'soal_id' => 842],
+            ['pilihan' => '(f∘g)(x)=x^2+x+1', 'skor' => 0, 'benar' => false, 'soal_id' => 842],
             // Pertanyaan 13
-            ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 843],
-            ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 843],
-            ['pilihan' => 'Table', 'skor' => 0, 'benar' => false, 'soal_id' => 843],
-            ['pilihan' => 'Lamp', 'skor' => 0, 'benar' => false, 'soal_id' => 843],
+            ['pilihan' => '(f∘g)(x)=3x^2+x+1', 'skor' => 0, 'benar' => false, 'soal_id' => 843],
+            ['pilihan' => '(f∘g)(x)=3x^2+5', 'skor' => 0, 'benar' => false, 'soal_id' => 843],
+            ['pilihan' => '(f∘g)(x)=2x^2+5', 'skor' => 20, 'benar' => true, 'soal_id' => 843],
+            ['pilihan' => '(f∘g)(x)=5x^2-5', 'skor' => 0, 'benar' => false, 'soal_id' => 843],
+            ['pilihan' => '(f∘g)(x)=4x^2-5', 'skor' => 0, 'benar' => false, 'soal_id' => 843],
             // Pertanyaan 14
-            ['pilihan' => 'Night', 'skor' => 20, 'benar' => true, 'soal_id' => 844],
-            ['pilihan' => 'Sun', 'skor' => 0, 'benar' => false, 'soal_id' => 844],
-            ['pilihan' => 'Morning', 'skor' => 0, 'benar' => false, 'soal_id' => 844],
-            ['pilihan' => 'Noon', 'skor' => 0, 'benar' => false, 'soal_id' => 844],
+            ['pilihan' => 'f∘(g∘h)(x)=8x+1', 'skor' => 0, 'benar' => false, 'soal_id' => 844],
+            ['pilihan' => 'f∘(g∘h)(x)=16x-15', 'skor' => 20, 'benar' => true, 'soal_id' => 844],
+            ['pilihan' => 'f∘(g∘h)(x)=16x-1', 'skor' => 0, 'benar' => false, 'soal_id' => 844],
+            ['pilihan' => 'f∘(g∘h)(x)=16x+9', 'skor' => 0, 'benar' => false, 'soal_id' => 844],
+            ['pilihan' => 'f∘(g∘h)(x)=8x+15', 'skor' => 0, 'benar' => false, 'soal_id' => 844],
             // Pertanyaan 15
-            ['pilihan' => 'London', 'skor' => 0, 'benar' => false, 'soal_id' => 845],
-            ['pilihan' => 'Paris', 'skor' => 20, 'benar' => true, 'soal_id' => 845],
-            ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 845],
-            ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 845],
+            ['pilihan' => 'f^-1x=1/5x-5', 'skor' => 0, 'benar' => false, 'soal_id' => 845],
+            ['pilihan' => 'f^-1x=1/5(x+7)', 'skor' => 0, 'benar' => false, 'soal_id' => 845],
+            ['pilihan' => 'f^-1x=1/5x+7', 'skor' => 0, 'benar' => false, 'soal_id' => 845],
+            ['pilihan' => 'f^-1x=1/5x-7', 'skor' => 0, 'benar' => false, 'soal_id' => 845],
+            ['pilihan' => 'f^-1x=1/5(x-7)', 'skor' => 20, 'benar' => true, 'soal_id' => 845],
         ];
 
         $pilihanBagian3Level2 = [
             // Pertanyaan 16
-            ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 846],
-            ['pilihan' => 'Square', 'skor' => 20, 'benar' => true, 'soal_id' => 846],
-            ['pilihan' => 'Green', 'skor' => 0, 'benar' => false, 'soal_id' => 846],
-            ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 846],
+            ['pilihan' => '(f+g)(x)=x^2+x+12', 'skor' => 0, 'benar' => false, 'soal_id' => 846],
+            ['pilihan' => '(fxg)(x)=x^2+x+2', 'skor' => 0, 'benar' => false, 'soal_id' => 846],
+            ['pilihan' => '(f+g)(x)=x^2+x-6', 'skor' => 20, 'benar' => true, 'soal_id' => 846],
+            ['pilihan' => '(f-g)(x)=x^2+x+10', 'skor' => 0, 'benar' => false, 'soal_id' => 846],
+            ['pilihan' => '(f-g)(x)=x^2+x', 'skor' => 0, 'benar' => false, 'soal_id' => 846],
             // Pertanyaan 17
-            ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 847],
-            ['pilihan' => 'Eight', 'skor' => 20, 'benar' => true, 'soal_id' => 847],
-            ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 847],
-            ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 847],
+            ['pilihan' => '(f-g)(x)=x^2+5x-3', 'skor' => 0, 'benar' => false, 'soal_id' => 847],
+            ['pilihan' => '(f-g)(x)=x^2-2x-3', 'skor' => 0, 'benar' => false, 'soal_id' => 847],
+            ['pilihan' => '(f+g)(x)=x^2+2x-3', 'skor' => 20, 'benar' => true, 'soal_id' => 847],
+            ['pilihan' => '(f+g)(x)=x^2+3x+3', 'skor' => 0, 'benar' => false, 'soal_id' => 847],
+            ['pilihan' => '(f+g)(x)=x^2-4x-3', 'skor' => 0, 'benar' => false, 'soal_id' => 847],
             // Pertanyaan 18
-            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 848],
-            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 848],
-            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 848],
-            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 848],
+            ['pilihan' => '(f+g)(x)=x^2+5x-1', 'skor' => 20, 'benar' => true, 'soal_id' => 848],
+            ['pilihan' => '(f-g)(x)=x^2+3x-1', 'skor' => 0, 'benar' => false, 'soal_id' => 848],
+            ['pilihan' => '(f+g)(x)=x^2-4x-1', 'skor' => 0, 'benar' => false, 'soal_id' => 848],
+            ['pilihan' => '(f+g)(x)=x^2+5x+1', 'skor' => 0, 'benar' => false, 'soal_id' => 848],
+            ['pilihan' => '(fxg)(x)=x^2-5x-1', 'skor' => 0, 'benar' => false, 'soal_id' => 848],
             // Pertanyaan 1
-            ['pilihan' => 'Cold', 'skor' => 20, 'benar' => true, 'soal_id' => 849],
-            ['pilihan' => 'Warm', 'skor' => 0, 'benar' => false, 'soal_id' => 849],
-            ['pilihan' => 'Cool', 'skor' => 0, 'benar' => false, 'soal_id' => 849],
-            ['pilihan' => 'Icy', 'skor' => 0, 'benar' => false, 'soal_id' => 849],
+            ['pilihan' => '(f-g)(x)=x^2+x-6', 'skor' => 0, 'benar' => false, 'soal_id' => 849],
+            ['pilihan' => '(f+g)(x)=x^2+x-6', 'skor' => 20, 'benar' => true, 'soal_id' => 849],
+            ['pilihan' => '(f-g)(x)=x^2-x-6', 'skor' => 0, 'benar' => false, 'soal_id' => 849],
+            ['pilihan' => '(fxg)(x)=x^3+x-6', 'skor' => 0, 'benar' => false, 'soal_id' => 849],
+            ['pilihan' => '(f+g)(x)=x^2+x+6', 'skor' => 0, 'benar' => false, 'soal_id' => 849],
             // Pertanyaan 2
-            ['pilihan' => 'Large', 'skor' => 20, 'benar' => true, 'soal_id' => 850],
-            ['pilihan' => 'Little', 'skor' => 0, 'benar' => false, 'soal_id' => 850],
-            ['pilihan' => 'Tiny', 'skor' => 0, 'benar' => false, 'soal_id' => 850],
-            ['pilihan' => 'Miniature', 'skor' => 0, 'benar' => false, 'soal_id' => 850],
+            ['pilihan' => '(f+g)(x)=x^2-2x+2', 'skor' => 20, 'benar' => true, 'soal_id' => 850],
+            ['pilihan' => '(fxg)(x)=x^2-2x+2', 'skor' => 0, 'benar' => false, 'soal_id' => 850],
+            ['pilihan' => '(f-g)(x)=x^2-3x-2', 'skor' => 0, 'benar' => false, 'soal_id' => 850],
+            ['pilihan' => '(f-g)(x)=x^2+2x+2', 'skor' => 0, 'benar' => false, 'soal_id' => 850],
+            ['pilihan' => '(f+g)(x)=x^2-3x-2', 'skor' => 0, 'benar' => false, 'soal_id' => 850],
         ];
 
         $pilihanBagian3Level3 = [
             // Pertanyaan 3
-            ['pilihan' => 'Bluee', 'skor' => 0, 'benar' => false, 'soal_id' => 851],
-            ['pilihan' => 'Bloue', 'skor' => 0, 'benar' => false, 'soal_id' => 851],
-            ['pilihan' => 'Blue', 'skor' => 20, 'benar' => true, 'soal_id' => 851],
-            ['pilihan' => 'Blhue', 'skor' => 0, 'benar' => false, 'soal_id' => 851],
+            ['pilihan' => '(fxg)(x)=x^2+x-3', 'skor' => 0, 'benar' => false, 'soal_id' => 851],
+            ['pilihan' => '(f+g)(x)=x^2-x-3', 'skor' => 0, 'benar' => false, 'soal_id' => 851],
+            ['pilihan' => '(f-g)(x)=x^2+x+3', 'skor' => 0, 'benar' => false, 'soal_id' => 851],
+            ['pilihan' => '(f+g)(x)=x^2+x-3', 'skor' => 20, 'benar' => true, 'soal_id' => 851],
+            ['pilihan' => '(f-g)(x)=x^2-x-3', 'skor' => 0, 'benar' => false, 'soal_id' => 851],
             // Pertanyaan 4
-            ['pilihan' => 'Bank', 'skor' => 0, 'benar' => false, 'soal_id' => 852],
-            ['pilihan' => 'School', 'skor' => 0, 'benar' => false, 'soal_id' => 852],
-            ['pilihan' => 'Library', 'skor' => 20, 'benar' => true, 'soal_id' => 852],
-            ['pilihan' => 'Mall', 'skor' => 0, 'benar' => false, 'soal_id' => 852],
+            ['pilihan' => '(f+g)(x)=x^2-9x-3', 'skor' => 0, 'benar' => false, 'soal_id' => 852],
+            ['pilihan' => '(fxg)(x)=x^2+9x-3', 'skor' => 0, 'benar' => false, 'soal_id' => 852],
+            ['pilihan' => '(f-g)(x)=x^2-9x+3', 'skor' => 0, 'benar' => false, 'soal_id' => 852],
+            ['pilihan' => '(f+g)(x)=x^2+9x-3', 'skor' => 20, 'benar' => true, 'soal_id' => 852],
+            ['pilihan' => '(f-g)(x)=x^2+9x+3', 'skor' => 0, 'benar' => false, 'soal_id' => 852],
             // Pertanyaan 5
-            ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 853],
-            ['pilihan' => 'Carrot', 'skor' => 20, 'benar' => true, 'soal_id' => 853],
-            ['pilihan' => 'Orange', 'skor' => 0, 'benar' => false, 'soal_id' => 853],
-            ['pilihan' => 'Banana', 'skor' => 0, 'benar' => false, 'soal_id' => 853],
+            ['pilihan' => '(f-g)(x)=x^2-x-4', 'skor' => 0, 'benar' => false, 'soal_id' => 853],
+            ['pilihan' => '(f+g)(x)=x^2+x-4', 'skor' => 20, 'benar' => true, 'soal_id' => 853],
+            ['pilihan' => '(f+g)(x)=x^2-x+5', 'skor' => 0, 'benar' => false, 'soal_id' => 853],
+            ['pilihan' => '(f-g)(x)=x^3+x-4', 'skor' => 0, 'benar' => false, 'soal_id' => 853],
+            ['pilihan' => '(f-g)(x)=x^2-x-5', 'skor' => 0, 'benar' => false, 'soal_id' => 853],
             // Pertanyaan 6
-            ['pilihan' => 'Angry', 'skor' => 0, 'benar' => false, 'soal_id' => 854],
-            ['pilihan' => 'Happy', 'skor' => 20, 'benar' => true, 'soal_id' => 854],
-            ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 854],
-            ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 854],
+            ['pilihan' => '(f-g)(x)=x^3+x+1', 'skor' => 0, 'benar' => false, 'soal_id' => 854],
+            ['pilihan' => '(f+g)(x)=x^2+x-1', 'skor' => 0, 'benar' => false, 'soal_id' => 854],
+            ['pilihan' => '(f+g)(x)=x^2+x+1', 'skor' => 20, 'benar' => true, 'soal_id' => 854],
+            ['pilihan' => '(f+g)(x)=x^2+2x+1', 'skor' => 0, 'benar' => false, 'soal_id' => 854],
+            ['pilihan' => '(fxg)(x)=x^2-x+3', 'skor' => 0, 'benar' => false, 'soal_id' => 854],
             // Pertanyaan 7
-            ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 855],
-            ['pilihan' => 'Went', 'skor' => 20, 'benar' => true, 'soal_id' => 855],
-            ['pilihan' => 'Gone', 'skor' => 0, 'benar' => false, 'soal_id' => 855],
-            ['pilihan' => 'Going', 'skor' => 0, 'benar' => false, 'soal_id' => 855],
+            ['pilihan' => '(fxg)(x)=x^2+7x-2', 'skor' => 0, 'benar' => false, 'soal_id' => 855],
+            ['pilihan' => '(f+g)(x)=x^2+6x+2', 'skor' => 20, 'benar' => true, 'soal_id' => 855],
+            ['pilihan' => '(fxg)(x)=x^2+8x-2', 'skor' => 0, 'benar' => false, 'soal_id' => 855],
+            ['pilihan' => '(f-g)(x)=x^2+7x+2', 'skor' => 0, 'benar' => false, 'soal_id' => 855],
+            ['pilihan' => '(f+g)(x)=x^2+6x+2', 'skor' => 0, 'benar' => false, 'soal_id' => 855],
         ];
 
         $pilihanBagian3Level4 = [
             // Pertanyaan 8
-            ['pilihan' => 'Dog', 'skor' => 0, 'benar' => false, 'soal_id' => 856],
-            ['pilihan' => 'Cat', 'skor' => 0, 'benar' => false, 'soal_id' => 856],
-            ['pilihan' => 'Bird', 'skor' => 20, 'benar' => true, 'soal_id' => 856],
-            ['pilihan' => 'Fish', 'skor' => 0, 'benar' => false, 'soal_id' => 856],
+            ['pilihan' => '(f-g)(x)=x^3+9x-3', 'skor' => 0, 'benar' => false, 'soal_id' => 856],
+            ['pilihan' => '(f+g)(x)=x^2+9x-3', 'skor' => 20, 'benar' => true, 'soal_id' => 856],
+            ['pilihan' => '(f-g)(x)=x^3+9x-3', 'skor' => 0, 'benar' => false, 'soal_id' => 856],
+            ['pilihan' => '(f+g)(x)=x^2+9x+3', 'skor' => 0, 'benar' => false, 'soal_id' => 856],
+            ['pilihan' => '(f+g)(x)=x^2-9x-3', 'skor' => 0, 'benar' => false, 'soal_id' => 856],
             // Pertanyaan 9
-            ['pilihan' => '5', 'skor' => 0, 'benar' => false, 'soal_id' => 857],
-            ['pilihan' => '6', 'skor' => 0, 'benar' => false, 'soal_id' => 857],
-            ['pilihan' => '7', 'skor' => 20, 'benar' => true, 'soal_id' => 857],
-            ['pilihan' => '8', 'skor' => 0, 'benar' => false, 'soal_id' => 857],
+            ['pilihan' => '(f-g)(x)=x^2-x+8', 'skor' => 0, 'benar' => false, 'soal_id' => 857],
+            ['pilihan' => '(fxg)(x)=x^2+x-6', 'skor' => 0, 'benar' => false, 'soal_id' => 857],
+            ['pilihan' => '(f+g)(x)=x^2+x+6', 'skor' => 0, 'benar' => false, 'soal_id' => 857],
+            ['pilihan' => '(f+g)(x)=x^2-x+6', 'skor' => 20, 'benar' => true, 'soal_id' => 857],
+            ['pilihan' => '(f-g)(x)=x^2-x+8', 'skor' => 0, 'benar' => false, 'soal_id' => 857],
             // Pertanyaan 10
-            ['pilihan' => 'Biology', 'skor' => 0, 'benar' => false, 'soal_id' => 858],
-            ['pilihan' => 'Chemistry', 'skor' => 0, 'benar' => false, 'soal_id' => 858],
-            ['pilihan' => 'Mathematics', 'skor' => 20, 'benar' => true, 'soal_id' => 858],
-            ['pilihan' => 'Geography', 'skor' => 0, 'benar' => false, 'soal_id' => 858],
+            ['pilihan' => '(f-g)(x)=x^2+7x-4', 'skor' => 0, 'benar' => false, 'soal_id' => 858],
+            ['pilihan' => '(f+g)(x)=x^2+7x+4', 'skor' => 0, 'benar' => false, 'soal_id' => 858],
+            ['pilihan' => '(f+g)(x)=x^2-6x+4', 'skor' => 0, 'benar' => false, 'soal_id' => 858],
+            ['pilihan' => '(f-g)(x)=x^2-7x-4', 'skor' => 0, 'benar' => false, 'soal_id' => 858],
+            ['pilihan' => '(f+g)(x)=x^2-7x+4', 'skor' => 20, 'benar' => true, 'soal_id' => 858],
             // Pertanyaan 11
-            ['pilihan' => 'Mango', 'skor' => 0, 'benar' => false, 'soal_id' => 859],
-            ['pilihan' => 'Tomato', 'skor' => 0, 'benar' => false, 'soal_id' => 859],
-            ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 859],
-            ['pilihan' => 'Potato', 'skor' => 20, 'benar' => true, 'soal_id' => 859],
+            ['pilihan' => '(fxg)(x)=x^2+x-6', 'skor' => 0, 'benar' => false, 'soal_id' => 859],
+            ['pilihan' => '(f+g)(x)=x^3+x-5', 'skor' => 0, 'benar' => false, 'soal_id' => 859],
+            ['pilihan' => '(f+g)(x)=x^2+x-5', 'skor' => 20, 'benar' => true, 'soal_id' => 859],
+            ['pilihan' => '(fxg)(x)=x^2+x-6', 'skor' => 0, 'benar' => false, 'soal_id' => 859],
+            ['pilihan' => '(f+g)(x)=x^2-x+5', 'skor' => 0, 'benar' => false, 'soal_id' => 859],
             // Pertanyaan 12
-            ['pilihan' => 'Sailor', 'skor' => 0, 'benar' => false, 'soal_id' => 860],
-            ['pilihan' => 'Pilot', 'skor' => 20, 'benar' => true, 'soal_id' => 860],
-            ['pilihan' => 'Driver', 'skor' => 0, 'benar' => false, 'soal_id' => 860],
-            ['pilihan' => 'Conductor', 'skor' => 0, 'benar' => false, 'soal_id' => 860],
+            ['pilihan' => '(fxg)(x)=x^2+7x-3', 'skor' => 0, 'benar' => false, 'soal_id' => 860],
+            ['pilihan' => '(f+g)(x)=x^2+7x+3', 'skor' => 0, 'benar' => false, 'soal_id' => 860],
+            ['pilihan' => '(f-g)(x)=x^2-7x+4', 'skor' => 0, 'benar' => false, 'soal_id' => 860],
+            ['pilihan' => '(f+g)(x)=x^2-7x+3', 'skor' => 20, 'benar' => true, 'soal_id' => 860],
+            ['pilihan' => '(f-g)(x)=x^2-7x+4', 'skor' => 0, 'benar' => false, 'soal_id' => 860],
         ];
 
         DB::table('pilihan')->insert(array_merge($pilihanBagian3Level1, $pilihanBagian3Level2, $pilihanBagian3Level3, $pilihanBagian3Level4));
 
-
         $soalBagian4Level1 = [
             // Pertanyaan 61
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 13, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Fungsi invers dari f(x)=3x-1 adalah...', 'sub_bagian_id' => 13, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 62
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 13, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f:R→R dengan f(x)=x-1. Rumus fungsi dari (f^-1)^-1(x) adalah...', 'sub_bagian_id' => 13, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 63
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 13, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f dan g adalah fungsi bijektif yang ditentukan dengan f(x)=2x+5 dan g(x)=x-2. Rumus fungsi dari (g∘f)^-1(x) adalah...', 'sub_bagian_id' => 13, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 64
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 13, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f:R→R dengan f(x)=5x-4 dan fungsi g:R→R dengan g(x)=3x. Rumus fungsi (f∘g)^-1(x) adalah...', 'sub_bagian_id' => 13, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 65
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 13, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui (f∘g)(x)=2x+4 dan f(x)=x-2. Rumus fungsi g(x) adalah...', 'sub_bagian_id' => 13, 'category_id' => 1, 'paket_id' => 3],
         ];
 
         $soalBagian4Level2 = [
             // Pertanyaan 66
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 14, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f:R→R dengan f(x)=4x+2 dan fungsi g:R→R dengan g(x)=2x. Rumus fungsi (f∘g)^-1(x) adalah...', 'sub_bagian_id' => 14, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 67
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 14, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f:R→R dengan f(x)=6x-5 dan fungsi g:R→R dengan g(x)=4x. Rumus fungsi (f∘g)^-1(x) adalah...', 'sub_bagian_id' => 14, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 68
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 14, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f:R→R dengan f(x)=3x+7 dan fungsi g:R→R dengan g(x)=5x. Rumus fungsi (f∘g)^-1(x) adalah...', 'sub_bagian_id' => 14, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 69
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 14, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f:R→R dengan f(x)=7x+1 dan fungsi g:R→R dengan g(x)=2x. Rumus fungsi (f∘g)^-1(x) adalah...', 'sub_bagian_id' => 14, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 70
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 14, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f:R→R dengan f(x)=8x-6 dan fungsi g:R→R dengan g(x)=3x. Rumus fungsi (f∘g)^-1(x) adalah...', 'sub_bagian_id' => 14, 'category_id' => 1, 'paket_id' => 3],
         ];
 
         $soalBagian4Level3 = [
             // Pertanyaan 71
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 15, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui (f∘g)(x)=3x+5 dan f(x)=x-3. Rumus fungsi g(x) adalah...', 'sub_bagian_id' => 15, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 72
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 15, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui (f∘g)(x)=4x-7 dan f(x)=x+2. Rumus fungsi g(x) adalah...', 'sub_bagian_id' => 15, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 73
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 15, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui (f∘g)(x)=5x+10 dan f(x)=x-4. Rumus fungsi g(x) adalah...', 'sub_bagian_id' => 15, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 74
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 15, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui (f∘g)(x)=6x-12 dan f(x)=x+1. Rumus fungsi g(x) adalah...', 'sub_bagian_id' => 15, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 75
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 15, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui (f∘g)(x)=7x+15 dan f(x)=x-5. Rumus fungsi g(x) adalah...', 'sub_bagian_id' => 15, 'category_id' => 1, 'paket_id' => 3],
         ];
 
         $soalBagian4Level4 = [
             // Pertanyaan 76
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 16, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f dan g adalah fungsi bijektif yang ditentukan dengan f(x)=3x+4 dan g(x)=x-1. Rumus fungsi dari (g∘f)^-1(x) adalah...', 'sub_bagian_id' => 16, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 77
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 16, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f dan g adalah fungsi bijektif yang ditentukan dengan f(x)=x+7 dan g(x)=2x-3. Rumus fungsi dari (g∘f)^-1(x) adalah...', 'sub_bagian_id' => 16, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 78
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 16, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f dan g adalah fungsi bijektif yang ditentukan dengan f(x)=4x+1 dan g(x)=x+5. Rumus fungsi dari (g∘f)^-1(x) adalah...', 'sub_bagian_id' => 16, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 79
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 16, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f dan g adalah fungsi bijektif yang ditentukan dengan f(x)=5x-2 dan g(x)=x+3. Rumus fungsi dari (g∘f)^-1(x) adalah...', 'sub_bagian_id' => 16, 'category_id' => 1, 'paket_id' => 3],
 
             // Pertanyaan 80
-            ['pertanyaan' => 'What is the opposite of "hot"?', 'sub_bagian_id' => 16, 'category_id' => 1, 'paket_id' => 3],
+            ['pertanyaan' => 'Diketahui fungsi f dan g adalah fungsi bijektif yang ditentukan dengan f(x)=6x+8 dan g(x)=x-4. Rumus fungsi dari (g∘f)^-1(x) adalah...', 'sub_bagian_id' => 16, 'category_id' => 1, 'paket_id' => 3],
         ];
 
         DB::table('soal')->insert(array_merge($soalBagian4Level1, $soalBagian4Level2, $soalBagian4Level3, $soalBagian4Level4));
 
         $pilihanBagian4Level1 = [
             // Pertanyaan 13
-            ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 861],
-            ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 861],
-            ['pilihan' => 'Table', 'skor' => 0, 'benar' => false, 'soal_id' => 861],
-            ['pilihan' => 'Lamp', 'skor' => 0, 'benar' => false, 'soal_id' => 861],
+            ['pilihan' => 'f^-1(x)=1/3(x-1)', 'skor' => 0, 'benar' => false, 'soal_id' => 861],
+            ['pilihan' => 'f^-1(x)=1/4(x-2)', 'skor' => 0, 'benar' => false, 'soal_id' => 861],
+            ['pilihan' => 'f^-1(x)=1/4(x+1)', 'skor' => 0, 'benar' => false, 'soal_id' => 861],
+            ['pilihan' => 'f^-1(x)=1/3(x+1)', 'skor' => 20, 'benar' => true, 'soal_id' => 861],
+            ['pilihan' => 'f^-1(x)=1/4(x+2)', 'skor' => 0, 'benar' => false, 'soal_id' => 861],
             // Pertanyaan 14
-            ['pilihan' => 'Night', 'skor' => 20, 'benar' => true, 'soal_id' => 862],
-            ['pilihan' => 'Sun', 'skor' => 0, 'benar' => false, 'soal_id' => 862],
-            ['pilihan' => 'Morning', 'skor' => 0, 'benar' => false, 'soal_id' => 862],
-            ['pilihan' => 'Noon', 'skor' => 0, 'benar' => false, 'soal_id' => 862],
+            ['pilihan' => '(f^-1)^-1(x)=x+2', 'skor' => 0, 'benar' => false, 'soal_id' => 862],
+            ['pilihan' => '(f^-1)^-1(x)=x-1', 'skor' => 20, 'benar' => true, 'soal_id' => 862],
+            ['pilihan' => '(f^-1)^-1(x)=x-3', 'skor' => 0, 'benar' => false, 'soal_id' => 862],
+            ['pilihan' => '(f^-1)^-1(x)=x-2', 'skor' => 0, 'benar' => false, 'soal_id' => 862],
+            ['pilihan' => '(f^-1)^-1(x)=x+1', 'skor' => 0, 'benar' => false, 'soal_id' => 862],
             // Pertanyaan 15
-            ['pilihan' => 'London', 'skor' => 0, 'benar' => false, 'soal_id' => 863],
-            ['pilihan' => 'Paris', 'skor' => 20, 'benar' => true, 'soal_id' => 863],
-            ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 863],
-            ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 863],
+            ['pilihan' => '1/2(x-4)', 'skor' => 0, 'benar' => false, 'soal_id' => 863],
+            ['pilihan' => '1/2(x+3)', 'skor' => 0, 'benar' => false, 'soal_id' => 863],
+            ['pilihan' => '1/2(x-3)', 'skor' => 20, 'benar' => true, 'soal_id' => 863],
+            ['pilihan' => '1/3(x-4)', 'skor' => 0, 'benar' => false, 'soal_id' => 863],
+            ['pilihan' => '1/3(x+2)', 'skor' => 0, 'benar' => false, 'soal_id' => 863],
             // Pertanyaan 16
-            ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 864],
-            ['pilihan' => 'Square', 'skor' => 20, 'benar' => true, 'soal_id' => 864],
-            ['pilihan' => 'Green', 'skor' => 0, 'benar' => false, 'soal_id' => 864],
-            ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 864],
+            ['pilihan' => '1/15(x+5)', 'skor' => 0, 'benar' => false, 'soal_id' => 864],
+            ['pilihan' => '1/14(x-4)', 'skor' => 0, 'benar' => false, 'soal_id' => 864],
+            ['pilihan' => '1/15(x+4)', 'skor' => 20, 'benar' => true, 'soal_id' => 864],
+            ['pilihan' => '1/15(x-5)', 'skor' => 0, 'benar' => false, 'soal_id' => 864],
+            ['pilihan' => '1/14(x+4)', 'skor' => 0, 'benar' => false, 'soal_id' => 864],
             // Pertanyaan 17
-            ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 865],
-            ['pilihan' => 'Eight', 'skor' => 20, 'benar' => true, 'soal_id' => 865],
-            ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 865],
-            ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 865],
+            ['pilihan' => 'g(x)=3x-6', 'skor' => 0, 'benar' => false, 'soal_id' => 865],
+            ['pilihan' => 'g(x)=2x+6', 'skor' => 20, 'benar' => true, 'soal_id' => 865],
+            ['pilihan' => 'g(x)=2x-8', 'skor' => 0, 'benar' => false, 'soal_id' => 865],
+            ['pilihan' => 'g(x)=3x+4', 'skor' => 0, 'benar' => false, 'soal_id' => 865],
+            ['pilihan' => 'g(x)=2x-4', 'skor' => 0, 'benar' => false, 'soal_id' => 865],
         ];
 
         $pilihanBagian4Level2 = [
             // Pertanyaan 18
-            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 866],
-            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 866],
-            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 866],
-            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 866],
+            ['pilihan' => '1/8(x-2)', 'skor' => 20, 'benar' => true, 'soal_id' => 866],
+            ['pilihan' => '1/8(x+2)', 'skor' => 0, 'benar' => false, 'soal_id' => 866],
+            ['pilihan' => '1/7(x-3)', 'skor' => 0, 'benar' => false, 'soal_id' => 866],
+            ['pilihan' => '1/7(x+2)', 'skor' => 0, 'benar' => false, 'soal_id' => 866],
+            ['pilihan' => '1/8(x-3)', 'skor' => 0, 'benar' => false, 'soal_id' => 866],
             // Pertanyaan 13
-            ['pilihan' => 'Chair', 'skor' => 0, 'benar' => false, 'soal_id' => 867],
-            ['pilihan' => 'Shirt', 'skor' => 20, 'benar' => true, 'soal_id' => 867],
-            ['pilihan' => 'Table', 'skor' => 0, 'benar' => false, 'soal_id' => 867],
-            ['pilihan' => 'Lamp', 'skor' => 0, 'benar' => false, 'soal_id' => 867],
+            ['pilihan' => '1/25(x+6)', 'skor' => 0, 'benar' => false, 'soal_id' => 867],
+            ['pilihan' => '1/25(x-5)', 'skor' => 0, 'benar' => false, 'soal_id' => 867],
+            ['pilihan' => '1/24(x+5)', 'skor' => 20, 'benar' => true, 'soal_id' => 867],
+            ['pilihan' => '1/24(x-5)', 'skor' => 0, 'benar' => false, 'soal_id' => 867],
+            ['pilihan' => '1/23(x-5)', 'skor' => 0, 'benar' => false, 'soal_id' => 867],
             // Pertanyaan 14
-            ['pilihan' => 'Night', 'skor' => 20, 'benar' => true, 'soal_id' => 868],
-            ['pilihan' => 'Sun', 'skor' => 0, 'benar' => false, 'soal_id' => 868],
-            ['pilihan' => 'Morning', 'skor' => 0, 'benar' => false, 'soal_id' => 868],
-            ['pilihan' => 'Noon', 'skor' => 0, 'benar' => false, 'soal_id' => 868],
+            ['pilihan' => '1/16(x+7)', 'skor' => 0, 'benar' => false, 'soal_id' => 868],
+            ['pilihan' => '1/15(x-7)', 'skor' => 20, 'benar' => true, 'soal_id' => 868],
+            ['pilihan' => '1/16(x-7)', 'skor' => 0, 'benar' => false, 'soal_id' => 868],
+            ['pilihan' => '1/15(x-8)', 'skor' => 0, 'benar' => false, 'soal_id' => 868],
+            ['pilihan' => '1/17(x+7)', 'skor' => 0, 'benar' => false, 'soal_id' => 868],
             // Pertanyaan 15
-            ['pilihan' => 'London', 'skor' => 0, 'benar' => false, 'soal_id' => 869],
-            ['pilihan' => 'Paris', 'skor' => 20, 'benar' => true, 'soal_id' => 869],
-            ['pilihan' => 'Berlin', 'skor' => 0, 'benar' => false, 'soal_id' => 869],
-            ['pilihan' => 'Rome', 'skor' => 0, 'benar' => false, 'soal_id' => 869],
+            ['pilihan' => '1/13(x-2)', 'skor' => 0, 'benar' => false, 'soal_id' => 869],
+            ['pilihan' => '1/14(x-1)', 'skor' => 20, 'benar' => true, 'soal_id' => 869],
+            ['pilihan' => '1/13(x-1)', 'skor' => 0, 'benar' => false, 'soal_id' => 869],
+            ['pilihan' => '1/14(x+1)', 'skor' => 0, 'benar' => false, 'soal_id' => 869],
+            ['pilihan' => '1/12(x+2)', 'skor' => 0, 'benar' => false, 'soal_id' => 869],
             // Pertanyaan 16
-            ['pilihan' => 'Yellow', 'skor' => 0, 'benar' => false, 'soal_id' => 870],
-            ['pilihan' => 'Square', 'skor' => 20, 'benar' => true, 'soal_id' => 870],
-            ['pilihan' => 'Green', 'skor' => 0, 'benar' => false, 'soal_id' => 870],
-            ['pilihan' => 'Purple', 'skor' => 0, 'benar' => false, 'soal_id' => 870],
+            ['pilihan' => '1/25(x-6)', 'skor' => 0, 'benar' => false, 'soal_id' => 870],
+            ['pilihan' => '1/24(x+8)', 'skor' => 0, 'benar' => false, 'soal_id' => 870],
+            ['pilihan' => '1/25(x+6)', 'skor' => 0, 'benar' => false, 'soal_id' => 870],
+            ['pilihan' => '1/24(x+6)', 'skor' => 20, 'benar' => true, 'soal_id' => 870],
+            ['pilihan' => '1/24(x-7)', 'skor' => 0, 'benar' => false, 'soal_id' => 870],
         ];
 
         $pilihanBagian4Level3 = [
             // Pertanyaan 17
-            ['pilihan' => 'Four', 'skor' => 0, 'benar' => false, 'soal_id' => 871],
-            ['pilihan' => 'Eight', 'skor' => 20, 'benar' => true, 'soal_id' => 871],
-            ['pilihan' => 'Six', 'skor' => 0, 'benar' => false, 'soal_id' => 871],
-            ['pilihan' => 'Ten', 'skor' => 0, 'benar' => false, 'soal_id' => 871],
+            ['pilihan' => 'g(x)=2x+7', 'skor' => 0, 'benar' => false, 'soal_id' => 871],
+            ['pilihan' => 'g(x)=3x+8', 'skor' => 20, 'benar' => true, 'soal_id' => 871],
+            ['pilihan' => 'g(x)=2x+8', 'skor' => 0, 'benar' => false, 'soal_id' => 871],
+            ['pilihan' => 'g(x)=3x-8', 'skor' => 0, 'benar' => false, 'soal_id' => 871],
+            ['pilihan' => 'g(x)=3x+7', 'skor' => 0, 'benar' => false, 'soal_id' => 871],
             // Pertanyaan 18
-            ['pilihan' => 'Dry', 'skor' => 20, 'benar' => true, 'soal_id' => 872],
-            ['pilihan' => 'Cold', 'skor' => 0, 'benar' => false, 'soal_id' => 872],
-            ['pilihan' => 'Damp', 'skor' => 0, 'benar' => false, 'soal_id' => 872],
-            ['pilihan' => 'Moist', 'skor' => 0, 'benar' => false, 'soal_id' => 872],
+            ['pilihan' => 'g(x)=5x+9', 'skor' => 0, 'benar' => false, 'soal_id' => 872],
+            ['pilihan' => 'g(x)=4x-8', 'skor' => 0, 'benar' => false, 'soal_id' => 872],
+            ['pilihan' => 'g(x)=4x-9', 'skor' => 20, 'benar' => true, 'soal_id' => 872],
+            ['pilihan' => 'g(x)=5x+8', 'skor' => 0, 'benar' => false, 'soal_id' => 872],
+            ['pilihan' => 'g(x)=4x+9', 'skor' => 0, 'benar' => false, 'soal_id' => 872],
             // Pertanyaan 1
-            ['pilihan' => 'Cold', 'skor' => 20, 'benar' => true, 'soal_id' => 873],
-            ['pilihan' => 'Warm', 'skor' => 0, 'benar' => false, 'soal_id' => 873],
-            ['pilihan' => 'Cool', 'skor' => 0, 'benar' => false, 'soal_id' => 873],
-            ['pilihan' => 'Icy', 'skor' => 0, 'benar' => false, 'soal_id' => 873],
+            ['pilihan' => 'g(x)=4x+13', 'skor' => 0, 'benar' => false, 'soal_id' => 873],
+            ['pilihan' => 'g(x)=5x+14', 'skor' => 20, 'benar' => true, 'soal_id' => 873],
+            ['pilihan' => 'g(x)=5x+13', 'skor' => 0, 'benar' => false, 'soal_id' => 873],
+            ['pilihan' => 'g(x)=5x-14', 'skor' => 0, 'benar' => false, 'soal_id' => 873],
+            ['pilihan' => 'g(x)=6x-14', 'skor' => 0, 'benar' => false, 'soal_id' => 873],
             // Pertanyaan 2
-            ['pilihan' => 'Large', 'skor' => 20, 'benar' => true, 'soal_id' => 874],
-            ['pilihan' => 'Little', 'skor' => 0, 'benar' => false, 'soal_id' => 874],
-            ['pilihan' => 'Tiny', 'skor' => 0, 'benar' => false, 'soal_id' => 874],
-            ['pilihan' => 'Miniature', 'skor' => 0, 'benar' => false, 'soal_id' => 874],
+            ['pilihan' => 'g(x)=5x-13', 'skor' => 0, 'benar' => false, 'soal_id' => 874],
+            ['pilihan' => 'g(x)=5x-14', 'skor' => 0, 'benar' => false, 'soal_id' => 874],
+            ['pilihan' => 'g(x)=6x+13', 'skor' => 0, 'benar' => false, 'soal_id' => 874],
+            ['pilihan' => 'g(x)=6x+14', 'skor' => 0, 'benar' => false, 'soal_id' => 874],
+            ['pilihan' => 'g(x)=6x-13', 'skor' => 20, 'benar' => true, 'soal_id' => 874],
             // Pertanyaan 3
-            ['pilihan' => 'Bluee', 'skor' => 0, 'benar' => false, 'soal_id' => 875],
-            ['pilihan' => 'Bloue', 'skor' => 0, 'benar' => false, 'soal_id' => 875],
-            ['pilihan' => 'Blue', 'skor' => 20, 'benar' => true, 'soal_id' => 875],
-            ['pilihan' => 'Blhue', 'skor' => 0, 'benar' => false, 'soal_id' => 875],
+            ['pilihan' => 'g(x)=8x-22', 'skor' => 0, 'benar' => false, 'soal_id' => 875],
+            ['pilihan' => 'g(x)=8x+21', 'skor' => 0, 'benar' => false, 'soal_id' => 875],
+            ['pilihan' => 'g(x)=7x-20', 'skor' => 0, 'benar' => false, 'soal_id' => 875],
+            ['pilihan' => 'g(x)=7x+20', 'skor' => 20, 'benar' => true, 'soal_id' => 875],
+            ['pilihan' => 'g(x)=7x+21', 'skor' => 0, 'benar' => false, 'soal_id' => 875],
         ];
 
         $pilihanBagian4Level4 = [
             // Pertanyaan 4
-            ['pilihan' => 'Bank', 'skor' => 0, 'benar' => false, 'soal_id' => 876],
-            ['pilihan' => 'School', 'skor' => 0, 'benar' => false, 'soal_id' => 876],
-            ['pilihan' => 'Library', 'skor' => 20, 'benar' => true, 'soal_id' => 876],
-            ['pilihan' => 'Mall', 'skor' => 0, 'benar' => false, 'soal_id' => 876],
+            ['pilihan' => '1/3(x-3)', 'skor' => 20, 'benar' => true, 'soal_id' => 876],
+            ['pilihan' => '1/4(x-3)', 'skor' => 0, 'benar' => false, 'soal_id' => 876],
+            ['pilihan' => '1/3(x+3)', 'skor' => 0, 'benar' => false, 'soal_id' => 876],
+            ['pilihan' => '1/4(x-4)', 'skor' => 0, 'benar' => false, 'soal_id' => 876],
+            ['pilihan' => '1/3(x-4)', 'skor' => 0, 'benar' => false, 'soal_id' => 876],
             // Pertanyaan 5
-            ['pilihan' => 'Apple', 'skor' => 0, 'benar' => false, 'soal_id' => 877],
-            ['pilihan' => 'Carrot', 'skor' => 20, 'benar' => true, 'soal_id' => 877],
-            ['pilihan' => 'Orange', 'skor' => 0, 'benar' => false, 'soal_id' => 877],
-            ['pilihan' => 'Banana', 'skor' => 0, 'benar' => false, 'soal_id' => 877],
+            ['pilihan' => '1/2(x-4)', 'skor' => 0, 'benar' => false, 'soal_id' => 877],
+            ['pilihan' => '1/3(x-4)', 'skor' => 0, 'benar' => false, 'soal_id' => 877],
+            ['pilihan' => '1/3(x-5)', 'skor' => 0, 'benar' => false, 'soal_id' => 877],
+            ['pilihan' => '1/3(x+5)', 'skor' => 0, 'benar' => false, 'soal_id' => 877],
+            ['pilihan' => '1/2(x+4)', 'skor' => 20, 'benar' => true, 'soal_id' => 877],
             // Pertanyaan 6
-            ['pilihan' => 'Angry', 'skor' => 0, 'benar' => false, 'soal_id' => 878],
-            ['pilihan' => 'Happy', 'skor' => 20, 'benar' => true, 'soal_id' => 878],
-            ['pilihan' => 'Tired', 'skor' => 0, 'benar' => false, 'soal_id' => 878],
-            ['pilihan' => 'Sleepy', 'skor' => 0, 'benar' => false, 'soal_id' => 878],
+            ['pilihan' => '1/4(x-5)', 'skor' => 20, 'benar' => true, 'soal_id' => 878],
+            ['pilihan' => '1/5(x-5)', 'skor' => 0, 'benar' => false, 'soal_id' => 878],
+            ['pilihan' => '1/4(x+5)', 'skor' => 0, 'benar' => false, 'soal_id' => 878],
+            ['pilihan' => '1/6(x-6)', 'skor' => 0, 'benar' => false, 'soal_id' => 878],
+            ['pilihan' => '1/4(x-6)', 'skor' => 0, 'benar' => false, 'soal_id' => 878],
             // Pertanyaan 7
-            ['pilihan' => 'Goed', 'skor' => 0, 'benar' => false, 'soal_id' => 879],
-            ['pilihan' => 'Went', 'skor' => 20, 'benar' => true, 'soal_id' => 879],
-            ['pilihan' => 'Gone', 'skor' => 0, 'benar' => false, 'soal_id' => 879],
-            ['pilihan' => 'Going', 'skor' => 0, 'benar' => false, 'soal_id' => 879],
+            ['pilihan' => '1/5(x-1)', 'skor' => 20, 'benar' => true, 'soal_id' => 879],
+            ['pilihan' => '1/6(x+1)', 'skor' => 0, 'benar' => false, 'soal_id' => 879],
+            ['pilihan' => '1/7(x-2)', 'skor' => 0, 'benar' => false, 'soal_id' => 879],
+            ['pilihan' => '1/8(x-3)', 'skor' => 0, 'benar' => false, 'soal_id' => 879],
+            ['pilihan' => '1/9(x+1)', 'skor' => 0, 'benar' => false, 'soal_id' => 879],
             // Pertanyaan 8
-            ['pilihan' => 'Dog', 'skor' => 0, 'benar' => false, 'soal_id' => 880],
-            ['pilihan' => 'Cat', 'skor' => 0, 'benar' => false, 'soal_id' => 880],
-            ['pilihan' => 'Bird', 'skor' => 20, 'benar' => true, 'soal_id' => 880],
-            ['pilihan' => 'Fish', 'skor' => 0, 'benar' => false, 'soal_id' => 880],
+            ['pilihan' => '1/6(x-4)', 'skor' => 20, 'benar' => true, 'soal_id' => 880],
+            ['pilihan' => '1/8(x-5)', 'skor' => 0, 'benar' => false, 'soal_id' => 880],
+            ['pilihan' => '1/9(x-6)', 'skor' => 0, 'benar' => false, 'soal_id' => 880],
+            ['pilihan' => '1/2(x+7)', 'skor' => 0, 'benar' => false, 'soal_id' => 880],
+            ['pilihan' => '1/5(x+8)', 'skor' => 0, 'benar' => false, 'soal_id' => 880],
         ];
 
         DB::table('pilihan')->insert(array_merge($pilihanBagian4Level1, $pilihanBagian4Level2, $pilihanBagian4Level3, $pilihanBagian4Level4));
@@ -800,7 +839,7 @@ class SoalPaketCSeeder extends Seeder
         $soalBagian1Level1 = [
             // Pertanyaan 1
             ['pertanyaan' => 'Dokumen untuk mencatat persetujuan yang bersifat sementara adalah?', 'sub_bagian_id' => 1, 'category_id' => 2, 'paket_id' => 3],
-            
+
             // Pertanyaan 2
             ['pertanyaan' => 'Wakil diplomatik yang pangkatnya lebih rendah dibanding duta besar adalah?', 'sub_bagian_id' => 1, 'category_id' => 2, 'paket_id' => 3],
 
@@ -989,7 +1028,7 @@ class SoalPaketCSeeder extends Seeder
         $soalBagian2Level1 = [
             // Pertanyaan 1
             ['pertanyaan' => 'Siapakah yang menjabat sebagai Presiden pertama Republik Indonesia?', 'sub_bagian_id' => 5, 'category_id' => 2, 'paket_id' => 3],
-            
+
             // Pertanyaan 2
             ['pertanyaan' => 'Apa dasar negara Indonesia yang tercantum dalam Pembukaan UUD 1945?', 'sub_bagian_id' => 5, 'category_id' => 2, 'paket_id' => 3],
 
